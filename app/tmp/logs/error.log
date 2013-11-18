@@ -1,0 +1,3080 @@
+2013-11-14 11:10:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:11:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:11:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:11:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:14:17 Error: [MissingControllerException] Controller class Cocktails.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Cocktails.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/cocktails.html
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:14:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:14:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:14:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:15:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:15:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:16:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:26:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:26:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:28:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:29:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:30:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:54:02 Error: [MissingViewException] View file "/home/baw4ux/html/project/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/baw4ux/html/project/app/View/Users/login.ctp',
+)
+Request URL: /~baw4ux/project/users/login
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-14 11:54:06 Error: [MissingViewException] View file "/home/baw4ux/html/project/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/baw4ux/html/project/app/View/Users/login.ctp',
+)
+Request URL: /~baw4ux/project/users/login
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-14 11:54:15 Error: [MissingViewException] View file "/home/baw4ux/html/project/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/baw4ux/html/project/app/View/Users/login.ctp',
+)
+Request URL: /~baw4ux/project/users/login
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-14 11:56:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 11:56:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:00:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:05:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:05:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:09:27 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/login
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:09:35 Error: Fatal Error (64): require_once() [http://php.net/function.require]: Failed opening required 'php/Authentication.php' (include_path='/home/baw4ux/html/project/lib:.:/usr/share/php:/usr/share/pear') in [/home/baw4ux/html/project/app/View/Users/login.ctp, line 5]
+2013-11-14 12:09:35 Error: [FatalErrorException] require_once() [http://php.net/function.require]: Failed opening required 'php/Authentication.php' (include_path='/home/baw4ux/html/project/lib:.:/usr/share/php:/usr/share/pear')
+Request URL: /~baw4ux/project/users/login
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', '/home/baw4ux/ht...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', '/home/baw4ux/ht...', 5, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', '/home/baw4ux/ht...', 5, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 12:09:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:09:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:10:28 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:10:28 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:05 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:05 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:12:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:12:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:34 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:34 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:48 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:12:48 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:13:56 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:13:56 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:14:23 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:14:23 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:14:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:14:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:14:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:20:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:20:20 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:20 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:20:24 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:24 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:20:55 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:20:55 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:26:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:26:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:51:17 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/home/baw4ux/html/project/app/Controller/AppController.php, line 25]
+2013-11-14 12:51:17 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 12:51:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 29]
+2013-11-14 12:51:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 12:52:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:52:03 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:52:03 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:52:05 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:52:05 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:55:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 12:55:22 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:55:22 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 12:55:26 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/baw4ux/html/project/lib/Cake/View/View.php(820): HelperCollection->__isset('Auth')
+#2 /home/baw4ux/html/project/app/View/Pages/home.ctp(28): View->__get('Auth')
+#3 /home/baw4ux/html/project/lib/Cake/View/View.php(931): include('/home/baw4ux/ht...')
+#4 /home/baw4ux/html/project/lib/Cake/View/View.php(893): View->_evaluate('/home/baw4ux/ht...', Array)
+#5 /home/baw4ux/html/project/lib/Cake/View/View.php(462): View->_render('/home/baw4ux/ht...')
+#6 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#7 /home/baw4ux/html/project/app/Controller/PagesController.php(70): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-11-14 12:55:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:00:26 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/baw4ux/html/project/lib/Cake/View/View.php(820): HelperCollection->__isset('Auth')
+#2 /home/baw4ux/html/project/app/View/Pages/home.ctp(28): View->__get('Auth')
+#3 /home/baw4ux/html/project/lib/Cake/View/View.php(931): include('/home/baw4ux/ht...')
+#4 /home/baw4ux/html/project/lib/Cake/View/View.php(893): View->_evaluate('/home/baw4ux/ht...', Array)
+#5 /home/baw4ux/html/project/lib/Cake/View/View.php(462): View->_render('/home/baw4ux/ht...')
+#6 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#7 /home/baw4ux/html/project/app/Controller/PagesController.php(70): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-11-14 13:00:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:03:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:03:10 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:10 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:24 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:24 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:03:32 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:32 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:03:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:04:32 Error: Fatal Error (4): syntax error, unexpected ',' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 31]
+2013-11-14 13:04:32 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:04:47 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/baw4ux/html/project/lib/Cake/View/View.php(820): HelperCollection->__isset('Auth')
+#2 /home/baw4ux/html/project/app/View/Pages/home.ctp(31): View->__get('Auth')
+#3 /home/baw4ux/html/project/lib/Cake/View/View.php(931): include('/home/baw4ux/ht...')
+#4 /home/baw4ux/html/project/lib/Cake/View/View.php(893): View->_evaluate('/home/baw4ux/ht...', Array)
+#5 /home/baw4ux/html/project/lib/Cake/View/View.php(462): View->_render('/home/baw4ux/ht...')
+#6 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#7 /home/baw4ux/html/project/app/Controller/PagesController.php(70): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-11-14 13:04:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:05:50 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:05:50 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:06:02 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:06:02 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:06:03 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:06:03 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:06:35 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:06:35 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:06:36 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:06:36 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:07:05 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 46]
+2013-11-14 13:07:05 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:07:06 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 46]
+2013-11-14 13:07:06 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:09:31 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 46]
+2013-11-14 13:09:31 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 46, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:09:50 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/home/baw4ux/html/project/app/Controller/AppController.php, line 44]
+2013-11-14 13:09:50 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 44, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:11:00 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/home/baw4ux/html/project/app/Controller/AppController.php, line 25]
+2013-11-14 13:11:00 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:11:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:11:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:11:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:12:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:13:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:13:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:13:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:14:37 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 31]
+2013-11-14 13:14:37 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:19:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:19:59 Error: Fatal Error (4): syntax error, unexpected T_ARRAY, expecting ',' or ';' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 33]
+2013-11-14 13:19:59 Error: [FatalErrorException] syntax error, unexpected T_ARRAY, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 33, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 33, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:20:08 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/baw4ux/html/project/lib/Cake/View/View.php(820): HelperCollection->__isset('Auth')
+#2 /home/baw4ux/html/project/app/View/Pages/home.ctp(31): View->__get('Auth')
+#3 /home/baw4ux/html/project/lib/Cake/View/View.php(931): include('/home/baw4ux/ht...')
+#4 /home/baw4ux/html/project/lib/Cake/View/View.php(893): View->_evaluate('/home/baw4ux/ht...', Array)
+#5 /home/baw4ux/html/project/lib/Cake/View/View.php(462): View->_render('/home/baw4ux/ht...')
+#6 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#7 /home/baw4ux/html/project/app/Controller/PagesController.php(72): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 /home/baw4ux/html/project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-11-14 13:20:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:21:14 Error: Fatal Error (1): Call to a member function read() on a non-object in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 31]
+2013-11-14 13:21:14 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/baw4ux/ht...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/baw4ux/ht...', 31, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/baw4ux/ht...', 31, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:21:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:22:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:23:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:23:08 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:23:08 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:23:11 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:23:11 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:23:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:25:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 31]
+2013-11-14 13:25:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 31, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 13:25:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:31:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:32:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:32:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:34:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:34:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:35:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:35:19 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:35:19 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:35:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:35:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:36:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:36:14 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:36:14 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:36:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:36:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:36:27 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:36:27 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:42:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:42:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:43:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:43:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:43:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:44:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:45:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:45:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:45:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:45:10 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:45:10 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:45:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 13:45:28 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:45:28 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 13:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:54:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:54:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:55:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:55:26 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:55:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:55:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:55:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:55:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:56:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:56:54 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:56:54 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:41 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:41 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:43 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:43 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:57:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:57:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 16:58:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:59:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:59:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 16:59:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 17:00:01 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 17:00:01 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 17:00:03 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 17:00:03 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 17:00:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:28:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:29:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:31:16 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /~baw4ux/project/users/login
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:34:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:34:59 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:35:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:35:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:35:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:35:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:35:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:37:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:37:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:38:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:38:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:38:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:38:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:39:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:39:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:39:11 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:11 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:12 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:12 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:39:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:40:52 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 28]
+2013-11-14 22:40:52 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 28, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 28, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 22:41:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:41:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:42:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:42:34 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:42:34 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:42:36 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:42:36 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:42:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:45:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:45:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:46:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:46:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:46:17 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:46:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:46:31 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:46:31 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:46:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:46:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:51:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:51:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:51:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/bootstrap.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:51:58 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /~baw4ux/project/users/css/style.css
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/project/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-14 22:52:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 22:52:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:02:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:03:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:03:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:03:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:04:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:04:51 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/home/baw4ux/html/project/app/View/Pages/home.ctp, line 37]
+2013-11-14 23:04:51 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /~baw4ux/project/
+Stack Trace:
+#0 /home/baw4ux/html/project/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 37, Array)
+#2 /home/baw4ux/html/project/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 37, Array)
+#3 /home/baw4ux/html/project/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 23:05:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:06:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:06:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:06:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:06:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:06:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:13:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 23:15:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/project/css/css.css
+Stack Trace:
+#0 /home/baw4ux/html/project/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-17 23:26:42 Error: [MissingControllerException] Controller class ~baw4uxController could not be found.
+Exception Attributes: array (
+  'class' => '~baw4uxController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/spiritguide/~baw4ux/spiritguide/favicon.ico
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-18 00:07:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/spiritguide/img/cocktailsplash.jpg
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-18 02:13:04 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php, line 29]
+2013-11-18 02:13:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 02:36:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%tequila%' at line 1
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select * from i...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select * from i...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('select * from i...')
+#4 [internal function]: DboSource->query('select * from i...')
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): Model->query('select * from i...')
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#8 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(28): PaginatorComponent->paginate('Ingredient')
+#9 [internal function]: IngredientsController->index()
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#11 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#13 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-11-18 02:41:31 Error: Fatal Error (4): syntax error, unexpected ',' in [/home/baw4ux/html/spiritguide/app/Model/Ingredient.php, line 98]
+2013-11-18 02:41:31 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 98, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 98, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 02:42:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ingredient_id = '4000'' at line 1
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select * from i...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select * from i...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('select * from i...', Array, Array)
+#4 [internal function]: DboSource->query('select * from i...', Array)
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): Model->query('select * from i...', Array)
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#8 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(28): PaginatorComponent->paginate('Ingredient')
+#9 [internal function]: IngredientsController->index()
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#11 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#13 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-11-18 02:43:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ingredient_id = '4000'' at line 1
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select * from i...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select * from i...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('select * from i...', Array, Array)
+#4 [internal function]: DboSource->query('select * from i...', Array)
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): Model->query('select * from i...', Array)
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#8 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(28): PaginatorComponent->paginate('Ingredient')
+#9 [internal function]: IngredientsController->index()
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#11 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#13 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-11-18 02:43:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ingredient_id = '4000'' at line 1
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select * from i...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select * from i...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('select * from i...', Array, Array)
+#4 [internal function]: DboSource->query('select * from i...', Array)
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): Model->query('select * from i...', Array)
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#8 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(28): PaginatorComponent->paginate('Ingredient')
+#9 [internal function]: IngredientsController->index()
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#11 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#13 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-11-18 02:49:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ingredient_id = '4000'' at line 1
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select * from i...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select * from i...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('select * from i...', Array, Array)
+#4 [internal function]: DboSource->query('select * from i...', Array)
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): Model->query('select * from i...', Array)
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#8 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(28): PaginatorComponent->paginate('Ingredient')
+#9 [internal function]: IngredientsController->index()
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#11 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#13 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-11-18 11:28:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'favicon.ico',
+)
+Request URL: /~baw4ux/spiritguide/users/favicon.ico
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-18 11:47:51 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/home/baw4ux/html/spiritguide/app/View/Users/login.ctp, line 27]
+2013-11-18 11:47:51 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 27, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 27, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 11:57:34 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 11:57:34 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:36:23 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cs4750baw4ux.users' doesn't exist
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * from u...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * from u...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/app/Model/Ingredient.php(100): DboSource->fetchAll('SELECT * from u...', Array)
+#4 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Component/PaginatorComponent.php(192): Ingredient->paginate(Array, NULL, NULL, 20, 1, 1, Array)
+#5 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(25): PaginatorComponent->paginate('Ingredient')
+#6 [internal function]: IngredientsController->index()
+#7 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#8 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-11-18 13:36:48 Error: Fatal Error (1): Cannot use string offset as an array in [/home/baw4ux/html/spiritguide/app/View/Ingredients/index.ctp, line 10]
+2013-11-18 13:36:48 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:37:13 Error: Fatal Error (1): Cannot use string offset as an array in [/home/baw4ux/html/spiritguide/app/View/Ingredients/index.ctp, line 10]
+2013-11-18 13:37:13 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:37:27 Error: Fatal Error (1): Cannot use string offset as an array in [/home/baw4ux/html/spiritguide/app/View/Ingredients/index.ctp, line 10]
+2013-11-18 13:37:27 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/home/baw4ux/ht...', 10, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:44:54 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 700186 bytes) in [/home/baw4ux/html/spiritguide/lib/Cake/Utility/String.php, line 243]
+2013-11-18 13:44:54 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 700186 bytes)
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/home/baw4ux/ht...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/home/baw4ux/ht...', 243, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/home/baw4ux/ht...', 243, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:49:52 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 700186 bytes) in [/home/baw4ux/html/spiritguide/lib/Cake/Utility/String.php, line 243]
+2013-11-18 13:49:52 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 700186 bytes)
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/home/baw4ux/ht...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/home/baw4ux/ht...', 243, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/home/baw4ux/ht...', 243, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 13:57:29 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/baw4ux/html/spiritguide/app/Model/Ingredient.php, line 99]
+2013-11-18 13:57:29 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /~baw4ux/spiritguide/ingredients
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 99, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 99, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:00:04 Error: [NotFoundException] Not Found
+Request URL: /~baw4ux/spiritguide/ingredients/index/page:2
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(25): PaginatorComponent->paginate('Ingredient')
+#1 [internal function]: IngredientsController->index()
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-11-18 14:02:14 Error: [NotFoundException] Not Found
+Request URL: /~baw4ux/spiritguide/ingredients/index/page:2
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/Controller/IngredientsController.php(25): PaginatorComponent->paginate('Ingredient')
+#1 [internal function]: IngredientsController->index()
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-11-18 14:23:23 Error: [MissingControllerException] Controller class IngredientController could not be found.
+Exception Attributes: array (
+  'class' => 'IngredientController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/spiritguide/ingredient/view/3789
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-18 14:23:24 Error: [MissingControllerException] Controller class IngredientController could not be found.
+Exception Attributes: array (
+  'class' => 'IngredientController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/spiritguide/ingredient/view/favicon.ico
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-18 14:23:36 Error: [MissingControllerException] Controller class IngredientController could not be found.
+Exception Attributes: array (
+  'class' => 'IngredientController',
+  'plugin' => NULL,
+)
+Request URL: /~baw4ux/spiritguide/ingredient/view/3789
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-18 14:23:42 Error: [NotFoundException] Invalid ingredient
+Request URL: /~baw4ux/spiritguide/ingredients/view/favicon.ico
+Stack Trace:
+#0 [internal function]: IngredientsController->view('favicon.ico')
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IngredientsController), Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(IngredientsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-18 14:41:28 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:41:28 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:41:49 Error: Fatal Error (1): Call to undefined method UsersController::query() in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:41:49 Error: [FatalErrorException] Call to undefined method UsersController::query()
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:42:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bas' in 'where clause'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT user_id ...', Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT user_id ...', Array, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('SELECT user_id ...')
+#4 [internal function]: DboSource->query('SELECT user_id ...')
+#5 /home/baw4ux/html/spiritguide/lib/Cake/Model/Model.php(3300): call_user_func_array(Array, Array)
+#6 /home/baw4ux/html/spiritguide/app/Controller/UsersController.php(20): Model->query('SELECT user_id ...')
+#7 [internal function]: UsersController->login()
+#8 /home/baw4ux/html/spiritguide/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /home/baw4ux/html/spiritguide/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/baw4ux/html/spiritguide/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-11-18 14:44:31 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:44:31 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /~baw4ux/spiritguide/users/logout
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:52:48 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:52:48 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:53:09 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:53:09 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:54:13 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 14:54:13 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:55:17 Error: Fatal Error (64): Cannot use [] for reading in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 14:55:17 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:58:21 Error: Fatal Error (4): syntax error, unexpected T_FOREACH in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 14:58:21 Error: [FatalErrorException] syntax error, unexpected T_FOREACH
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:58:32 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting '(' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 14:58:32 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting '('
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 14:59:33 Error: Fatal Error (4): syntax error, unexpected '}' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 29]
+2013-11-18 14:59:33 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 29, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:02:27 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 20]
+2013-11-18 15:02:27 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 20, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:03:27 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 15:03:27 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:03:30 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 15:03:30 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:11:02 Error: Fatal Error (1): Cannot use string offset as an array in [/home/baw4ux/html/spiritguide/vendors/QueryBot.php, line 6]
+2013-11-18 15:11:02 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 6, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/home/baw4ux/ht...', 6, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:11:22 Error: Fatal Error (1): Cannot use string offset as an array in [/home/baw4ux/html/spiritguide/vendors/QueryBot.php, line 6]
+2013-11-18 15:11:22 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/home/baw4ux/ht...', 6, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/home/baw4ux/ht...', 6, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:20:35 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/home/baw4ux/html/spiritguide/app/Controller/AppController.php, line 25]
+2013-11-18 15:20:35 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 25, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:24:11 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting ',' or ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 22]
+2013-11-18 15:24:11 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting ',' or ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:24:23 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting ',' or ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 22]
+2013-11-18 15:24:23 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting ',' or ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:24:24 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting ',' or ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 22]
+2013-11-18 15:24:24 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting ',' or ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:24:25 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting ',' or ';' in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 22]
+2013-11-18 15:24:25 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting ',' or ';'
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/baw4ux/ht...', 22, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:24:55 Error: Fatal Error (1): Call to undefined method UsersController::query() in [/home/baw4ux/html/spiritguide/app/Controller/UsersController.php, line 21]
+2013-11-18 15:24:55 Error: [FatalErrorException] Call to undefined method UsersController::query()
+Request URL: /~baw4ux/spiritguide/users/login
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/baw4ux/ht...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/baw4ux/ht...', 21, Array)
+#2 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/baw4ux/ht...', 21, Array)
+#3 /home/baw4ux/html/spiritguide/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 15:55:00 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /home/baw4ux/html/spiritguide/app/Config/bootstrap.php(30): CakePlugin::load('DebugKit')
+#1 /home/baw4ux/html/spiritguide/lib/Cake/Core/Configure.php(92): include('/home/baw4ux/ht...')
+#2 /home/baw4ux/html/spiritguide/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /home/baw4ux/html/spiritguide/app/webroot/index.php(92): include('/home/baw4ux/ht...')
+#4 {main}

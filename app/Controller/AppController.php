@@ -38,8 +38,7 @@ class AppController extends Controller {
         'Auth' => array(
             'loginRedirect' => array('controller' => 'cocktails', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
-        ),
-        'DebugKit.Toolbar'
+        )
     );
 
 	public function beforeFilter() {
