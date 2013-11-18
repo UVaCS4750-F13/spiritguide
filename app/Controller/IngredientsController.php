@@ -22,7 +22,7 @@ class IngredientsController extends AppController {
  * @return void
  */
 	public function index() {
-		$data = $this->Paginator->paginate('Ingredient', array('limit' => 20));
+		$data = $this->Paginator->paginate('Ingredient', array('ing' => 'tequila'));
 		$this->set('ingredients', $data);
 	}
 

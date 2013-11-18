@@ -95,7 +95,7 @@ class Ingredient extends AppModel {
 	);
 
 	public function paginate($conditions, $fields, $order, $limit, $page = 1, $recursive = null, $extra = array()) {
-    	$sql = "select * from ingredient";
+    	$sql = "select * from ingredient where description='".$conditions['ing']."'";
     	
     	return $results = $this->query($sql);
 	}

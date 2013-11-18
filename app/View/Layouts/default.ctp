@@ -10,6 +10,7 @@
 		echo $this->Html->script('jquery-1.9.1'); 
 		echo $this->Html->script('jquery-ui-1.10.3.custom');
 		echo $this->Html->script('bootstrap');
+		echo $this->Html->script('bootstrap-responsive');
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('bootstrap');
 		echo $this->Html->css('style');

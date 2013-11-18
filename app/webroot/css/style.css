@@ -43,3 +43,20 @@ html {
 
     border: 1px solid #DDD;
 }
+
+#form-row {
+	margin-left: 136px;
+	margin-right: auto;
+	display: inline-block;
+}
+
+#mixer-filter-button {
+	margin-left: 267px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#ingredient-header {
+	margin-left: 250px;
+}
+
