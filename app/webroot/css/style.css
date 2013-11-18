@@ -1,0 +1,45 @@
+html { 
+	overflow-y: scroll; 
+}
+
+#container-outer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+#container-inner {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+.ui-tabs-active {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+  	background-color: #ffffff;
+  	border: 1px solid #ddd;
+  	border-bottom-color: transparent;
+}
+
+.dropdown-toggle:active, .open .dropdown-toggle {
+	background:transparent !important; 
+	color:#transparent !important;
+}
+
+.paging span {
+    float: left;
+    padding: 0 14px;
+
+    color: #999;
+    cursor: default;
+    line-height: 34px;
+    text-decoration: none;
+
+    border: 1px solid #DDD;
+}
