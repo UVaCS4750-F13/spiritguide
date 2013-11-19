@@ -5,12 +5,9 @@ body {
 	background-size: 100%;
 }
 
-#home-header {
-	position: relative;
-	margin-top: 50%;
-}
-
 span h1 {
-	font-size: 65pt;
+	margin-top: 740px;
+	margin-left: 320px;
+	font-size: 60pt;
 	color: #49afcd;
 }
