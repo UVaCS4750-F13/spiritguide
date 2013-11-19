@@ -95,14 +95,4 @@ class Ingredient extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-
-	public function paginate($conditions, $fields, $order, $limit, $page = 1, $recursive = null, $extra = array()) {
-		return $this->query(QueryBot::ingredient_query());
-	}
-
-	public function paginateCount($conditions = null, $recursive = 0, $extra = array()) {
-   		return count($this->query(QueryBot::ingredient_query()));
-}
-
-
 }

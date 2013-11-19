@@ -1,6 +1,8 @@
 <?php
 App::uses('AppController', 'Controller');
 
+App::import('Vendor', 'QueryBot');
+
 /**
  * Ingredients Controller
  *
@@ -14,7 +16,6 @@ class IngredientsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
 
 function filter() {
 		// the page we will redirect to
@@ -50,8 +51,7 @@ function filter() {
             Configure::write('ingredient_query.type', $this->passedArgs['type']);
 		} else { Configure::write('ingredient_query.type', null); }
 
-		$data = $this->Paginator->paginate('Ingredient');
-		$this->set('ingredients', $data);
+		$this->set('ingredients', QueryBot::ingredient_query());
 	}
 
 /**

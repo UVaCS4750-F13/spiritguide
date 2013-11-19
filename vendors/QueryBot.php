@@ -26,45 +26,88 @@ class QueryBot {
 		$brand = Configure::read('ingredient_query.brand');
 		$type = Configure::read('ingredient_query.type');
 
+		$this->loadModel('Ingredient');
+		$db = $this->Ingredient->getDataSource();
+
+		// select alcohols
+
 		if (is_null($description) and is_null($brand) and $type == 'alcohols') {
-			return "SELECT * FROM ingredient WHERE ingredient_id IN (SELECT ingredient_id FROM proof)";
-		} elseif (is_null($description) and !is_null($brand) and $type == 'alcohols') {
-			return "SELECT * FROM ingredient WHERE brand LIKE '%".$brand."%' 
+			$sql =  "SELECT * FROM ingredient WHERE ingredient_id IN (SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql);
+		} 
+
+		elseif (is_null($description) and !is_null($brand) and $type == 'alcohols') {
+			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%' 
 				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-		} elseif (!is_null($description) and is_null($brand) and $type == 'alcohols') {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%' 
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-		} elseif (!is_null($description) and !is_null($brand) and $type == 'alcohols') {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%' 
-				AND brand LIKE '%".$brand."%' 
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':brand' => $brand));
 		}
+
+		elseif (!is_null($description) and is_null($brand) and $type == 'alcohols') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':description' => $description));
+		}
+
+		elseif (!is_null($description) and !is_null($brand) and $type == 'alcohols') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+				AND brand LIKE '%:brand%' 
+				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
+
+		}
+
+		// select mixers
 
 		elseif (is_null($description) and is_null($brand) and $type == 'mixers') {
-			return "SELECT * FROM ingredient WHERE ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-		} elseif (is_null($description) and !is_null($brand) and $type == 'mixers') {
-			return "SELECT * FROM ingredient WHERE brand LIKE '%".$brand."%' 
-				AND ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-		} elseif (!is_null($description) and is_null($brand) and $type == 'mixers') {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%' 
-				AND ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-		} elseif (!is_null($description) and !is_null($brand) and $type == 'mixers') {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%' 
-				AND brand LIKE '%".$brand."%' 
-				AND ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
+			$sql =  "SELECT * FROM ingredient WHERE ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql);
+		} 
+
+		elseif (is_null($description) and !is_null($brand) and $type == 'mixers') {
+			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%' 
+				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':brand' => $brand));
 		}
 
-		elseif (is_null($description) and is_null($brand) and $type == "all") {
-			return "SELECT * FROM ingredient WHERE ingredient_id IN (SELECT ingredient_id FROM proof)";
-		} elseif (is_null($description) and !is_null($brand) and $type == "all") {
-			return "SELECT * FROM ingredient WHERE brand LIKE '%".$brand."%'";
-		} elseif (!is_null($description) and is_null($brand) and $type == "all") {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%'";
-		} elseif (!is_null($description) and !is_null($brand) and $type == "all") {
-			return "SELECT * FROM ingredient WHERE description LIKE '%".$description."%' AND brand LIKE '%".$brand."%'";
+		elseif (!is_null($description) and is_null($brand) and $type == 'mixers') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':description' => $description));
 		}
 
-		else { return "SELECT * FROM ingredient"; }
+		elseif (!is_null($description) and !is_null($brand) and $type == 'mixers') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+				AND brand LIKE '%:brand%' 
+				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
+			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
+
+		}
+
+		// select all ingredients
+
+		elseif (is_null($description) and is_null($brand) and $type == 'all') {
+			$sql =  "SELECT * FROM ingredient";
+			return $db->fetchAll($sql);
+		} 
+
+		elseif (is_null($description) and !is_null($brand) and $type == 'all') {
+			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%'";
+			return $db->fetchAll($sql, array(':brand' => $brand));
+		}
+
+		elseif (!is_null($description) and is_null($brand) and $type == 'all') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%'";
+			return $db->fetchAll($sql, array(':description' => $description));
+		}
+
+		elseif (!is_null($description) and !is_null($brand) and $type == 'all') {
+			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+				AND brand LIKE '%:brand%'";
+			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
+
+		}
+
+		else { return $db->fetchAll( "SELECT * FROM ingredient"); }
 	}
 
 
