@@ -2,9 +2,7 @@
 <h2><?php echo $ingredient['Ingredient']['brand']; ?></h2>
 	<dl>
 		<dt><?php echo __('Ingredient Id'); ?></dt>
-		<dd>
-			<?php echo h($ingredient['Ingredient']['ingredient_id']); ?>
-		</dd>
+		<dd> <?php echo h($ingredient['Ingredient']['ingredient_id']); ?></dd>
 		<dt><?php echo __('Description'); ?></dt>
 		<dd>
 			<?php echo h($ingredient['Ingredient']['description']); ?>

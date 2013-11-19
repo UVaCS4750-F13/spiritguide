@@ -48,7 +48,21 @@ class QueryBot {
 		else { return "SELECT * FROM ingredient"; }
 	}
 
+	public function ingredient_brands_asc() {
+		return "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
+	}
 
+	public function cocktail_id_by_name($name) {
+		return "SELECT cocktail_id FROM cocktail WHERE name='".$name."' LIMIT 1";
+	}
+
+	public function insert_cocktail($name, $recipe) {
+		return "INSERT INTO cocktail (name, recipe) VALUES ('".$name."', '".$recipe."')";
+	}
+
+	public function insert_contains($cocktail_id, $ingredient_id, $volume) {
+		return "INSERT INTO contains (cocktail_id, ingredient_id, volume) VALUES ('".$cocktail_id."', '".$ingredient_id."', '".$volume."')";
+	}
 
 }
 

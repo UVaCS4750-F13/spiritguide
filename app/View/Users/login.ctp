@@ -1,7 +1,7 @@
 <script type="text/javascript">
-    j$s(function {
-        $('#tabs').tab();
-    });
+  j$s(function {
+    $('#tabs').tab();
+  });
 </script> 
 
 <div class="row">
@@ -17,7 +17,7 @@
             <li><a href="#register" data-toggle="tab">Create Account</a></li>
           </ul>
           <div id="account" class="tab-content">
-            <div class="tab-pane active" id="login">
+            <div id="login" class="tab-pane active" >
               <?php echo $this->Form->create('User', array('action' => 'login')); ?>
               <fieldset>
                 <?php echo $this->Form->input('username', array('label' => false, 'placeHolder' => 'Username')); ?>
@@ -25,17 +25,17 @@
               </fieldset>
               <?php echo $this->Form->end(array('label' => 'Login', 'class' => 'btn btn-primary')); ?>            
             </div>
-          <div id="register" class="tab-pane">
-            <?php echo $this->Form->create('User', array('action' => 'add')); ?>
-            <fieldset>
-              <?php echo $this->Form->input('username', array('label' => false, 'placeHolder' => 'Username')); ?>
-              <?php echo $this->Form->input('password', array('label' => false, 'placeHolder' => 'Password')); ?>
-              <?php echo $this->Form->input('display_name', array('label' => false, 'placeHolder' => 'Display Name')); ?>
-              <?php echo $this->Form->input('email', array('label' => false, 'placeHolder' => 'Email')); ?>
-            </fieldset>
-            <?php echo $this->Form->end(array('label' => 'Create', 'class' => 'btn btn-primary')); ?>   
-          </div>
+            <div id="register" class="tab-pane">
+              <?php echo $this->Form->create('User', array('action' => 'add')); ?>
+              <fieldset>
+                <?php echo $this->Form->input('username', array('label' => false, 'placeHolder' => 'Username')); ?>
+                <?php echo $this->Form->input('password', array('label' => false, 'placeHolder' => 'Password')); ?>
+                <?php echo $this->Form->input('display_name', array('label' => false, 'placeHolder' => 'Display Name')); ?>
+                <?php echo $this->Form->input('email', array('label' => false, 'placeHolder' => 'Email')); ?>
+              </fieldset>
+              <?php echo $this->Form->end(array('label' => 'Create', 'class' => 'btn btn-primary')); ?>   
             </div>
+          </div>
         </div>
       </div>
     </div>

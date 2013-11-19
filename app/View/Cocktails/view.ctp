@@ -23,23 +23,6 @@
 		</dd>
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Cocktail'), array('action' => 'edit', $cocktail['Cocktail']['cocktail_id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Cocktail'), array('action' => 'delete', $cocktail['Cocktail']['cocktail_id']), null, __('Are you sure you want to delete # %s?', $cocktail['Cocktail']['cocktail_id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Cocktails'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Cocktail'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Contains'), array('controller' => 'contains', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Contain'), array('controller' => 'contains', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Favorites'), array('controller' => 'favorites', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Favorite'), array('controller' => 'favorites', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Labels'), array('controller' => 'labels', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Label'), array('controller' => 'labels', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List User Ratings'), array('controller' => 'user_ratings', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User Rating'), array('controller' => 'user_ratings', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
 <div class="related">
 	<h3><?php echo __('Related Contains'); ?></h3>
 	<?php if (!empty($cocktail['Contain'])): ?>
@@ -47,21 +30,12 @@
 	<tr>
 		<th><?php echo __('Cocktail Id'); ?></th>
 		<th><?php echo __('Ingredient Id'); ?></th>
-		<th><?php echo __('Unit'); ?></th>
-		<th><?php echo __('Amount'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($cocktail['Contain'] as $contain): ?>
 		<tr>
 			<td><?php echo $contain['cocktail_id']; ?></td>
 			<td><?php echo $contain['ingredient_id']; ?></td>
-			<td><?php echo $contain['unit']; ?></td>
-			<td><?php echo $contain['amount']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'contains', 'action' => 'view', $contain['cocktail_id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'contains', 'action' => 'edit', $contain['cocktail_id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'contains', 'action' => 'delete', $contain['cocktail_id']), null, __('Are you sure you want to delete # %s?', $contain['cocktail_id'])); ?>
-			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>

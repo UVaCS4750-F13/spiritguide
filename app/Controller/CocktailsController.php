@@ -1,5 +1,15 @@
 <?php
 App::uses('AppController', 'Controller');
+
+// good ole' QueryBot
+App::import('Vendor', 'QueryBot');
+
+// model imports
+
+App::import('Model','Ingredient'); 
+App::import('Model','Contain');
+
+
 /**
  * Cocktails Controller
  *
@@ -46,14 +56,55 @@ class CocktailsController extends AppController {
  * @return void
  */
 	public function add() {
+
+		// attempting to create cocktail
 		if ($this->request->is('post')) {
-			$this->Cocktail->create();
-			if ($this->Cocktail->save($this->request->data)) {
-				$this->Session->setFlash(__('The cocktail has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The cocktail could not be saved. Please, try again.'));
-			}
+
+			// insert the cocktail name and recipe
+			$this->Cocktail->query(QueryBot::insert_cocktail(
+				$this->request->data['Cocktail']['name'], 
+				$this->request->data['Cocktail']['recipe']));
+
+			// find id of new cocktail
+			$cocktails = $this->Cocktail->query(QueryBot::cocktail_id_by_name($this->request->data['Cocktail']['name']));
+			$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
+
+			// load contains relation model
+			$this->loadModel('Contain');
+
+			// insert first contains relation
+			$this->Contain->query(QueryBot::insert_contains(
+				$cocktail_id,
+				$this->request->data['Cocktail']['ingredient_1'], 
+				$this->request->data['Cocktail']['ingredient_1_volume']));
+
+			// insert second contains relation
+			$this->Contain->query(QueryBot::insert_contains(
+				$cocktail_id,
+				$this->request->data['Cocktail']['ingredient_2'], 
+				$this->request->data['Cocktail']['ingredient_2_volume']));
+
+			// redirect
+			$this->redirect(array('action' => 'view', $cocktail_id));
+		} 
+
+
+		else {
+
+			// load ingredient model
+			$this->loadModel('Ingredient');
+
+			// create array
+			$ingredients = array();
+
+			// get names
+			foreach ($this->Ingredient->query(QueryBot::ingredient_brands_asc()) as $ingredient) {
+				$ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
+			} 
+
+			// set names
+			$this->set('ingredients', $ingredients);
+
 		}
 	}
 
