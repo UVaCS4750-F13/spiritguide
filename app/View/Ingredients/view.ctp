@@ -99,3 +99,19 @@
 	</table>
 <?php endif; ?>
 </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+     <span class="input-group-addon">
+        <button id="fav-button" class="btn btn-info" type="button">Favorite</button>
+      </span>
+      <input id="inv-update-button" type="text" class="form-control" placeHolder="Volume (ml)">
+       <span class="input-group-addon">
+        <button class="btn btn-info" type="button">Update Inventory</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->

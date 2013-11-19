@@ -90,3 +90,11 @@ span h5 {
 .ingredient-submit {
 	margin-left: 300px;
 }
+
+#inv-update-button {
+	margin-top: 9px;
+}
+
+#fav-button {
+	margin-left: 270px;
+}
