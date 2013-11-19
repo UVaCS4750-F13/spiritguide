@@ -73,26 +73,33 @@ class QueryBot {
 	public function get_ingredient_brands_asc() {
 		$this->loadModel('Ingredient');
 		$db = $this->Ingredient->getDataSource();
-
 		$sql = "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
-
 		return $db->fetchAll($sql);
 	}
 
 	public function get_cocktail_by_id($cocktail_id) {
-		return "SELECT * FROM cocktail WHERE cocktail_id='".$cocktail_id."' LIMIT 1";
+		$this->loadModel('Cocktail');
+		$db = $this->Cocktail->getDataSource();
+		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
+		return $db->fetchAll($sql, array(':cocktail_id' => $cocktail_id));
 	}
 
 	public function get_cocktail_by_name($name) {
-		return "SELECT * FROM cocktail WHERE name='".$name."' LIMIT 1";
+		$this->loadModel('Cocktail');
+		$db = $this->Cocktail->getDataSource();
+		$sql = "SELECT * FROM cocktail WHERE name = :name LIMIT 1";
+		return $db->fetchAll($sql, array(':name' => $name));
 	}
 
-	public function get_ingredients_in_cocktail($cocktail_id) {
-		return "SELECT description, brand, volume
+	public function get_cocktail_ingredients($cocktail_id) {
+		$this->loadModel('Cocktail');
+		$db = $this->Cocktail->getDataSource();
+		$sql = "SELECT description, brand, volume
 			FROM cocktail coc
 				JOIN contains con ON coc.cocktail_id=con.cocktail_id
 				JOIN ingredient ing ON con.ingredient_id=ing.ingredient_id
-				WHERE coc.cocktail_id='".$cocktail_id."'";
+				WHERE coc.cocktail_id = :cocktail_id";
+		return $db->fetchAll($sql, array(':cocktail_id' => $cocktail_id));
 	}
 
 
@@ -108,7 +115,7 @@ class QueryBot {
 		
 		$success = $stmt->execute();
 		if (!$success) {
-			 die('execute() failed: ' . htmlspecialchars($stmt->error));
+			 throw new BadRequestException("Insert Failed: ".htmlspecialchars($stmt->error));
 		}
 
 		$stmt->close();
@@ -125,8 +132,7 @@ class QueryBot {
 		
 		$success = $stmt->execute();
 		if (!$success) {
-			$this->redirect(array('action' => 'add'));
-			$this->Session->setFlash('boo');
+			throw new BadRequestException("Insert Failed: ".htmlspecialchars($stmt->error));
 		}
 
 		$stmt->close();

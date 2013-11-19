@@ -50,10 +50,10 @@ class CocktailsController extends AppController {
 		}
 
 		// get all ingredients in cocktail for use in view
-		$this->set('ingredients', $this->Cocktail->query(QueryBot::get_ingredients_in_cocktail($id)));
+		$this->set('ingredients', QueryBot::get_cocktail_ingredients($id));
 
 		// get cocktail for which id matches
-		$cocktail_array = $this->Cocktail->query(QueryBot::get_cocktail_by_id($id));
+		$cocktail_array = QueryBot::get_cocktail_by_id($id);
 		$this->set('cocktail', $cocktail_array[0]);
 
 	}
@@ -103,7 +103,7 @@ class CocktailsController extends AppController {
 
 				// redirect
 				$this->redirect(array('action' => 'view', $cocktail_id));
-				
+
 			}
 
 		} 
