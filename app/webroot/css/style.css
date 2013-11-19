@@ -60,3 +60,7 @@ html {
 	margin-left: 250px;
 }
 
+.ingredients-view {
+	display: inline-block;
+	margin: auto;
+}

@@ -101,7 +101,7 @@ class Ingredient extends AppModel {
 	}
 
 	public function paginateCount($conditions = null, $recursive = 0, $extra = array()) {
-   		return 1;
+   		return count($this->query(QueryBot::ingredient_query()));
 }
 
 

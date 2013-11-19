@@ -15,7 +15,7 @@
 			)
 		); ?>
     </fieldset>
-    <?php echo $this->Form->end(array('label' => 'Filter Ingredients', 'div' => false, 'id' => 'mixer-filter-button', 'class' => 'btn btn-primary')); ?> 
+    <?php echo $this->Form->end(array('label' => 'Filter Ingredients', 'div' => false, 'id' => 'mixer-filter-button', 'class' => 'btn btn-info')); ?> 
     
 </span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
