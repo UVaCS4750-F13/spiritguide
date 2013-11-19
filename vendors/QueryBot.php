@@ -4,7 +4,22 @@
 App::import('Model','Ingredient'); 
 App::import('Model','Cocktail'); 
 
+// define database constants
+define("SERVER", "stardock.cs.virginia.edu");
+define("USER", "cs4750baw4ux");
+define("PASS", "fall2013");
+define("DB", "cs4750baw4ux");
+
 class QueryBot {
+
+	public function db_connect() {
+		$db_connection = new mysqli(SERVER, USER, PASS, DB);
+		if (mysqli_connect_error()) {
+			echo "Can't connect!";
+			echo "<br>" . mysqli_connect_error();
+			return null;
+		} return $db_connection;
+	}
 
 	public function ingredient_query() {
 		$description = Configure::read('ingredient_query.descr');
@@ -85,63 +100,30 @@ class QueryBot {
 	/** Model Insertions **/
 
 	public function insert_contains($cocktail_id, $ingredient_id, $volume) {
-
-			// database constants
-	$SERVER = "stardock.cs.virginia.edu";
-	$USER = "cs4750baw4ux";
-	$PASS = "fall2013";
-	$DB = "cs4750baw4ux";
-
-		$db_connection = new mysqli($SERVER, $USER, $PASS, $DB);
-		if (mysqli_connect_error()) {
-			echo "Can't connect!";
-			echo "<br>" . mysqli_connect_error();
-			return null;
-		}
+		$db_connection = self::db_connect();
 
 		$sql = "INSERT INTO contains (cocktail_id, ingredient_id, volume) VALUES (? , ?, ?)";
 		$stmt = $db_connection->prepare($sql);
-	
-		// bind parameters
 		$stmt->bind_param("sss", $cocktail_id, $ingredient_id, $volume);
 		
-		//run the query
 		$success = $stmt->execute();
-
 		if (!$success) {
 			 die('execute() failed: ' . htmlspecialchars($stmt->error));
 		}
 
 		$stmt->close();
 		$db_connection->close();
-
 		return $success;
-
 	}
 
 	public function insert_cocktail($name, $recipe) {
+		$db_connection = self::db_connect();
 
-		// database constants
-		$SERVER = "stardock.cs.virginia.edu";
-		$USER = "cs4750baw4ux";
-		$PASS = "fall2013";
-		$DB = "cs4750baw4ux";
-
-		$db_connection = new mysqli($SERVER, $USER, $PASS, $DB);
-		if (mysqli_connect_error()) {
-			echo "Can't connect!";
-			echo "<br>" . mysqli_connect_error();
-			return null;
-		}
-
-		$stmt = $db_connection->prepare("INSERT INTO cocktail (name, recipe) VALUES (?, ?)");
-	
-		// bind parameters
+		$sql = "INSERT INTO cocktail (name, recipe) VALUES (?, ?)";
+		$stmt = $db_connection->prepare($sql);
 		$stmt->bind_param("ss", $name, $recipe);
 		
-		//run the query
 		$success = $stmt->execute();
-
 		if (!$success) {
 			$this->redirect(array('action' => 'add'));
 			$this->Session->setFlash('boo');
@@ -149,9 +131,7 @@ class QueryBot {
 
 		$stmt->close();
 		$db_connection->close();
-
 		return $success;
-
 	}
 
 }
