@@ -16,13 +16,41 @@ class IngredientsController extends AppController {
  */
 	public $components = array('Paginator');
 
-/**
- * index method
- *
- * @return void
- */
+function filter() {
+		// the page we will redirect to
+		$url['action'] = 'index';
+		
+		// build a URL will all the search elements in it
+		foreach ($this->data as $k=>$v){ 
+			foreach ($v as $kk=>$vv){
+				if($vv != "") {
+					$url[$kk]=$vv;
+				}
+			} 
+		}
+
+		// redirect the user to the url
+		$this->redirect($url, null, true);
+	}
+
 	public function index() {
-		$data = $this->Paginator->paginate('Ingredient', array('ing' => 'tequila'));
+
+		if (isset($this->passedArgs['descr'])) {
+            $this->request->data['Ingredient']['descr'] = $this->passedArgs['descr'];
+            Configure::write('ingredient_query.descr', $this->passedArgs['descr']);
+		} else { Configure::write('ingredient_query.descr', null); }
+
+		if (isset($this->passedArgs['brand'])) {
+            $this->request->data['Ingredient']['brand'] = $this->passedArgs['brand'];
+            Configure::write('ingredient_query.brand', $this->passedArgs['brand']);
+		} else { Configure::write('ingredient_query.brand', null); }
+
+		if (isset($this->passedArgs['type'])) {
+            $this->request->data['Ingredient']['type'] = $this->passedArgs['type'];
+            Configure::write('ingredient_query.type', $this->passedArgs['type']);
+		} else { Configure::write('ingredient_query.type', null); }
+
+		$data = $this->Paginator->paginate('Ingredient');
 		$this->set('ingredients', $data);
 	}
 

@@ -1,5 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
+
+App::import('Vendor', 'QueryBot');
 /**
  * Ingredient Model
  *
@@ -95,15 +97,11 @@ class Ingredient extends AppModel {
 	);
 
 	public function paginate($conditions, $fields, $order, $limit, $page = 1, $recursive = null, $extra = array()) {
-    	$sql = "select * from ingredient where description='".$conditions['ing']."'";
-    	
-    	return $results = $this->query($sql);
+		return $this->query(QueryBot::ingredient_query());
 	}
 
 	public function paginateCount($conditions = null, $recursive = 0, $extra = array()) {
-   		$sql = "select * from ingredient";
-    	
-    	return count($this->query($sql));
+   		return 1;
 }
 
 
