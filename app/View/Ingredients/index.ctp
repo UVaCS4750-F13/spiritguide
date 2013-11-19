@@ -24,10 +24,12 @@
 			<th><?php echo 'Description'; ?></th>
 			<th><?php echo 'Brand'; ?></th>
 		</tr>
+		<tr>
 		<?php foreach ($ingredients as $ingredient): ?>
 			<td><?php echo h($ingredient['ingredient']['description']); ?></td>
-			<td><?php echo $this->Html->link($ingredient['ingredient']['brand'], 
-				array('controller' => 'ingredients', 'action' => 'view', $ingredient['ingredient']['ingredient_id'])); ?>
+			<td>
+				<?php echo $this->Html->link($ingredient['ingredient']['brand'], 
+					array('action' => 'view', $ingredient['ingredient']['ingredient_id'])); ?>
 			</td>
 		</tr>
 		<?php endforeach; ?>

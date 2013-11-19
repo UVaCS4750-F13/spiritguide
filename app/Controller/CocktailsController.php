@@ -46,8 +46,9 @@ class CocktailsController extends AppController {
 		if (!$this->Cocktail->exists($id)) {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
-		$options = array('conditions' => array('Cocktail.' . $this->Cocktail->primaryKey => $id));
-		$this->set('cocktail', $this->Cocktail->find('first', $options));
+
+		$this->set('ingredients', $this->Cocktail->query(QueryBot::get_ingredients_in_cocktail($id)));
+		$this->set('cocktail', $this->Cocktail->find('first'));
 	}
 
 /**
@@ -66,7 +67,7 @@ class CocktailsController extends AppController {
 				$this->request->data['Cocktail']['recipe']));
 
 			// find id of new cocktail
-			$cocktails = $this->Cocktail->query(QueryBot::cocktail_id_by_name($this->request->data['Cocktail']['name']));
+			$cocktails = $this->Cocktail->query(QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']));
 			$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
 
 			// load contains relation model
@@ -86,6 +87,7 @@ class CocktailsController extends AppController {
 
 			// redirect
 			$this->redirect(array('action' => 'view', $cocktail_id));
+
 		} 
 
 
@@ -98,9 +100,9 @@ class CocktailsController extends AppController {
 			$ingredients = array();
 
 			// get names
-			foreach ($this->Ingredient->query(QueryBot::ingredient_brands_asc()) as $ingredient) {
+			foreach ($this->Ingredient->query(QueryBot::get_ingredient_brands_asc()) as $ingredient) {
 				$ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
-			} 
+			}
 
 			// set names
 			$this->set('ingredients', $ingredients);
