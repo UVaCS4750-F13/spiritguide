@@ -9,7 +9,6 @@ App::import('Model','Ingredient');
 App::import('Model','Contain');
 
 
-
 /**
  * Cocktails Controller
  *

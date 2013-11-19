@@ -1,19 +1,17 @@
 <div class="ingredients view">
 <h2><?php echo $ingredient['Ingredient']['brand']; ?></h2>
-	<dl>
-		<dt><?php echo __('Ingredient Id'); ?></dt>
-		<dd> <?php echo h($ingredient['Ingredient']['ingredient_id']); ?></dd>
-		<dt><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($ingredient['Ingredient']['description']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Brand'); ?></dt>
-		<dd>
-			<?php echo h($ingredient['Ingredient']['brand']); ?>
-			&nbsp;
-		</dd>
-	</dl>
+	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
+		<tr>
+			<th><?php echo 'Ingredient ID'; ?></th>
+			<th><?php echo 'Description'; ?></th>
+			<th><?php echo 'Brand'; ?></th>
+		</tr>
+		<tr>
+			<td><?php echo $ingredient['Ingredient']['ingredient_id']; ?></td>
+			<td><?php echo $ingredient['Ingredient']['description']; ?></td>
+			<td><?php echo $ingredient['Ingredient']['brand']; ?></td>
+		</tr>
+	</table>
 </div>
 <div class="related">
 	<?php if (!empty($ingredient['Contain'])): ?>

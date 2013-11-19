@@ -2,7 +2,6 @@
 	<?php echo $this->Form->create('Cocktail'); ?>
 	<fieldset>
 		<?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'placeHolder' => 'Cocktail Name', 'class' => 'input-block-level')); ?>
-		<?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'placeHolder' => 'Recipe', 'class' => 'input-block-level')); ?>
 		<span class="ingredient-box">
 			<h4>Ingredient 1</h4>
 			<?php echo $this->Form->input('ingredient_1', array('label' => false, 'empty' => 'No Ingredient', 'options' => $ingredients)); ?>
@@ -18,6 +17,7 @@
 			<?php echo $this->Form->input('ingredient_3', array('label' => false, 'empty' => 'No Ingredient', 'options' => $ingredients)); ?>	
 			<?php echo $this->Form->input('ingredient_3_volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
 		</span>
+		<?php echo $this->Form->input('recipe', array('label' => '<h4>Recipe</h4>', 'div' => false, 'class' => 'input-block-level')); ?>
 	</fieldset>
 	<br>
 	<?php echo $this->Form->end('Submit', array('action' => 'add')); ?>

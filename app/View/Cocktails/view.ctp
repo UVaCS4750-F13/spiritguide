@@ -12,14 +12,6 @@
 			<td><?php echo $cocktail['cocktail']['rating']; ?></td>
 		</tr>
 	</table>
-	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
-		<tr>
-			<th><?php echo 'Recipe'; ?></th>
-		</tr>
-		<tr>
-			<td><?php echo $cocktail['cocktail']['recipe']; ?></td>
-		</tr>
-	</table>
 </div>
 
 <div class="related">
@@ -42,6 +34,13 @@
 		</table>
 	<?php endif; ?>
 </div>
+
+<h3><?php echo __('Recipe'); ?></h3>
+<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><?php echo $cocktail['cocktail']['recipe']; ?></td>
+	</tr>
+	</table>
 
 <div class="related">
 	<?php if (!empty($cocktail['Favorite'])): ?>
