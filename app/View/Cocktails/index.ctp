@@ -1,5 +1,30 @@
 <div class="cocktails index">
-	<h2><?php echo __('Cocktails'); ?></h2>
+	
+<span id="form-row">
+<h2 id="cocktail-header">Cocktails</h2>
+   	<?php echo $this->Form->create('Cocktail', array('action' => 'filter', 'class' => 'form-inline')); ?>
+    <fieldset>
+         <?php echo $this->Form->input('type', array('label' => false, 'div' => false,
+				'options' => array(
+				'all' => 'All Cocktails',
+				'alcohols' => 'Ones I Can Make'
+				)
+			)
+		); ?>
+        <?php echo $this->Form->input('brand', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
+        <?php echo $this->Form->input('type', array('label' => false, 'div' => false,
+				'options' => array(
+				'all' => 'All Tags',
+				'alcohols' => 'Alcohols', 
+				'mixers' => 'Mixers'
+				)
+			)
+		); ?>
+    </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Filter Cocktails', 'div' => false, 'id' => 'cocktail-filter-button', 'class' => 'btn btn-info')); ?> 
+    
+</span>
+<span><h5><?php echo $this->Paginator->counter(array('format' => __('{:count} Cocktail(s) Found'))); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
@@ -12,14 +37,4 @@
 		</tr>
 		<?php endforeach; ?>
 	</table>
-	<p>
-		<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}'))); ?>
-	</p>
-	<div class="paging">
-		<?php
-			echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-			echo $this->Paginator->numbers(array('separator' => ''));
-			echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-		?>
-	</div>
 </div>

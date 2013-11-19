@@ -53,14 +53,26 @@ html {
 #mixer-filter-button {
 	margin-left: 267px;
 	margin-top: 13px;
-	margin-bottom: 20px;
+}
+
+#cocktail-filter-button {
+	margin-left: 280px;
+	margin-top: 13px;
 }
 
 #ingredient-header {
 	margin-left: 250px;
 }
 
+#cocktail-header {
+	margin-left: 260px;
+}
+
 .ingredients-view {
 	display: inline-block;
 	margin: auto;
+}
+
+span h5 {
+	float: right;
 }

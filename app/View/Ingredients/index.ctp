@@ -18,6 +18,7 @@
     <?php echo $this->Form->end(array('label' => 'Filter Ingredients', 'div' => false, 'id' => 'mixer-filter-button', 'class' => 'btn btn-info')); ?> 
     
 </span>
+	<span><h5><?php echo $this->Paginator->counter(array('format' => __('{:count} Ingredient(s) Found'))); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
 			<th><?php echo 'Description'; ?></th>
@@ -32,7 +33,6 @@
 		<?php endforeach; ?>
 	</table>
 	<p>
-	<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages} {:count}'))); ?>
 	</p>
 </div>
 
