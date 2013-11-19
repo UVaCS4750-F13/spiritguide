@@ -80,3 +80,13 @@ html {
 span h5 {
 	float: right;
 }
+
+.ingredient-box {
+	display:inline-block;
+	margin-right: 45px;
+	margin-left: 45px;
+}
+
+.ingredient-submit {
+	margin-left: 300px;
+}

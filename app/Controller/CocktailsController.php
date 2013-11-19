@@ -83,23 +83,32 @@ class CocktailsController extends AppController {
 			if (QueryBot::insert_cocktail($name, $recipe)) {
 
 				// find id of new cocktail
-				$cocktails = $this->Cocktail->query(QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']));
+				$cocktails = QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']);
 				$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
 
-				// load contains relation model
-				$this->loadModel('Contain');
-
+				$i1 = $this->request->data['Cocktail']['ingredient_1'];
+				$v1 = $this->request->data['Cocktail']['ingredient_1_volume'];
+	
 				// insert first contains relation
-				QueryBot::insert_contains(
-					$cocktail_id,
-					$this->request->data['Cocktail']['ingredient_1'], 
-					$this->request->data['Cocktail']['ingredient_1_volume']);
+				if ($i1 != '') {
+					QueryBot::insert_contains($cocktail_id, $i1, $v1);
+				}
 
-				// insert second contains relation
-				QueryBot::insert_contains(
-					$cocktail_id,
-					$this->request->data['Cocktail']['ingredient_2'], 
-					$this->request->data['Cocktail']['ingredient_2_volume']);
+				$i2 = $this->request->data['Cocktail']['ingredient_2'];
+				$v2 = $this->request->data['Cocktail']['ingredient_2_volume'];
+	
+				// insert first contains relation
+				if ($i2 != '') {
+					QueryBot::insert_contains($cocktail_id, $i2, $v2);
+				}
+
+				$i3 = $this->request->data['Cocktail']['ingredient_3'];
+				$v3 = $this->request->data['Cocktail']['ingredient_3_volume'];
+	
+				// insert first contains relation
+				if ($i3 != '') {
+					QueryBot::insert_contains($cocktail_id, $i3, $v3);
+				}
 
 				// redirect
 				$this->redirect(array('action' => 'view', $cocktail_id));
