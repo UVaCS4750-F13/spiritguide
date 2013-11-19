@@ -26,15 +26,14 @@
               <?php echo $this->Form->end(array('label' => 'Login', 'class' => 'btn btn-primary')); ?>            
             </div>
           <div id="register" class="tab-pane">
-            <form id="tab">
-              <input type="text" value="" class="input-xlarge" placeHolder="Username"><br>
-              <input type="text" value="" class="input-xlarge" placeHolder="Password"><br>
-              <input type="text" value="" class="input-xlarge" placeHolder="Display Name"><br>
-              <input type="text" value="" class="input-xlarge" placeHolder="Email">
-              <div>
-                <button class="btn btn-primary">Create Account</button>
-              </div>
-            </form> 
+            <?php echo $this->Form->create('User', array('action' => 'add')); ?>
+            <fieldset>
+              <?php echo $this->Form->input('username', array('label' => false, 'placeHolder' => 'Username')); ?>
+              <?php echo $this->Form->input('password', array('label' => false, 'placeHolder' => 'Password')); ?>
+              <?php echo $this->Form->input('display_name', array('label' => false, 'placeHolder' => 'Display Name')); ?>
+              <?php echo $this->Form->input('email', array('label' => false, 'placeHolder' => 'Email')); ?>
+            </fieldset>
+            <?php echo $this->Form->end(array('label' => 'Create', 'class' => 'btn btn-primary')); ?>   
           </div>
             </div>
         </div>

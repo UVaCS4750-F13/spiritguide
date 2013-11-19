@@ -7,8 +7,7 @@ body {
 
 #home-header {
 	position: relative;
-	left: 350px;
-	top: 750px;
+	margin-top: 50%;
 }
 
 span h1 {
