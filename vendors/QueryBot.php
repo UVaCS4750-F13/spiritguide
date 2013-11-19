@@ -37,26 +37,24 @@ class QueryBot {
 		} 
 
 		elseif (is_null($description) and !is_null($brand) and $type == 'alcohols') {
-			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%' 
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':brand' => $brand));
+			return $db->fetchAll("SELECT * FROM ingredient WHERE brand LIKE CONCAT('%',:brand,'%')
+				AND ingredient_id IN (SELECT ingredient_id FROM proof)", array('brand' => $brand));
 		}
 
 		elseif (!is_null($description) and is_null($brand) and $type == 'alcohols') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%') 
 				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':description' => $description));
+			return $db->fetchAll($sql, array('description' => $description));
 		}
 
 		elseif (!is_null($description) and !is_null($brand) and $type == 'alcohols') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
-				AND brand LIKE '%:brand%' 
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%') 
+				AND brand LIKE CONCAT('%',:brand,'%') 
 				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
-
+			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
 		}
 
-		// select mixers
+		// select from mixers
 
 		elseif (is_null($description) and is_null($brand) and $type == 'mixers') {
 			$sql =  "SELECT * FROM ingredient WHERE ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
@@ -64,22 +62,22 @@ class QueryBot {
 		} 
 
 		elseif (is_null($description) and !is_null($brand) and $type == 'mixers') {
-			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%' 
+			$sql = "SELECT * FROM ingredient WHERE brand LIKE CONCAT('%',:brand,'%') 
 				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':brand' => $brand));
+			return $db->fetchAll($sql, array('brand' => $brand));
 		}
 
 		elseif (!is_null($description) and is_null($brand) and $type == 'mixers') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%') 
 				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':description' => $description));
+			return $db->fetchAll($sql, array('description' => $description));
 		}
 
 		elseif (!is_null($description) and !is_null($brand) and $type == 'mixers') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
-				AND brand LIKE '%:brand%' 
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%') 
+				AND brand LIKE CONCAT('%',:brand,'%') 
 				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
-			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
+			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
 
 		}
 
@@ -91,19 +89,19 @@ class QueryBot {
 		} 
 
 		elseif (is_null($description) and !is_null($brand) and $type == 'all') {
-			$sql = "SELECT * FROM ingredient WHERE brand LIKE '%:brand%'";
-			return $db->fetchAll($sql, array(':brand' => $brand));
+			$sql = "SELECT * FROM ingredient WHERE brand LIKE CONCAT('%',:brand,'%')";
+			return $db->fetchAll($sql, array('brand' => $brand));
 		}
 
 		elseif (!is_null($description) and is_null($brand) and $type == 'all') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%'";
-			return $db->fetchAll($sql, array(':description' => $description));
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%')";
+			return $db->fetchAll($sql, array('description' => $description));
 		}
 
 		elseif (!is_null($description) and !is_null($brand) and $type == 'all') {
-			$sql = "SELECT * FROM ingredient WHERE description LIKE '%:description%' 
-				AND brand LIKE '%:brand%'";
-			return $db->fetchAll($sql, array(':description' => $description, ':brand' => $brand));
+			$sql = "SELECT * FROM ingredient WHERE description LIKE CONCAT('%',:description,'%') 
+				AND brand LIKE CONCAT('%',:brand,'%')";
+			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
 
 		}
 
@@ -124,14 +122,14 @@ class QueryBot {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
 		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
-		return $db->fetchAll($sql, array(':cocktail_id' => $cocktail_id));
+		return $db->fetchAll($sql, array('cocktail_id' => $cocktail_id));
 	}
 
 	public function get_cocktail_by_name($name) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
 		$sql = "SELECT * FROM cocktail WHERE name = :name LIMIT 1";
-		return $db->fetchAll($sql, array(':name' => $name));
+		return $db->fetchAll($sql, array('name' => $name));
 	}
 
 	public function get_cocktail_ingredients($cocktail_id) {
@@ -142,7 +140,7 @@ class QueryBot {
 				JOIN contains con ON coc.cocktail_id=con.cocktail_id
 				JOIN ingredient ing ON con.ingredient_id=ing.ingredient_id
 				WHERE coc.cocktail_id = :cocktail_id";
-		return $db->fetchAll($sql, array(':cocktail_id' => $cocktail_id));
+		return $db->fetchAll($sql, array('cocktail_id' => $cocktail_id));
 	}
 
 

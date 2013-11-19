@@ -37,18 +37,18 @@ function filter() {
 	public function index() {
 
 		if (isset($this->passedArgs['descr'])) {
-            $this->request->data['Ingredient']['descr'] = $this->passedArgs['descr'];
-            Configure::write('ingredient_query.descr', $this->passedArgs['descr']);
+            $this->request->data['Ingredient']['descr'] = trim($this->passedArgs['descr']);
+            Configure::write('ingredient_query.descr', trim($this->passedArgs['descr']));
 		} else { Configure::write('ingredient_query.descr', null); }
 
 		if (isset($this->passedArgs['brand'])) {
-            $this->request->data['Ingredient']['brand'] = $this->passedArgs['brand'];
-            Configure::write('ingredient_query.brand', $this->passedArgs['brand']);
+            $this->request->data['Ingredient']['brand'] = trim($this->passedArgs['brand']);
+            Configure::write('ingredient_query.brand', trim($this->passedArgs['brand']));
 		} else { Configure::write('ingredient_query.brand', null); }
 
 		if (isset($this->passedArgs['type'])) {
-            $this->request->data['Ingredient']['type'] = $this->passedArgs['type'];
-            Configure::write('ingredient_query.type', $this->passedArgs['type']);
+            $this->request->data['Ingredient']['type'] = trim($this->passedArgs['type']);
+            Configure::write('ingredient_query.type', trim($this->passedArgs['type']));
 		} else { Configure::write('ingredient_query.type', null); }
 
 		$this->set('ingredients', QueryBot::ingredient_query());

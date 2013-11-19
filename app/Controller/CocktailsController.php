@@ -4,11 +4,6 @@ App::uses('AppController', 'Controller');
 // good ole' QueryBot
 App::import('Vendor', 'QueryBot');
 
-// model imports
-App::import('Model','Ingredient'); 
-App::import('Model','Contain');
-
-
 /**
  * Cocktails Controller
  *
