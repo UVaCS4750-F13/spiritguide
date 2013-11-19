@@ -7,9 +7,17 @@
 			<th><?php echo 'Rating'; ?></th>
 		</tr>
 		<tr>
-			<td><?php echo $cocktail['Cocktail']['cocktail_id']; ?></td>
-			<td><?php echo $cocktail['Cocktail']['name']; ?></td>
-			<td><?php echo $cocktail['Cocktail']['rating']; ?></td>
+			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
+			<td><?php echo $cocktail['cocktail']['name']; ?></td>
+			<td><?php echo $cocktail['cocktail']['rating']; ?></td>
+		</tr>
+	</table>
+	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
+		<tr>
+			<th><?php echo 'Recipe'; ?></th>
+		</tr>
+		<tr>
+			<td><?php echo $cocktail['cocktail']['recipe']; ?></td>
 		</tr>
 	</table>
 </div>
@@ -60,8 +68,8 @@
 </div>
 
 <div class="related">
-	<h3><?php echo __('Related Labels'); ?></h3>
 	<?php if (!empty($cocktail['Label'])): ?>
+	<h3><?php echo __('Related Labels'); ?></h3>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Cocktail Id'); ?></th>
@@ -81,16 +89,10 @@
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Label'), array('controller' => 'labels', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <div class="related">
-	<h3><?php echo __('Related User Ratings'); ?></h3>
 	<?php if (!empty($cocktail['UserRating'])): ?>
+		<h3><?php echo __('Related User Ratings'); ?></h3>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('User Id'); ?></th>
@@ -112,10 +114,4 @@
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New User Rating'), array('controller' => 'user_ratings', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>

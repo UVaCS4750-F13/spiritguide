@@ -5,9 +5,9 @@ App::uses('AppController', 'Controller');
 App::import('Vendor', 'QueryBot');
 
 // model imports
-
 App::import('Model','Ingredient'); 
 App::import('Model','Contain');
+
 
 
 /**
@@ -23,7 +23,7 @@ class CocktailsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator', 'Session');
 
 /**
  * index method
@@ -43,12 +43,19 @@ class CocktailsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+
+		// check if valid cocktail
 		if (!$this->Cocktail->exists($id)) {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
 
+		// get all ingredients in cocktail for use in view
 		$this->set('ingredients', $this->Cocktail->query(QueryBot::get_ingredients_in_cocktail($id)));
-		$this->set('cocktail', $this->Cocktail->find('first'));
+
+		// get cocktail for which id matches
+		$cocktail_array = $this->Cocktail->query(QueryBot::get_cocktail_by_id($id));
+		$this->set('cocktail', $cocktail_array[0]);
+
 	}
 
 /**
@@ -61,46 +68,54 @@ class CocktailsController extends AppController {
 		// attempting to create cocktail
 		if ($this->request->is('post')) {
 
-			// insert the cocktail name and recipe
-			$this->Cocktail->query(QueryBot::insert_cocktail(
-				$this->request->data['Cocktail']['name'], 
-				$this->request->data['Cocktail']['recipe']));
+			
+			$name = null; // check if name is null
+			if (trim($this->request->data['Cocktail']['name']) != '') {
+				$name = $this->request->data['Cocktail']['name'];
+			}
 
-			// find id of new cocktail
-			$cocktails = $this->Cocktail->query(QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']));
-			$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
+			$recipe = null; // check if recipe is null
+			if (trim($this->request->data['Cocktail']['recipe']) != '') {
+				$recipe = $this->request->data['Cocktail']['recipe'];
+			}
 
-			// load contains relation model
-			$this->loadModel('Contain');
+			// insert cocktail
+			if (QueryBot::insert_cocktail($name, $recipe)) {
 
-			// insert first contains relation
-			$this->Contain->query(QueryBot::insert_contains(
-				$cocktail_id,
-				$this->request->data['Cocktail']['ingredient_1'], 
-				$this->request->data['Cocktail']['ingredient_1_volume']));
+				// find id of new cocktail
+				$cocktails = $this->Cocktail->query(QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']));
+				$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
 
-			// insert second contains relation
-			$this->Contain->query(QueryBot::insert_contains(
-				$cocktail_id,
-				$this->request->data['Cocktail']['ingredient_2'], 
-				$this->request->data['Cocktail']['ingredient_2_volume']));
+				// load contains relation model
+				$this->loadModel('Contain');
 
-			// redirect
-			$this->redirect(array('action' => 'view', $cocktail_id));
+				// insert first contains relation
+				QueryBot::insert_contains(
+					$cocktail_id,
+					$this->request->data['Cocktail']['ingredient_1'], 
+					$this->request->data['Cocktail']['ingredient_1_volume']);
+
+				// insert second contains relation
+				QueryBot::insert_contains(
+					$cocktail_id,
+					$this->request->data['Cocktail']['ingredient_2'], 
+					$this->request->data['Cocktail']['ingredient_2_volume']);
+
+				// redirect
+				$this->redirect(array('action' => 'view', $cocktail_id));
+				
+			}
 
 		} 
 
 
 		else {
 
-			// load ingredient model
-			$this->loadModel('Ingredient');
-
 			// create array
 			$ingredients = array();
 
 			// get names
-			foreach ($this->Ingredient->query(QueryBot::get_ingredient_brands_asc()) as $ingredient) {
+			foreach (QueryBot::get_ingredient_brands_asc() as $ingredient) {
 				$ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
 			}
 
@@ -118,9 +133,12 @@ class CocktailsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+
+		// check if valid cocktail
 		if (!$this->Cocktail->exists($id)) {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
+
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Cocktail->save($this->request->data)) {
 				$this->Session->setFlash(__('The cocktail has been saved.'));
