@@ -138,3 +138,7 @@ html {
 
 span h5 {float: right;}
 h5 {margin-top: 0px;}
+
+.view-button {
+	float: right;
+}
