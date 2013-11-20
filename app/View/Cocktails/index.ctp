@@ -30,9 +30,7 @@
 
 	<?php $plural = "s"; if ($count == 1) { $plural = ""; } ?>
 <span>
-	<button class ="btn btn-info">
-		New Cocktail
-		</button>
+<?php echo $this->Form->button('New Cocktail', array('div' => false, 'action' => 'add', 'class' => 'btn btn-info')) ?>
 	<h5 id="cocktail-results"><?php echo  __($count.' Cocktail'.$plural.' Returned'); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 				<tr>
