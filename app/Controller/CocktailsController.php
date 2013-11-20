@@ -221,25 +221,6 @@ class CocktailsController extends AppController {
 	/************ UPDATE ACTIONS ************/
 
 
-	public function update_name() {
-		if ($this->request->is('post')) {
-			
-			$cocktail_id = NULL;
-			$rid = trim($this->request->data['Cocktail']['cocktail_id']);
-			if ($rid != '') { $cocktail_id = $rid; }
-
-			$name = NULL;
-			$rname = trim($this->request->data['Cocktail']['name']);
-			if ($rname != '') {
-				$name = $rname;
-			}
-
-			if (QueryBot::update_cocktail_name($cocktail_id, $name)) {
-				$this->redirect(array('action' => 'view', $cocktail_id));
-			}
-		}
-	}
-
 	public function update_recipe() {
 		if ($this->request->is('post')) {
 			

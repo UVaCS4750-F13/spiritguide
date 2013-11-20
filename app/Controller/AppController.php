@@ -45,12 +45,35 @@ class AppController extends Controller {
 		$this->Auth->allow('index', 'view', 'display');
 	}
 
+
+    public function update_cocktail_name() {
+        if ($this->request->is('post')) {
+            $index = 'Cocktail';
+            $cocktail_id = self::request($index, 'cocktail_id');
+            $name = self::request($index, 'name');
+            $status = QueryBot::update_cocktail_name($cocktail_id, $name);
+            if($status['success']) {
+                $this->redirect(array('controller' => 'cocktails', 
+                    'action' => 'view', $cocktail_id));
+            } else {
+               $this->redirect(array('controller' => 'cocktails', 
+                    'action' => 'index'));
+            }
+        }
+    }
+
+
+    /************ DELETE REQUESTS ************/
+
     public function delete_contains() {
-        $index = 'Contain';
-        $cocktail_id = self::request($index, 'cocktail_id');
-        $ingredient_id = self::request($index, 'ingredient_id');
-        if (QueryBot::delete_contains($cocktail_id, $ingredient_id)) {
-            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        if($this->request->is('post')) {
+            $index = 'Contain';
+            $cocktail_id = self::request($index, 'cocktail_id');
+            $ingredient_id = self::request($index, 'ingredient_id');
+            if (QueryBot::delete_contains($cocktail_id, $ingredient_id)) {
+                $this->redirect(array('controller' => 'cocktails', 
+                                        'action' => 'view', $cocktail_id));
+            }
         }
     }
 

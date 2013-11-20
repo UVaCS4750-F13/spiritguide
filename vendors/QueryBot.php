@@ -21,6 +21,14 @@ class QueryBot {
 		} return $db_connection;
 	}
 
+	function run($db, $stmt) {
+		$success = $stmt->execute();
+		if (!$success) {
+			throw new BadRequestException("Error: ".htmlspecialchars($stmt->error));
+		} $stmt->close(); $db->close();
+		return $success;
+	}
+
 	/************ INGREDIENT FILTER  ************/
 
 	public function ingredient_query($description, $brand, $type) {
@@ -116,7 +124,9 @@ class QueryBot {
 
 	}
 
-	/** Model Getters **/
+
+
+	/************ MODEL SELECTIONS ************/
 
 	public function get_ingredient_brands_asc() {
 		$this->loadModel('Ingredient');
@@ -152,95 +162,57 @@ class QueryBot {
 
 
 
-	/** Model Insertions **/
+	/************ MODEL INSERTIONS ************/
 
 	public function insert_contains($cocktail_id, $ingredient_id, $volume) {
-		$db_connection = self::db_connect();
-
+		$db = self::db_connect();
 		$sql = "INSERT INTO contains (cocktail_id, ingredient_id, volume) VALUES (? , ?, ?)";
-		$stmt = $db_connection->prepare($sql);
-		$stmt->bind_param("sss", $cocktail_id, $ingredient_id, $volume);
-		
-		$success = $stmt->execute();
-		if (!$success) {
-			 throw new BadRequestException("Insert Failed: ".htmlspecialchars($stmt->error));
-		}
 
-		$stmt->close();
-		$db_connection->close();
-		return $success;
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("sss", $cocktail_id, $ingredient_id, $volume);
+		return self::run($db, $stmt);
 	}
 
 	public function insert_cocktail($name, $recipe) {
-		$db_connection = self::db_connect();
-
+		$db = self::db_connect();
 		$sql = "INSERT INTO cocktail (name, recipe) VALUES (?, ?)";
-		$stmt = $db_connection->prepare($sql);
-		$stmt->bind_param("ss", $name, $recipe);
 		
-		$success = $stmt->execute();
-		if (!$success) {
-			throw new BadRequestException("Insert Failed: ".htmlspecialchars($stmt->error));
-		}
-
-		$stmt->close();
-		$db_connection->close();
-		return $success;
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("ss", $name, $recipe);
+		return self::run($db, $stmt);
 	}
+
 
 	/************ MODEL UPDATES ************/
 
 	public function update_cocktail_name($cocktail_id, $name) {
-		$db_connection = self::db_connect();
-
-		$sql = "UPDATE cocktail SET name = ? WHERE cocktail_id = ?";
-		$stmt = $db_connection->prepare($sql);
-		$stmt->bind_param("ss", $name, $cocktail_id);
+		$db = self::db_connect();
+		$sql = "UPDATE cocktail SET name = IF(LENGTH(?)=0, NULL) WHERE cocktail_id = ?";
 		
-		$success = $stmt->execute();
-		if (!$success) {
-			throw new BadRequestException("Update Failed: ".htmlspecialchars($stmt->error));
-		}
-
-		$stmt->close();
-		$db_connection->close();
-		return $success;
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("ss", $name, $cocktail_id);
+		return self::run($db, $stmt);
 	}
 
 	public function update_cocktail_recipe($cocktail_id, $recipe) {
-		$db_connection = self::db_connect();
-
+		$db = self::db_connect();
 		$sql = "UPDATE cocktail SET recipe = ? WHERE cocktail_id = ?";
-		$stmt = $db_connection->prepare($sql);
-		$stmt->bind_param("ss", $recipe, $cocktail_id);
 		
-		$success = $stmt->execute();
-		if (!$success) {
-			throw new BadRequestException("Update Failed: ".htmlspecialchars($stmt->error));
-		}
-
-		$stmt->close();
-		$db_connection->close();
-		return $success;
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("ss", $recipe, $cocktail_id);
+		return self::run($db, $stmt);
 	}
 
 
 	/************ MODEL DELETES **********/
 
 	public function delete_contains($cocktail_id, $ingredient_id) {
-		$db_connection = self::db_connect();
-
+		$db = self::db_connect();
 		$sql = "DELETE FROM contains WHERE cocktail_id = ? AND ingredient_id = ?";
-		$stmt = $db_connection->prepare($sql);
-		$stmt->bind_param("ss", $cocktail_id, $ingredient_id);
 		
-		$success = $stmt->execute();
-		if (!$success) {
-			throw new BadRequestException("Delete Failed: ".htmlspecialchars($stmt->error));
-		}
-
-		$stmt->close();
-		$db_connection->close();
-		return $success;
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("ss", $cocktail_id, $ingredient_id);
+		return self::run($db, $stmt);
 	}
+
 }

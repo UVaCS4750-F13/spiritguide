@@ -20,5 +20,5 @@
 		<?php echo $this->Form->input('recipe', array('label' => '<h4>Recipe</h4>', 'div' => false, 'class' => 'input-block-level')); ?>
 	</fieldset>
 	<br>
-	<?php echo $this->Form->end('Submit', array('action' => 'add')); ?>
+	<?php echo $this->Form->end(array('label' => 'Submit', 'action' => 'add', 'class' => 'btn btn-info')); ?>
 </div>
