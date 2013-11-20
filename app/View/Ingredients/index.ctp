@@ -1,9 +1,12 @@
+<script>
+	document.getElementById("ingredient-tab").className = "active";
+</script>
+
 <div class="ingredients index">
 
-<span id="form-row">
-<h2 id="ingredient-header">Ingredients</h2>
-   	<?php echo $this->Form->create('Ingredient', array('action' => 'filter', 'class' => 'form-inline')); ?>
-    <fieldset>
+<span id="ingredient-index-span">
+   	<?php echo $this->Form->create('Ingredient', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
+    <fieldset class="filter-form">
         <?php echo $this->Form->input('descr', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Description')); ?>
         <?php echo $this->Form->input('brand', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Brand')); ?>
         <?php echo $this->Form->input('type', array('label' => false, 'div' => false,

@@ -37,7 +37,7 @@
   									</li>
         						</ul>
      						</li>
-							<li><?php echo $this->Html->link('Ingredients',
+							<li id="ingredient-tab"><?php echo $this->Html->link('Ingredients',
 								array('controller' => 'ingredients', 'action' => 'index')); ?>
 							</li>
 							<li><?php echo $this->Html->link('Prices',

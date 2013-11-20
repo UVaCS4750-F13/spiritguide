@@ -44,16 +44,15 @@ html {
     border: 1px solid #DDD;
 }
 
-#form-row {
-	margin-left: 136px;
-	margin-right: auto;
+#ingredient-index-span {
+	width: 820px;
+	margin: 0 auto;
+    margin-left: 50px;
+    margin-right:auto;
 	display: inline-block;
 }
 
-#mixer-filter-button {
-	margin-left: 267px;
-	margin-top: 13px;
-}
+
 
 #cocktail-filter-button {
 	margin-left: 280px;
@@ -97,4 +96,13 @@ span h5 {
 
 #fav-button {
 	margin-left: 270px;
+}
+
+fieldset {
+	display: inline-block; 
+	margin-right: 5px;
+}
+
+#ingredient-index-span fieldset input {
+	margin-right: 5px;
 }

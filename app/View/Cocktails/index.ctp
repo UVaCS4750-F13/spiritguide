@@ -3,7 +3,7 @@
 <span id="form-row">
 <h2 id="cocktail-header">Cocktails</h2>
    	<?php echo $this->Form->create('Cocktail', array('action' => 'filter', 'class' => 'form-inline')); ?>
-    <fieldset>
+    <fieldset class ="filter-form">
          <?php echo $this->Form->input('type', array('label' => false, 'div' => false,
 				'options' => array(
 				'all' => 'All Cocktails',
