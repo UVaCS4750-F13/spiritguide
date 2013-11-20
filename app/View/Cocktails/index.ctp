@@ -1,18 +1,22 @@
+<script>
+	document.getElementById("cocktail-tab").className = "active";
+</script>
+
+
 <div class="cocktails index">
 	
-<span id="form-row">
-<h2 id="cocktail-header">Cocktails</h2>
-   	<?php echo $this->Form->create('Cocktail', array('action' => 'filter', 'class' => 'form-inline')); ?>
-    <fieldset class ="filter-form">
-         <?php echo $this->Form->input('type', array('label' => false, 'div' => false,
+<span id="cocktail-index-span">
+   	<?php echo $this->Form->create('Ingredient', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
+    <fieldset class="filter-form">
+         <?php echo $this->Form->input('availablility', array('id' => 'type-select', 'label' => false, 'div' => false,
 				'options' => array(
 				'all' => 'All Cocktails',
-				'alcohols' => 'Ones I Can Make'
+				'alcohols' => 'Within Your Power'
 				)
 			)
 		); ?>
-        <?php echo $this->Form->input('brand', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
-        <?php echo $this->Form->input('type', array('label' => false, 'div' => false,
+        <?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
+        <?php echo $this->Form->input('tag', array('label' => false, 'div' => false,
 				'options' => array(
 				'all' => 'All Tags',
 				'alcohols' => 'Alcohols', 
@@ -22,9 +26,10 @@
 		); ?>
     </fieldset>
     <?php echo $this->Form->end(array('label' => 'Filter Cocktails', 'div' => false, 'id' => 'cocktail-filter-button', 'class' => 'btn btn-info')); ?> 
-    
 </span>
-<span><h5><?php echo $this->Paginator->counter(array('format' => __('{:count} Cocktail(s) Found'))); ?></h5></span>
+
+	<?php $plural = "s"; if ($count == 1) { $plural = ""; } ?>
+<span><h5><?php echo  __($count.' Cocktail'.$plural.' Found'); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 				<tr>
 			<th><?php echo 'Name'; ?></th>
@@ -34,10 +39,10 @@
 
 		<tr>
 			<td>
-				<?php echo $this->Html->link($cocktail['Cocktail']['name'], 
-					array('action' => 'view', $cocktail['Cocktail']['cocktail_id'])); ?>
+				<?php echo $this->Html->link($cocktail['cocktail']['name'], 
+					array('action' => 'view', $cocktail['cocktail']['cocktail_id'])); ?>
 			</td>
-			<td><?php echo h($cocktail['Cocktail']['rating']); ?>&nbsp;</td>
+			<td><?php echo h($cocktail['cocktail']['rating']); ?>&nbsp;</td>
 		</tr>
 		<?php endforeach; ?>
 	</table>

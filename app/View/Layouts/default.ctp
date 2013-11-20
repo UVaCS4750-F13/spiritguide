@@ -26,19 +26,11 @@
 				<div class="navbar-inner">
 					<?php echo $this->Html->link('The Spirit Guide', '/', array('class'=>'brand')); ?>
 						<ul class="nav">
-							<li class="dropdown">
-       							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cocktails</a>
-       							<ul class="dropdown-menu">
-       								<li><?php echo $this->Html->link('Index', 
-  										array('controller'=>'cocktails', 'action'=>'index')); ?>
-  									</li>
-       								<li><?php echo $this->Html->link('Create New', 
-  										array('controller'=>'cocktails', 'action'=>'add')); ?>
-  									</li>
-        						</ul>
-     						</li>
 							<li id="ingredient-tab"><?php echo $this->Html->link('Ingredients',
 								array('controller' => 'ingredients', 'action' => 'index')); ?>
+							</li>
+							<li id="cocktail-tab"><?php echo $this->Html->link('Cocktails',
+								array('controller' => 'cocktails', 'action' => 'index')); ?>
 							</li>
 							<li><?php echo $this->Html->link('Prices',
 								array('controller' => 'prices', 'action' => 'index')); ?>

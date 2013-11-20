@@ -21,6 +21,8 @@
     <?php echo $this->Form->end(array('label' => 'Filter Ingredients', 'div' => false, 'id' => 'mixer-filter-button', 'class' => 'btn btn-info')); ?> 
     
 </span>
+	<?php $plural = "s"; if ($count == 1) { $plural = ""; } ?>
+	<span><h5><?php echo  __($count.' Ingredient'.$plural.' Returned'); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
 			<th><?php echo 'Description'; ?></th>
@@ -28,7 +30,7 @@
 		</tr>
 		<tr>
 		<?php foreach ($ingredients as $ingredient): ?>
-			<td><?php echo h($ingredient['ingredient']['description']); ?></td>
+			<td><?php echo $ingredient['ingredient']['description']; ?></td>
 			<td>
 				<?php echo $this->Html->link($ingredient['ingredient']['brand'], 
 					array('action' => 'view', $ingredient['ingredient']['ingredient_id'])); ?>

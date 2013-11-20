@@ -17,7 +17,7 @@ class IngredientsController extends AppController {
  * @var array
  */
 
-function filter() {
+	function filter() {
 		// the page we will redirect to
 		$url['action'] = 'index';
 		
@@ -26,9 +26,9 @@ function filter() {
 			foreach ($v as $kk=>$vv){
 				if($vv != "") {
 					$url[$kk]=$vv;
-				}
-			} 
-		}
+			}
+		} 
+	}
 
 		// redirect the user to the url
 		$this->redirect($url, null, true);
@@ -36,22 +36,27 @@ function filter() {
 
 	public function index() {
 
+		$description = null;
 		if (isset($this->passedArgs['descr'])) {
             $this->request->data['Ingredient']['descr'] = trim($this->passedArgs['descr']);
-            Configure::write('ingredient_query.descr', trim($this->passedArgs['descr']));
-		} else { Configure::write('ingredient_query.descr', null); }
+           $description = trim($this->passedArgs['descr']);
+		}
 
+		$brand = null;
 		if (isset($this->passedArgs['brand'])) {
             $this->request->data['Ingredient']['brand'] = trim($this->passedArgs['brand']);
-            Configure::write('ingredient_query.brand', trim($this->passedArgs['brand']));
-		} else { Configure::write('ingredient_query.brand', null); }
+            $brand = trim($this->passedArgs['brand']);
+		} 
 
+		$type = null;
 		if (isset($this->passedArgs['type'])) {
             $this->request->data['Ingredient']['type'] = trim($this->passedArgs['type']);
-            Configure::write('ingredient_query.type', trim($this->passedArgs['type']));
-		} else { Configure::write('ingredient_query.type', null); }
+            $type = trim($this->passedArgs['type']);
+		}
 
-		$this->set('ingredients', QueryBot::ingredient_query());
+		$results = QueryBot::ingredient_query($description, $brand, $type);
+		$this->set('ingredients', $results);
+		$this->set('count', count($results));
 	}
 
 /**

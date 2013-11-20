@@ -44,21 +44,6 @@ html {
     border: 1px solid #DDD;
 }
 
-#ingredient-index-span {
-	width: 820px;
-	margin: 0 auto;
-    margin-left: 50px;
-    margin-right:auto;
-	display: inline-block;
-}
-
-
-
-#cocktail-filter-button {
-	margin-left: 280px;
-	margin-top: 13px;
-}
-
 #ingredient-header {
 	margin-left: 250px;
 }
@@ -76,9 +61,7 @@ html {
 	margin: auto;
 }
 
-span h5 {
-	float: right;
-}
+
 
 .ingredient-box {
 	display:inline-block;
@@ -98,7 +81,9 @@ span h5 {
 	margin-left: 270px;
 }
 
-fieldset {
+/** Index Pages **/
+
+.filter-form {
 	display: inline-block; 
 	margin-right: 5px;
 }
@@ -106,3 +91,34 @@ fieldset {
 #ingredient-index-span fieldset input {
 	margin-right: 5px;
 }
+
+#cocktail-index-span fieldset input {
+	margin-right: 0px;
+}
+
+#cocktail-index-span fieldset select {
+	margin-left: 5px;
+}
+
+#ingredient-index-span {
+	width: 820px;
+	margin: 0 auto;
+    margin-left: 60px;
+    margin-right:auto;
+	display: inline-block;
+}
+
+#cocktail-index-span {
+	width: 890px;
+	margin: 0 auto;
+    margin-left: 58px;
+    margin-right:auto;
+	display: inline-block;
+}
+
+#type-select {
+	margin-right: 5px;
+}
+
+span h5 {float: right;}
+h5 {margin-top: 0px;}

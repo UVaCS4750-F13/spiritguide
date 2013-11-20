@@ -21,11 +21,9 @@ class QueryBot {
 		} return $db_connection;
 	}
 
-	public function ingredient_query() {
-		$description = Configure::read('ingredient_query.descr');
-		$brand = Configure::read('ingredient_query.brand');
-		$type = Configure::read('ingredient_query.type');
+	/************ INGREDIENT FILTER  ************/
 
+	public function ingredient_query($description, $brand, $type) {
 		$this->loadModel('Ingredient');
 		$db = $this->Ingredient->getDataSource();
 
@@ -108,6 +106,15 @@ class QueryBot {
 		else { return $db->fetchAll( "SELECT * FROM ingredient"); }
 	}
 
+	/************ COCKTAIL FILTER  ************/
+
+	public function cocktail_query($available, $name, $tag) {
+		$this->loadModel('Cocktail');
+		$db = $this->Cocktail->getDataSource();
+
+		return $db->fetchAll('SELECT * FROM cocktail');
+
+	}
 
 	/** Model Getters **/
 

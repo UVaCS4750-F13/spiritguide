@@ -19,14 +19,52 @@ class CocktailsController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
+	function filter() {
+		// the page we will redirect to
+		$url['action'] = 'index';
+		
+		// build a URL will all the search elements in it
+		foreach ($this->data as $k=>$v){ 
+			foreach ($v as $kk=>$vv){
+				if($vv != "") {
+					$url[$kk]=$vv;
+				}
+			} 
+		}
+		
+		// redirect the user to the url
+		$this->redirect($url, null, true);
+	}
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->Cocktail->recursive = 0;
-		$this->set('cocktails', $this->Paginator->paginate());
+		
+		$availability = null;
+		if (isset($this->passedArgs['availability'])) {
+            $this->request->data['Cocktail']['availability'] = trim($this->passedArgs['availability']);
+           $description = trim($this->passedArgs['descr']);
+		}
+
+		$name = null;
+		if (isset($this->passedArgs['name'])) {
+            $this->request->data['Cocktail']['name'] = trim($this->passedArgs['name']);
+            $name = trim($this->passedArgs['name']);
+		} 
+
+		$tag = null;
+		if (isset($this->passedArgs['tag'])) {
+            $this->request->data['Cocktail']['tag'] = trim($this->passedArgs['tag']);
+            $tag = trim($this->passedArgs['tag']);
+		}
+
+		$results = QueryBot::cocktail_query($availability, $name, $tag);
+		$this->set('cocktails', $results);
+		$this->set('count', count($results));
+
 	}
 
 /**
