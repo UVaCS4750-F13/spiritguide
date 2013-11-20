@@ -204,7 +204,7 @@ class QueryBot {
 
 	public function update_cocktail_name($cocktail_id, $name) {
 		$db = self::db_connect();
-		$sql = "UPDATE cocktail SET name = IF(LENGTH(?)=0, NULL) WHERE cocktail_id = ?";
+		$sql = "UPDATE cocktail SET name = ? WHERE cocktail_id = ?";
 		
 		$stmt = $db->prepare($sql);
 		$stmt->bind_param("ss", $name, $cocktail_id);
