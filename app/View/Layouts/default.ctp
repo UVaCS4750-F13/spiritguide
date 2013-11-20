@@ -56,7 +56,7 @@
   											array('controller'=>'users', 'action'=>'logout')); ?>
   										</li>
         							</ul>
-     							</li>' <?php
+     							</li> <?php
 							} ?>
 		
 					</ul>
