@@ -45,10 +45,17 @@ class AppController extends Controller {
 		$this->Auth->allow('index', 'view', 'display');
 	}
 
-    public function remove_contains() {
-        $cocktail_id = $this->request->data['Ingredient']['cocktail_id'];
-        $ingredient_id = $this->request->data['Ingredient']['ingredient_id'];
-        if ($ingredient_id != '') { QueryBot::delete_contains($cocktail_id, $ingredient_id); }
-        $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+    public function delete_contains() {
+        $index = 'Contain';
+        $cocktail_id = self::request($index, 'cocktail_id');
+        $ingredient_id = self::request($index, 'ingredient_id');
+        if (QueryBot::delete_contains($cocktail_id, $ingredient_id)) {
+            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
+    }
+
+    function request($index, $attribute) {
+        $result = trim($this->request->data[$index][$attribute]);
+        if ($result != '') { return $result; } else { return NULL; }
     }
 }
