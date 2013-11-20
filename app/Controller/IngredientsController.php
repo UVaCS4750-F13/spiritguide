@@ -17,6 +17,8 @@ class IngredientsController extends AppController {
  * @var array
  */
 
+	public $components = array('Auth');
+
 	function filter() {
 		// the page we will redirect to
 		$url['action'] = 'index';
@@ -72,6 +74,10 @@ class IngredientsController extends AppController {
 		}
 		$options = array('conditions' => array('Ingredient.' . $this->Ingredient->primaryKey => $id));
 		$this->set('ingredient', $this->Ingredient->find('first', $options));
+
+		$owns = QueryBot::get_user_ingredient($this->Auth->user('user_id'), $id);
+		$this->set('owns', $owns[0]);
+		$this->set('owns_at_all', count($owns));
 	}
 
 /**

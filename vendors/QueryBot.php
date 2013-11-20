@@ -3,6 +3,7 @@
 // model imports
 App::import('Model','Ingredient'); 
 App::import('Model','Cocktail'); 
+App::import('Model','User'); 
 
 // define database constants
 define("SERVER", "stardock.cs.virginia.edu");
@@ -131,6 +132,7 @@ class QueryBot {
 	public function get_ingredient_brands_asc() {
 		$this->loadModel('Ingredient');
 		$db = $this->Ingredient->getDataSource();
+
 		$sql = "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
 		return $db->fetchAll($sql);
 	}
@@ -138,6 +140,7 @@ class QueryBot {
 	public function get_cocktail_by_id($cocktail_id) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
+
 		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
 		return $db->fetchAll($sql, array('cocktail_id' => $cocktail_id));
 	}
@@ -145,6 +148,7 @@ class QueryBot {
 	public function get_cocktail_by_name($name) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
+
 		$sql = "SELECT * FROM cocktail WHERE name = :name LIMIT 1";
 		return $db->fetchAll($sql, array('name' => $name));
 	}
@@ -152,12 +156,25 @@ class QueryBot {
 	public function get_cocktail_ingredients($cocktail_id) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
+
 		$sql = "SELECT ing.ingredient_id, description, brand, volume
 			FROM cocktail coc
 				JOIN contains con ON coc.cocktail_id=con.cocktail_id
 				JOIN ingredient ing ON con.ingredient_id=ing.ingredient_id
 				WHERE coc.cocktail_id = :cocktail_id";
 		return $db->fetchAll($sql, array('cocktail_id' => $cocktail_id));
+	}
+
+	public function get_user_ingredient($user_id, $ingredient_id) {
+		$this->loadModel('User');
+		$db = $this->User->getDataSource();
+
+		$sql = "SELECT o.volume_in_ml
+			FROM user u
+				JOIN owns o ON u.user_id=o.user_id
+				JOIN ingredient i ON o.ingredient_id=i.ingredient_id
+				WHERE u.user_id = :user_id AND i.ingredient_id = :ingredient_id LIMIT 1";
+		return $db->fetchAll($sql, array('user_id' => $user_id, 'ingredient_id' => $ingredient_id));
 	}
 
 
