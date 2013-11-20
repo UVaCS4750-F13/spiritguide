@@ -108,6 +108,10 @@ html {
 	display: inline-block;
 }
 
+#IngredientFilterForm {
+	margin-bottom: 8px;
+}
+
 #cocktail-index-span {
 	width: 890px;
 	margin: 0 auto;
@@ -118,6 +122,10 @@ html {
 
 #type-select {
 	margin-right: 5px;
+}
+
+#cocktail-results {
+	margin-top: 7px;
 }
 
 span h5 {float: right;}
