@@ -230,7 +230,7 @@ class QueryBot {
 	public function delete_contains($cocktail_id, $ingredient_id) {
 		$db_connection = self::db_connect();
 
-		$sql = "DELETE FROM cocktail WHERE cocktail_id = ? AND ingredient_id = ?";
+		$sql = "DELETE FROM contains WHERE cocktail_id = ? AND ingredient_id = ?";
 		$stmt = $db_connection->prepare($sql);
 		$stmt->bind_param("ss", $cocktail_id, $ingredient_id);
 		

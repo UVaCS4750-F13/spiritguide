@@ -44,4 +44,11 @@ class AppController extends Controller {
 	public function beforeFilter() {
 		$this->Auth->allow('index', 'view', 'display');
 	}
+
+    public function remove_contains() {
+        $cocktail_id = $this->request->data['Ingredient']['cocktail_id'];
+        $ingredient_id = $this->request->data['Ingredient']['ingredient_id'];
+        if ($ingredient_id != '') { QueryBot::delete_contains($cocktail_id, $ingredient_id); }
+        $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+    }
 }

@@ -91,15 +91,20 @@ class ContainsController extends AppController {
 		if (!$this->Contain->exists()) {
 			throw new NotFoundException(__('Invalid contain'));
 		}
-		$this->request->onlyAllow('post', 'delete');
-		return $this->redirect(array('action' => 'index'));
+		$cocktail_id = $this->request->data['Contain']['cocktail_id'];
+		$ingredient_id = $this->request->data['Contain']['ingredient_id'];
+		if ($ingredient != '') { QueryBot::delete_contains($cocktail_id, $ingredient_id); }
+		$this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
 	}
 
 
-	public function remove($cocktail_id, $ingredient_id) {
-		$c = $this->request->data['contain']['cocktail_id'];
-		$i = $this->request->data['contain']['ingredient_id'];
-		QueryBot::delete_contains($c, $i);
+	public function remove() {
+		if (!$this->Contain->exists()) {
+			throw new NotFoundException(__('Invalid contain'));
+		}
+		$cocktail_id = $this->request->data['Ingredient']['cocktail_id'];
+		$ingredient_id = $this->request->data['Ingredient']['ingredient_id'];
+		if ($ingredient != '') { QueryBot::delete_contains($cocktail_id, $ingredient_id); }
+		$this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
 	}
-
 }

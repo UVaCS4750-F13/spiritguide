@@ -58,13 +58,26 @@
 					<td><?php echo $ingredient['ing']['brand']; ?></td>
 					<td><?php echo $ingredient['con']['volume']; ?></td>
 					<td><?php echo $this->Html->link('Upgrade'); ?></td>
-					<td><?php echo $this->Html->link('Delete'); ?></td>
+					<td><?php echo '<a href data-toggle="modal" data-target="#delete-modal-'.$ingredient['ing']['ingredient_id'].'">Delete</a>'; ?></td>
 				</tr>
+				<?php echo '<div id="delete-modal-'.$ingredient['ing']['ingredient_id'].'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'; ?>
+  					<div class="modal-header">
+    					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    					<h4 class="modal-title" id="myModalLabel">Remove <?php echo $ingredient['ing']['brand']; ?>?</h4>
+      				</div>
+      				<div class="modal-footer">
+       					<?php echo $this->Form->create('Ingredient', array('controller' => 'app', 'action' => 'remove_contains')); ?>
+              		<fieldset>
+              		<?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+              		<?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ing']['ingredient_id'])); ?>
+               </fieldset>
+     <?php echo $this->Form->end(array('label' => 'Delete', 'class' => 'btn btn-danger')); ?>   
+      				</div>
+				</div>
 			<?php endforeach; ?>
 		</table>
 	<?php endif; ?>
 </div>
-
 
 
 <?php echo $this->Form->button('Add Ingredient', array('div' => false, 
