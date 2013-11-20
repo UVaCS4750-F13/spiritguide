@@ -142,7 +142,7 @@ class QueryBot {
 	public function get_cocktail_ingredients($cocktail_id) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
-		$sql = "SELECT description, brand, volume
+		$sql = "SELECT ing.ingredient_id, description, brand, volume
 			FROM cocktail coc
 				JOIN contains con ON coc.cocktail_id=con.cocktail_id
 				JOIN ingredient ing ON con.ingredient_id=ing.ingredient_id
@@ -188,4 +188,59 @@ class QueryBot {
 		return $success;
 	}
 
+	/************ MODEL UPDATES ************/
+
+	public function update_cocktail_name($cocktail_id, $name) {
+		$db_connection = self::db_connect();
+
+		$sql = "UPDATE cocktail SET name = ? WHERE cocktail_id = ?";
+		$stmt = $db_connection->prepare($sql);
+		$stmt->bind_param("ss", $name, $cocktail_id);
+		
+		$success = $stmt->execute();
+		if (!$success) {
+			throw new BadRequestException("Update Failed: ".htmlspecialchars($stmt->error));
+		}
+
+		$stmt->close();
+		$db_connection->close();
+		return $success;
+	}
+
+	public function update_cocktail_recipe($cocktail_id, $recipe) {
+		$db_connection = self::db_connect();
+
+		$sql = "UPDATE cocktail SET recipe = ? WHERE cocktail_id = ?";
+		$stmt = $db_connection->prepare($sql);
+		$stmt->bind_param("ss", $recipe, $cocktail_id);
+		
+		$success = $stmt->execute();
+		if (!$success) {
+			throw new BadRequestException("Update Failed: ".htmlspecialchars($stmt->error));
+		}
+
+		$stmt->close();
+		$db_connection->close();
+		return $success;
+	}
+
+
+	/************ MODEL DELETES **********/
+
+	public function delete_contains($cocktail_id, $ingredient_id) {
+		$db_connection = self::db_connect();
+
+		$sql = "DELETE FROM cocktail WHERE cocktail_id = ? AND ingredient_id = ?";
+		$stmt = $db_connection->prepare($sql);
+		$stmt->bind_param("ss", $cocktail_id, $ingredient_id);
+		
+		$success = $stmt->execute();
+		if (!$success) {
+			throw new BadRequestException("Delete Failed: ".htmlspecialchars($stmt->error));
+		}
+
+		$stmt->close();
+		$db_connection->close();
+		return $success;
+	}
 }

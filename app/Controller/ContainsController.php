@@ -1,5 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
+
+App::import('Vendor', 'QueryBot');
 /**
  * Contains Controller
  *
@@ -47,18 +49,14 @@ class ContainsController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Contain->create();
-			if ($this->Contain->save($this->request->data)) {
-				$this->Session->setFlash(__('The contain has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The contain could not be saved. Please, try again.'));
-			}
+				$cocktail_id = $this->request->data['Contain']['cocktail_id'];
+				$ingredient = $this->request->data['Contain']['ingredient'];
+				$volume = $this->request->data['Contain']['ingredient_volume'];
+				if ($ingredient != '') { QueryBot::insert_contains($cocktail_id, $ingredient, $volume); }
+				$this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
 		}
-		$cocktails = $this->Contain->Cocktail->find('list');
-		$ingredients = $this->Contain->Ingredient->find('list');
-		$this->set(compact('cocktails', 'ingredients'));
 	}
+	
 
 /**
  * edit method
@@ -87,23 +85,21 @@ class ContainsController extends AppController {
 		$this->set(compact('cocktails', 'ingredients'));
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+
 	public function delete($id = null) {
 		$this->Contain->id = $id;
 		if (!$this->Contain->exists()) {
 			throw new NotFoundException(__('Invalid contain'));
 		}
 		$this->request->onlyAllow('post', 'delete');
-		if ($this->Contain->delete()) {
-			$this->Session->setFlash(__('The contain has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The contain could not be deleted. Please, try again.'));
-		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+
+
+	public function remove($cocktail_id, $ingredient_id) {
+		$c = $this->request->data['contain']['cocktail_id'];
+		$i = $this->request->data['contain']['ingredient_id'];
+		QueryBot::delete_contains($c, $i);
+	}
+
+}

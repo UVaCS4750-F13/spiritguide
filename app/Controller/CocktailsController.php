@@ -81,8 +81,14 @@ class CocktailsController extends AppController {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
 
+		$all_ingredients = array();
+		foreach (QueryBot::get_ingredient_brands_asc() as $ingredient) {
+			$all_ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
+		} $this->set('all_ingredients', $all_ingredients);
+
 		// get all ingredients in cocktail for use in view
-		$this->set('ingredients', QueryBot::get_cocktail_ingredients($id));
+		$this->set('cocktail_ingredients', QueryBot::get_cocktail_ingredients($id));
+		
 
 		// get cocktail for which id matches
 		$cocktail_array = QueryBot::get_cocktail_by_id($id);
@@ -193,13 +199,10 @@ class CocktailsController extends AppController {
 		}
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+
+	/************ DELETE ACTION ************/
+
+
 	public function delete($id = null) {
 		$this->Cocktail->id = $id;
 		if (!$this->Cocktail->exists()) {
@@ -212,4 +215,48 @@ class CocktailsController extends AppController {
 			$this->Session->setFlash(__('The cocktail could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+
+
+	/************ UPDATE ACTIONS ************/
+
+
+	public function update_name() {
+		if ($this->request->is('post')) {
+			
+			$cocktail_id = NULL;
+			$rid = trim($this->request->data['Cocktail']['cocktail_id']);
+			if ($rid != '') { $cocktail_id = $rid; }
+
+			$name = NULL;
+			$rname = trim($this->request->data['Cocktail']['name']);
+			if ($rname != '') {
+				$name = $rname;
+			}
+
+			if (QueryBot::update_cocktail_name($cocktail_id, $name)) {
+				$this->redirect(array('action' => 'view', $cocktail_id));
+			}
+		}
+	}
+
+	public function update_recipe() {
+		if ($this->request->is('post')) {
+			
+			$cocktail_id = NULL;
+			$rid = trim($this->request->data['Cocktail']['cocktail_id']);
+			if ($rid != '') { $cocktail_id = $rid; }
+
+			$name = NULL;
+			$rname = trim($this->request->data['Cocktail']['recipe']);
+			if ($rname != '') {
+				$name = $rname;
+			}
+
+			if (QueryBot::update_cocktail_recipe($cocktail_id, $name)) {
+				$this->redirect(array('action' => 'view', $cocktail_id));
+			}
+		}
+	}
+
+}
