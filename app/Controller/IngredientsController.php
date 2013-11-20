@@ -1,47 +1,25 @@
 <?php
 App::uses('AppController', 'Controller');
-
 App::import('Vendor', 'QueryBot');
 
-/**
- * Ingredients Controller
- *
- * @property Ingredient $Ingredient
- * @property PaginatorComponent $Paginator
- */
 class IngredientsController extends AppController {
-
-/**
- * Components
- *
- * @var array
- */
-
 	public $components = array('Auth');
 
 	function filter() {
-		// the page we will redirect to
 		$url['action'] = 'index';
-		
-		// build a URL will all the search elements in it
 		foreach ($this->data as $k=>$v){ 
 			foreach ($v as $kk=>$vv){
 				if($vv != "") {
 					$url[$kk]=$vv;
-			}
-		} 
-	}
-
-		// redirect the user to the url
-		$this->redirect($url, null, true);
-	}
+				}
+			} 
+		}$this->redirect($url, null, true);}
 
 	public function index() {
-
 		$description = null;
-		if (isset($this->passedArgs['descr'])) {
-            $this->request->data['Ingredient']['descr'] = trim($this->passedArgs['descr']);
-           $description = trim($this->passedArgs['descr']);
+		if (isset($this->passedArgs['description'])) {
+            $this->request->data['Ingredient']['description'] = trim($this->passedArgs['description']);
+           $description = trim($this->passedArgs['description']);
 		}
 
 		$brand = null;
@@ -50,96 +28,31 @@ class IngredientsController extends AppController {
             $brand = trim($this->passedArgs['brand']);
 		} 
 
-		$type = null;
-		if (isset($this->passedArgs['type'])) {
-            $this->request->data['Ingredient']['type'] = trim($this->passedArgs['type']);
-            $type = trim($this->passedArgs['type']);
+		$classification = null;
+		if (isset($this->passedArgs['classification'])) {
+            $this->request->data['Ingredient']['classification'] = trim($this->passedArgs['classification']);
+            $classification = trim($this->passedArgs['classification']);
 		}
 
-		$results = QueryBot::ingredient_query($description, $brand, $type);
+		$results = QueryBot::index_ingredient($description, $brand, $classification);
 		$this->set('ingredients', $results);
-		$this->set('count', count($results));
-	}
+		$this->set('ingredient_count', count($results));}
 
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	public function add() { throw new NotFoundException(_('Invalid Action')); }
+
 	public function view($id = null) {
-		if (!$this->Ingredient->exists($id)) {
-			throw new NotFoundException(__('Invalid ingredient'));
-		}
-		$options = array('conditions' => array('Ingredient.' . $this->Ingredient->primaryKey => $id));
-		$this->set('ingredient', $this->Ingredient->find('first', $options));
+		$ingredient = QueryBot::retrieve_ingredient($id);    
+        $this->set('ingredient', $ingredient[0]['ingredient']);
+        
+        $this->set('prices', QueryBot::retrieve_prices($id));
+        
+        $this->set('proofs', QueryBot::retrieve_proofs($id));
 
-		$owns = QueryBot::get_user_ingredient($this->Auth->user('user_id'), $id);
-		$this->set('owns', $owns[0]);
-		$this->set('owns_at_all', count($owns));
-	}
+        $owns = QueryBot::retrieve_owns($this->Auth->user('user_id'), $id);
+        $this->set('owns_at_all', count($owns));
+        $this->set('current_inventory', $owns[0]['owns']);}
+	
+	public function edit($id = null) { throw new NotFoundException(_('Invalid Action')); }
 
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
-		if ($this->request->is('post')) {
-			$this->Ingredient->create();
-			if ($this->Ingredient->save($this->request->data)) {
-				$this->Session->setFlash(__('The ingredient has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The ingredient could not be saved. Please, try again.'));
-			}
-		}
-	}
-
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		if (!$this->Ingredient->exists($id)) {
-			throw new NotFoundException(__('Invalid ingredient'));
-		}
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Ingredient->save($this->request->data)) {
-				$this->Session->setFlash(__('The ingredient has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The ingredient could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('Ingredient.' . $this->Ingredient->primaryKey => $id));
-			$this->request->data = $this->Ingredient->find('first', $options);
-		}
-	}
-
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		$this->Ingredient->id = $id;
-		if (!$this->Ingredient->exists()) {
-			throw new NotFoundException(__('Invalid ingredient'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Ingredient->delete()) {
-			$this->Session->setFlash(__('The ingredient has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The ingredient could not be deleted. Please, try again.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-	}
-
+	public function delete($id = null) { throw new NotFoundException(_('Invalid Action')); }
 }

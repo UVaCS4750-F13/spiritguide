@@ -1,48 +1,22 @@
 <?php
 App::uses('AppController', 'Controller');
-
-// good ole' QueryBot
 App::import('Vendor', 'QueryBot');
 
-/**
- * Cocktails Controller
- *
- * @property Cocktail $Cocktail
- * @property PaginatorComponent $Paginator
- */
 class CocktailsController extends AppController {
-
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Paginator', 'Session');
+	public $components = array('Session');
 
 	function filter() {
-		// the page we will redirect to
 		$url['action'] = 'index';
-		
-		// build a URL will all the search elements in it
 		foreach ($this->data as $k=>$v){ 
 			foreach ($v as $kk=>$vv){
 				if($vv != "") {
 					$url[$kk]=$vv;
 				}
-			} 
-		}
-		
-		// redirect the user to the url
-		$this->redirect($url, null, true);
-	}
-
-/**
- * index method
- *
- * @return void
- */
+			}}$this->redirect($url, null, true);}
+	
 	public function index() {
-		
+
+
 		$availability = null;
 		if (isset($this->passedArgs['availability'])) {
             $this->request->data['Cocktail']['availability'] = trim($this->passedArgs['availability']);
@@ -67,13 +41,7 @@ class CocktailsController extends AppController {
 
 	}
 
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+
 	public function view($id = null) {
 
 		// check if valid cocktail
@@ -96,11 +64,6 @@ class CocktailsController extends AppController {
 
 	}
 
-/**
- * add method
- *
- * @return void
- */
 	public function add() {
 
 		// attempting to create cocktail

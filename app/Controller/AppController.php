@@ -42,7 +42,7 @@ class AppController extends Controller {
     );
 
 	public function beforeFilter() {
-		$this->Auth->allow('index', 'view', 'display');
+		$this->Auth->allow('display', 'index');
 	}
 
 
@@ -61,24 +61,5 @@ class AppController extends Controller {
             }
         }
     }
-
-
-    /************ DELETE REQUESTS ************/
-
-    public function delete_contains() {
-        if($this->request->is('post')) {
-            $index = 'Contain';
-            $cocktail_id = self::request($index, 'cocktail_id');
-            $ingredient_id = self::request($index, 'ingredient_id');
-            if (QueryBot::delete_contains($cocktail_id, $ingredient_id)) {
-                $this->redirect(array('controller' => 'cocktails', 
-                                        'action' => 'view', $cocktail_id));
-            }
-        }
-    }
-
-    function request($index, $attribute) {
-        $result = trim($this->request->data[$index][$attribute]);
-        if ($result != '') { return $result; } else { return NULL; }
-    }
 }
+

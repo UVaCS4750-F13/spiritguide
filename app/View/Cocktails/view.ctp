@@ -84,7 +84,7 @@
     					<h4 class="modal-title" id="myModalLabel">Remove <?php echo $ingredient['ing']['brand']; ?>?</h4>
       				</div>
       				<div class="modal-footer">
-       					<?php echo $this->Form->create('Contain', array('controller' => 'app', 'action' => 'delete_contains')); ?>
+       					<?php echo $this->Form->create('Contain', array('controller' => 'cocntains', 'action' => 'delete')); ?>
               				<fieldset>
         	      				<?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
             	  				<?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ing']['ingredient_id'])); ?>

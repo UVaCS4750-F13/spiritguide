@@ -1,15 +1,15 @@
 <div class="ingredients view">
-<h2><?php echo $ingredient['Ingredient']['brand']; ?></h2>
+<h2><?php echo $ingredient['brand']; ?></h2>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
-			<th><?php echo 'Ingredient ID'; ?></th>
 			<th><?php echo 'Description'; ?></th>
 			<th><?php echo 'Brand'; ?></th>
+			<th><?php echo 'Ingredient ID'; ?></th>
 		</tr>
 		<tr>
-			<td><?php echo $ingredient['Ingredient']['ingredient_id']; ?></td>
-			<td><?php echo $ingredient['Ingredient']['description']; ?></td>
-			<td><?php echo $ingredient['Ingredient']['brand']; ?></td>
+			<td><?php echo $ingredient['description']; ?></td>
+			<td><?php echo $ingredient['brand']; ?></td>
+			<td><?php echo $ingredient['ingredient_id']; ?></td>
 		</tr>
 	</table>
 </div>
@@ -54,7 +54,7 @@
 		<tr>
 			<th><?php echo __('Volume Owned in Milliters'); ?></th>
 		</tr>
-		<td><?php echo $owns['o']['volume_in_ml']; ?></td>
+		<td><?php echo $current_inventory['volume']; ?></td>
 		</table>
 
 </div>
@@ -71,12 +71,12 @@
 <div id="inv-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   	<div class="modal-header">
     	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    	<h3 id="myModalLabel"><?echo "How much ".$ingredient['Ingredient']['brand']." do you own?"; ?></h3>
+    	<h3 id="myModalLabel"><?echo "How much ".$ingredient['brand']." do you own?"; ?></h3>
   	</div>
   	<div class="modal-body">
     	<?php echo $this->Form->create('Cocktail', array('action' => 'update_recipe')); ?>
         <fieldset>
-               <?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'value' => $owns['o']['volume_in_ml'])); ?>
+               <?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'value' => $current_inventory['volume'])); ?>
         </fieldset>
      	<?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
   	</div>
