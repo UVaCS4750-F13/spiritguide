@@ -22,7 +22,8 @@
     
 </span>
 	<?php $plural = "s"; if ($count == 1) { $plural = ""; } ?>
-	<span><h5><?php echo  __($count.' Ingredient'.$plural.' Returned'); ?></h5></span>
+	<span><?php echo $this->Form->button('New Ingredient', array('div' => false, 'onclick' => 'location.href=\'ingredients/add\'', 'class' => 'btn btn-info')) ?>
+	<h5 id="ingredient-results"><?php echo  __($count.' Ingredient'.$plural.' Returned'); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
 			<th><?php echo 'Description'; ?></th>

@@ -109,7 +109,11 @@ html {
 }
 
 #IngredientFilterForm {
-	margin-bottom: 2px;
+	margin-bottom: 10px;
+}
+
+#CocktailFilterForm {
+	margin-bottom: 10px;
 }
 
 #cocktail-index-span {
@@ -125,7 +129,11 @@ html {
 }
 
 #cocktail-results {
-	margin-top: 2px;
+	margin-top: 10px;
+}
+
+#ingredient-results {
+	margin-top: 10px;
 }
 
 span h5 {float: right;}
