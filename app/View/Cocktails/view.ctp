@@ -1,18 +1,26 @@
+<script>
+	document.getElementById("cocktail-tab").className = "active";
+</script>
+
+
 <div class="cocktails view">
-	<h2><?php echo __('Cocktail'); ?></h2>
+	<h2><?php echo __($cocktail['cocktail']['name']); ?></h2>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
-			<th><?php echo 'Cocktail ID'; ?></th>
 			<th><?php echo 'Name'; ?></th>
+			<th><?php echo 'Cocktail ID'; ?></th>
 			<th><?php echo 'Rating'; ?></th>
 		</tr>
 		<tr>
-			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 			<td><?php echo $cocktail['cocktail']['name']; ?></td>
+			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 			<td><?php echo $cocktail['cocktail']['rating']; ?></td>
 		</tr>
 	</table>
 </div>
+			<?php echo $this->Form->button('New Ingredient', array('id' => 'new-ingredient-button', 'div' => false, 
+				'onclick' => 'location.href=\'ingredients/add\'', 'class' => 'btn btn-info')); ?>
+				<br><br>
 
 <div class="related">
 	<?php if (!empty($ingredients)): ?>
@@ -21,20 +29,25 @@
 			<tr>
 				<th><?php echo __('Brand'); ?></th>
 				<th><?php echo __('Description'); ?></th>
-				<th><?php echo __('Volume'); ?></th>
-
+				<th><?php echo __('Volume (ml)'); ?></th>
+				<th><?php echo __('Update'); ?></th>
+				<th><?php echo __('Delete'); ?></th>
 			</tr>
 			<?php foreach ($ingredients as $ingredient): ?>
 				<tr>
 					<td><?php echo $ingredient['ing']['brand']; ?></td>
 					<td><?php echo $ingredient['ing']['description']; ?></td>
 					<td><?php echo $ingredient['con']['volume']; ?></td>
+					<td><?php echo 'Update' ?></td>
+					<td><?php echo $this->Form->postLink(__('Delete'), array('controller' => 'contains', 'action' => 'delete')); ?></td>
 				</tr>
 			<?php endforeach; ?>
 		</table>
 	<?php endif; ?>
 </div>
-
+			<?php echo $this->Form->button('New Ingredient', array('id' => 'new-ingredient-button', 'div' => false, 
+				'onclick' => 'location.href=\'ingredients/add\'', 'class' => 'btn btn-info')); ?>
+<br><br>
 <h3><?php echo __('Recipe'); ?></h3>
 <table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 	<tr>
