@@ -32,9 +32,6 @@
 							<li id="cocktail-tab"><?php echo $this->Html->link('Cocktails',
 								array('controller' => 'cocktails', 'action' => 'index')); ?>
 							</li>
-							<li><?php echo $this->Html->link('Prices',
-								array('controller' => 'prices', 'action' => 'index')); ?>
-							</li>
 						</ul>
 						<ul class="nav pull-right">
 						<form class="navbar-search pull-left">

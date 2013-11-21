@@ -7,6 +7,12 @@ App::uses('AppModel', 'Model');
  * @property Ingredient $Ingredient
  */
 class Contain extends AppModel {
+	public $validate = array(
+		'volume'	=>	array(
+				'rule'			=>	array('comparison', 'greater', 0),
+				'message' 		=>	'Volume must be greater than 0 ml'
+		)
+	);
 
 /**
  * Primary key field

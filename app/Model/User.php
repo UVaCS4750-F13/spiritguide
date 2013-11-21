@@ -7,7 +7,53 @@ App::uses('AppModel', 'Model');
  * @property Own $Own
  */
 class User extends AppModel {
-
+	public $validate = array(
+		'username' 		=> array(
+			'unique'		=>	array(
+				'rule'			=>	'isUnique',
+				'message' 		=>	'This Username has already been taken'
+			),
+			'alphanum'		=>	array(
+				'rule'			=> 	'alphaNumeric',
+				'message'		=>	'Usernames may only consist of alphanumeric characters'
+			),
+			'between'		=>	array(
+				'rule'			=>	array('between', 5, 20),
+				'message'		=>	'Username must be between 5 and 20 characters'
+			)
+		),
+		'password'		=>	array(
+			'alphanum'		=>	array(
+				'rule'			=> 	'alphaNumeric',
+				'message'		=>	'Passwords may only consist of alphanumeric characters'
+			),
+			'between'		=>	array(
+				'rule'			=>	array('between', 5, 20),
+				'message'		=>	'Passwords must be between 5 and 20 characters'
+			)
+		),
+		'display_name'	=>	array(
+			'alphanum'		=>	array(
+				'rule'			=> 	'alphaNumeric',
+				'message'		=>	'Display names may only consist of alphanumeric characters'
+			),
+			'between'		=>	array(
+				'rule'			=>	array('between', 5, 20),
+				'message'		=>	'Display names must be between 5 and 20 characters'
+			)
+		),
+		'email'			=>	array(
+			'email'			=>	array(
+				'rule'			=>	array('email', true),
+				'message'		=>	'Not a valid email address'
+			),
+			'unique'		=>	array(
+				'rule'			=>	'isUnique',
+				'message' 		=>	'A User with this email already exists'
+			)
+		)
+	);
+	
 /**
  * Use table
  *
@@ -67,11 +113,10 @@ class User extends AppModel {
 	);
 
 
-		public function beforeSave($options = array()) {
-    if (isset($this->data[$this->alias]['password'])) {
-        $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-    }
-    return true;
-}
-
+	public function beforeSave($options = array()) {
+    	if (isset($this->data[$this->alias]['password'])) {
+        	$this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
+    	}
+    	return true;
+	}
 }

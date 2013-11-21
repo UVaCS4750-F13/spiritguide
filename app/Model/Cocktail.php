@@ -9,6 +9,28 @@ App::uses('AppModel', 'Model');
  * @property UserRating $UserRating
  */
 class Cocktail extends AppModel {
+	public $validate = array(
+		'name' 			=> array(
+			'unique'		=>	array(
+				'rule'			=>	'isUnique',
+				'message' 		=>	'Cocktail names must be unique'
+			),
+			'alphanum'		=>	array(
+				'rule'			=> 	'alphaNumeric',
+				'message'		=>	'Cocktail names may only consist of alphanumeric characters'
+			),
+			'between'		=>	array(
+				'rule'			=>	array('between', 5, 20),
+				'message'		=>	'Cocktail names must be between 5 and 20 characters'
+			)
+		),
+		'recipe'		=>	array(
+			'between'		=>	array(
+				'rule'			=>	array('between', 25, 260),
+				'message'		=>	'Recipes must be between 25 and 250 characters'
+			)
+		)
+	);
 
 /**
  * Use table

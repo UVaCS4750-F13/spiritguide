@@ -43,28 +43,6 @@ class CocktailsController extends AppController {
 			$all_tags[$tag['tag']['tag_id']] = $tag['tag']['name'];
 		} $this->set('all_tags', $all_tags); }
 
-
-	public function view($id = null) {
-
-		if (!$this->Cocktail->exists($id)) {
-			throw new NotFoundException(__('Invalid cocktail'));
-		}
-
-		$all_ingredients = array();
-		foreach (QueryBot::retrieve_ingredient_brands_asc() as $ingredient) {
-			$all_ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
-		} $this->set('all_ingredients', $all_ingredients);
-
-		// get all ingredients in cocktail for use in view
-		$this->set('cocktail_ingredients', QueryBot::retrieve_ingredients_by_cocktail($id));
-	
-
-		// get cocktail for which id matches
-		$cocktail_array = QueryBot::retrieve_cocktail($id);
-		$this->set('cocktail', $cocktail_array[0]);
-
-	}
-
 	public function add() {
 		if ($this->request->is('post')) {
 			$name = QueryBot::tidy($this->request->data['Cocktail']['name']);
@@ -87,30 +65,47 @@ class CocktailsController extends AppController {
 		}
 	}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
+	public function view($id = null) {
 
-		// check if valid cocktail
 		if (!$this->Cocktail->exists($id)) {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
 
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Cocktail->save($this->request->data)) {
-				$this->Session->setFlash(__('The cocktail has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The cocktail could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('Cocktail.' . $this->Cocktail->primaryKey => $id));
-			$this->request->data = $this->Cocktail->find('first', $options);
+		$all_ingredients = array();
+		foreach (QueryBot::retrieve_ingredient_brands_asc() as $ingredient) {
+			$all_ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
+		} $this->set('all_ingredients', $all_ingredients);
+
+		// get all ingredients in cocktail for use in view
+		$this->set('cocktail_ingredients', QueryBot::retrieve_ingredients_by_cocktail($id));
+	
+
+		// get cocktail for which id matches
+		$cocktail_array = QueryBot::retrieve_cocktail($id);
+		$this->set('cocktail', $cocktail_array[0]);
+
+	}
+
+
+	public function edit($id = null) { throw new NotFoundException(__('Invalid Action')); }
+
+
+	public function update_cocktail_name() {
+		if ($this->request->is('post')) {
+			$cocktail_id = QueryBot::tidy($this->request->data['Cocktail']['cocktail_id']);
+			$name = QueryBot::tidy($this->request->data['Cocktail']['name']);
+			QueryBot::update_cocktail_name($cocktail_id, $name);
+			return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+		}
+	}
+
+
+	public function update_cocktail_recipe() {
+		if ($this->request->is('post')) {
+			$cocktail_id = QueryBot::tidy($this->request->data['Cocktail']['cocktail_id']);
+			$recipe = QueryBot::tidy($this->request->data['Cocktail']['recipe']);
+			QueryBot::update_cocktail_recipe($cocktail_id, $recipe);
+			return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
 		}
 	}
 

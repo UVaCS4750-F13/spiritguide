@@ -1,19 +1,7 @@
 <?php
-App::import('Model','Ingredient'); 
-App::import('Model','Cocktail');
-App::import('Model','Owns');  
-App::import('Model','Price'); 
-App::import('Model','Proof');
-App::import('Model','Tag'); 
 App::import('Model','User'); 
 
-define("SERVER", "stardock.cs.virginia.edu");
-define("USER", "cs4750baw4ux");
-define("PASS", "fall2013");
-define("DB", "cs4750baw4ux");
-
 class QueryBot {
-
 
 	function tidy($data) {
 		if (trim($data == "")) { return NULL; }
@@ -95,12 +83,12 @@ class QueryBot {
 
 	public function update_cocktail_name($cocktail_id, $name) {
 		$sql = "UPDATE cocktail SET name = :name WHERE cocktail_id = :cocktail_id";
-		$bound = array('name' => $name, 'ingredient_id' => $ingredient_id);
+		$bound = array('name' => $name, 'cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); }
 
 	public function update_cocktail_recipe($cocktail_id, $recipe) {
 		$sql = "UPDATE cocktail SET recipe = :recipe WHERE cocktail_id = :cocktail_id";
-		$bound = array('recipe' => $recipe, 'ingredient_id' => $ingredient_id);
+		$bound = array('recipe' => $recipe, 'cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); }
 
 

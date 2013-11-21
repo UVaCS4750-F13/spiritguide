@@ -20,24 +20,6 @@
 	</table>
 </div>
 
-
-<div id="ingredient-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  	<div class="modal-header">
-    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    	<h3 id="myModalLabel">Add Ingredient</h3>
-  	</div>
-  	<div class="modal-body">
-    	<?php echo $this->Form->create('Contain', array('action' => 'add')); ?>
-            <fieldset>
-         	    <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
-              	<?php echo $this->Form->input('ingredient_id', array('label' => false, 'options' => $all_ingredients)); ?>
-				<?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
-            </fieldset>
-     	<?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    
-  	</div>
-</div>
-
-
 <?php echo $this->Form->button('Update Name', array('div' => false, 
 	'data-toggle' => 'modal', 'data-target' => '#name-modal', 'class' => 'view-button btn btn-info')); ?>
 <br>
@@ -49,7 +31,7 @@
     	<h3 id="myModalLabel">Update Name</h3>
   	</div>
   	<div class="modal-body">
-    	<?php echo $this->Form->create('Cocktail', array('controller' => 'app', 'action' => 'update_cocktail_name')); ?>
+    	<?php echo $this->Form->create('Cocktail', array('action' => 'update_cocktail_name')); ?>
             <fieldset>
             	<?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
                	<?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'placeHolder' => 'Name', 'value' => $cocktail['cocktail']['name'])); ?>
@@ -57,7 +39,6 @@
      	<?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
   	</div>
 </div>
-
 
 <div class="related">
 	<?php if (!empty($cocktail_ingredients)): ?>
@@ -97,29 +78,10 @@
 	<?php endif; ?>
 </div>
 
-
 <?php echo $this->Form->button('Add Ingredient', array('div' => false, 
 	'data-toggle' => 'modal', 'data-target' => '#ingredient-modal', 'class' => 'view-button btn btn-info')); ?>
 <br>
 <br>
-
-
-<div id="ingredient-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  	<div class="modal-header">
-    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    	<h3 id="myModalLabel">Add Ingredient</h3>
-  	</div>
-  	<div class="modal-body">
-    	<?php echo $this->Form->create('Contain', array('controller' => 'contains', 'action' => 'add')); ?>
-            <fieldset>
-         	    <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
-              	<?php echo $this->Form->input('ingredient_id', array('label' => false, 'options' => $all_ingredients)); ?>
-				<?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
-            </fieldset>
-     	<?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    
-  	</div>
-</div>
-
 
 <h3><?php echo __('Recipe'); ?></h3>
 <table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
@@ -128,22 +90,51 @@
 	</tr>
 </table>
 
-
 <?php echo $this->Form->button('Update Recipe', array('div' => false, 
 	'data-toggle' => 'modal', 'data-target' => '#recipe-modal', 'class' => 'view-button btn btn-info')); ?>
-	
+
+<div id="name-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Update Name</h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Cocktail', array('action' => 'update_cocktail_name')); ?>
+      <fieldset>
+        <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+        <?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'placeHolder' => 'Name', 'value' => $cocktail['cocktail']['name'])); ?>
+      </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
+  </div>
+</div>
+
+<div id="ingredient-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Add Ingredient</h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Contain', array('action' => 'add')); ?>
+      <fieldset>
+        <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+        <?php echo $this->Form->input('ingredient_id', array('label' => false, 'options' => $all_ingredients)); ?>
+        <?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
+      </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    
+  </div>
+</div>
 
 <div id="recipe-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  	<div class="modal-header">
-    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    	<h3 id="myModalLabel">Update Recipe</h3>
-  	</div>
-  	<div class="modal-body">
-    	<?php echo $this->Form->create('Cocktail', array('action' => 'update_recipe')); ?>
-        <fieldset>
-            <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
-            <?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $cocktail['cocktail']['recipe'])); ?>
-        </fieldset>
-     	<?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
-  	</div>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Update Recipe</h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Cocktail', array('action' => 'update_cocktail_recipe')); ?>
+      <fieldset>
+        <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+        <?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $cocktail['cocktail']['recipe'])) ?>
+      </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
+  </div>
 </div>
