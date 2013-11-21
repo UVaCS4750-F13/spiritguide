@@ -34,13 +34,18 @@ class IngredientsController extends AppController {
             $classification = trim($this->passedArgs['classification']);
 		}
 
-		$results = QueryBot::index_ingredient($description, $brand, $classification);
+		$results = QueryBot::index_ingredients($description, $brand, $classification);
 		$this->set('ingredients', $results);
 		$this->set('ingredient_count', count($results));}
 
 	public function add() { throw new NotFoundException(_('Invalid Action')); }
 
 	public function view($id = null) {
+
+		if (!$this->Ingredient->exists($id)) {
+			throw new NotFoundException(__('Invalid Ingredient'));
+		}
+
 		$ingredient = QueryBot::retrieve_ingredient($id);    
         $this->set('ingredient', $ingredient[0]['ingredient']);
         

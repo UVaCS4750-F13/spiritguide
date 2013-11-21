@@ -1,7 +1,4 @@
-<script>
-	document.getElementById("cocktail-tab").className = "active";
-</script>
-
+<script>document.getElementById("cocktail-tab").className = "active";</script>
 
 <div class="cocktails index">
 	
@@ -11,17 +8,14 @@
          <?php echo $this->Form->input('availablility', array('id' => 'type-select', 'label' => false, 'div' => false,
 				'options' => array(
 				'all' => 'All Cocktails',
-				'alcohols' => 'Within Your Power'
+				'power' => 'Within Your Power'
 				)
 			)
 		); ?>
         <?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
         <?php echo $this->Form->input('tag', array('label' => false, 'div' => false,
-				'options' => array(
-				'all' => 'All Tags',
-				'alcohols' => 'Alcohols', 
-				'mixers' => 'Mixers'
-				)
+        		'empty' => 'All Tags',
+				'options' => $all_tags
 			)
 		); ?>
     </fieldset>
@@ -35,7 +29,7 @@
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 				<tr>
 			<th><?php echo 'Name'; ?></th>
-			<th><?php echo 'Rating'; ?></th>
+			<th><?php echo 'Favorites'; ?></th>
 		</tr>
 		<?php foreach ($cocktails as $cocktail): ?>
 
@@ -44,7 +38,7 @@
 				<?php echo $this->Html->link($cocktail['cocktail']['name'], 
 					array('action' => 'view', $cocktail['cocktail']['cocktail_id'])); ?>
 			</td>
-			<td><?php echo h($cocktail['cocktail']['rating']); ?>&nbsp;</td>
+			<td><?php echo h($cocktail['cocktail']['favorited']); ?>&nbsp;</td>
 		</tr>
 		<?php endforeach; ?>
 	</table>

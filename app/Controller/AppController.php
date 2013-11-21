@@ -44,22 +44,5 @@ class AppController extends Controller {
 	public function beforeFilter() {
 		$this->Auth->allow('display', 'index');
 	}
-
-
-    public function update_cocktail_name() {
-        if ($this->request->is('post')) {
-            $index = 'Cocktail';
-            $cocktail_id = self::request($index, 'cocktail_id');
-            $name = self::request($index, 'name');
-            $status = QueryBot::update_cocktail_name($cocktail_id, $name);
-            if($status['success']) {
-                $this->redirect(array('controller' => 'cocktails', 
-                    'action' => 'view', $cocktail_id));
-            } else {
-               $this->redirect(array('controller' => 'cocktails', 
-                    'action' => 'index'));
-            }
-        }
-    }
 }
 

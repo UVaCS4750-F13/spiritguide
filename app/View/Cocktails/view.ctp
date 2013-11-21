@@ -8,13 +8,13 @@
 		<tr>
 			<th><?php echo 'Name'; ?></th>
 			<th><?php echo 'Favorite'; ?></th>
-			<th><?php echo 'Rating'; ?></th>
+			<th><?php echo 'Favorites'; ?></th>
 			<th><?php echo 'Cocktail ID'; ?></th>
 		</tr>
 		<tr>
 			<td><?php echo $cocktail['cocktail']['name']; ?></td>
 			<td><?php echo 'Yes'; ?></td>
-			<td><?php echo $cocktail['cocktail']['rating']; ?></td>
+			<td><?php echo $cocktail['cocktail']['favorited']; ?></td>
 			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 		</tr>
 	</table>
@@ -31,7 +31,7 @@
             <fieldset>
          	    <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
               	<?php echo $this->Form->input('ingredient', array('label' => false, 'options' => $all_ingredients)); ?>
-				<?php echo $this->Form->input('ingredient_volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
+				<?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
             </fieldset>
      	<?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    
   	</div>
@@ -75,13 +75,13 @@
 					<td><?php echo $ingredient['ing']['description']; ?></td>
 					<td><?php echo $ingredient['ing']['brand']; ?></td>
 					<td><?php echo $ingredient['con']['volume']; ?></td>
-					<td><?php echo $this->Html->link('Upgrade'); ?></td>
+					<td><?php echo 'Update'; ?></td>
 					<td><?php echo '<a href data-toggle="modal" data-target="#delete-modal-'.$ingredient['ing']['ingredient_id'].'">Delete</a>'; ?></td>
 				</tr>
 				<?php echo '<div id="delete-modal-'.$ingredient['ing']['ingredient_id'].'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'; ?>
   					<div class="modal-header">
     					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    					<h4 class="modal-title" id="myModalLabel">Remove <?php echo $ingredient['ing']['brand']; ?>?</h4>
+    					<h4 class="modal-title" id="myModalLabel">Remove <?php echo $ingredient['ingredient']['brand']; ?>?</h4>
       				</div>
       				<div class="modal-footer">
        					<?php echo $this->Form->create('Contain', array('controller' => 'cocntains', 'action' => 'delete')); ?>
@@ -110,11 +110,11 @@
     	<h3 id="myModalLabel">Add Ingredient</h3>
   	</div>
   	<div class="modal-body">
-    	<?php echo $this->Form->create('Contain', array('action' => 'add')); ?>
+    	<?php echo $this->Form->create('Contain', array('controller' => 'contains', 'action' => 'add')); ?>
             <fieldset>
          	    <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
-              	<?php echo $this->Form->input('ingredient', array('label' => false, 'options' => $all_ingredients)); ?>
-				<?php echo $this->Form->input('ingredient_volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
+              	<?php echo $this->Form->input('ingredient_id', array('label' => false, 'options' => $all_ingredients)); ?>
+				<?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
             </fieldset>
      	<?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    
   	</div>

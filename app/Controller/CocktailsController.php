@@ -15,8 +15,6 @@ class CocktailsController extends AppController {
 			}}$this->redirect($url, null, true);}
 	
 	public function index() {
-
-
 		$availability = null;
 		if (isset($this->passedArgs['availability'])) {
             $this->request->data['Cocktail']['availability'] = trim($this->passedArgs['availability']);
@@ -35,16 +33,18 @@ class CocktailsController extends AppController {
             $tag = trim($this->passedArgs['tag']);
 		}
 
-		$results = QueryBot::cocktail_query($availability, $name, $tag);
+		$results = QueryBot::index_cocktails($availability, $name, $tag);
 		$this->set('cocktails', $results);
 		$this->set('count', count($results));
 
-	}
+		$all_tags = array();
+		foreach (QueryBot::retrieve_tag_names_asc() as $tag) {
+			$all_tags[$tag['tag']['tag_id']] = $tag['tag']['name'];
+		} $this->set('all_tags', $all_tags);}
 
 
 	public function view($id = null) {
 
-		// check if valid cocktail
 		if (!$this->Cocktail->exists($id)) {
 			throw new NotFoundException(__('Invalid cocktail'));
 		}
@@ -55,8 +55,8 @@ class CocktailsController extends AppController {
 		} $this->set('all_ingredients', $all_ingredients);
 
 		// get all ingredients in cocktail for use in view
-		$this->set('cocktail_ingredients', QueryBot::get_cocktail_ingredients($id));
-		
+		$this->set('cocktail_ingredients', QueryBot::retrieve_ingredients_by_cocktail($id));
+	
 
 		// get cocktail for which id matches
 		$cocktail_array = QueryBot::get_cocktail_by_id($id);
@@ -65,73 +65,24 @@ class CocktailsController extends AppController {
 	}
 
 	public function add() {
-
-		// attempting to create cocktail
 		if ($this->request->is('post')) {
-
+			$name = QueryBot::tidy($this->request->data['Cocktail']['name']);
+			$recipe = QueryBot::tidy($this->request->data['Cocktail']['recipe']);
+			QueryBot::create_cocktail($name, $recipe);
 			
-			$name = null; // check if name is null
-			if (trim($this->request->data['Cocktail']['name']) != '') {
-				$name = $this->request->data['Cocktail']['name'];
-			}
+			$cocktail = QueryBot::retrieve_cocktail_by_name($name);
+			$cocktail_id = $cocktail[0]['cocktail']['cocktail_id'];
 
-			$recipe = null; // check if recipe is null
-			if (trim($this->request->data['Cocktail']['recipe']) != '') {
-				$recipe = $this->request->data['Cocktail']['recipe'];
-			}
+			QueryBot::create_contains($cocktail_id, $this->request->data['Cocktail']['ingredient_1'], $this->request->data['Cocktail']['ingredient_1_volume']);
+			QueryBot::create_contains($cocktail_id, $this->request->data['Cocktail']['ingredient_2'], $this->request->data['Cocktail']['ingredient_2_volume']);
+			QueryBot::create_contains($cocktail_id, $this->request->data['Cocktail']['ingredient_3'], $this->request->data['Cocktail']['ingredient_3_volume']);
 
-			// insert cocktail
-			if (QueryBot::insert_cocktail($name, $recipe)) {
-
-				// find id of new cocktail
-				$cocktails = QueryBot::get_cocktail_by_name($this->request->data['Cocktail']['name']);
-				$cocktail_id = $cocktails[0]['cocktail']['cocktail_id'];
-
-				$i1 = $this->request->data['Cocktail']['ingredient_1'];
-				$v1 = $this->request->data['Cocktail']['ingredient_1_volume'];
-	
-				// insert first contains relation
-				if ($i1 != '') {
-					QueryBot::insert_contains($cocktail_id, $i1, $v1);
-				}
-
-				$i2 = $this->request->data['Cocktail']['ingredient_2'];
-				$v2 = $this->request->data['Cocktail']['ingredient_2_volume'];
-	
-				// insert first contains relation
-				if ($i2 != '') {
-					QueryBot::insert_contains($cocktail_id, $i2, $v2);
-				}
-
-				$i3 = $this->request->data['Cocktail']['ingredient_3'];
-				$v3 = $this->request->data['Cocktail']['ingredient_3_volume'];
-	
-				// insert first contains relation
-				if ($i3 != '') {
-					QueryBot::insert_contains($cocktail_id, $i3, $v3);
-				}
-
-				// redirect
-				$this->redirect(array('action' => 'view', $cocktail_id));
-
-			}
-
-		} 
-
-
-		else {
-
-			// create array
+			return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));	
+		} else {
 			$ingredients = array();
-
-			// get names
 			foreach (QueryBot::get_ingredient_brands_asc() as $ingredient) {
 				$ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
-			}
-
-			// set names
-			$this->set('ingredients', $ingredients);
-
+			} $this->set('ingredients', $ingredients);
 		}
 	}
 

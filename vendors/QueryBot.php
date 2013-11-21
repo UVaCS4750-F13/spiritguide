@@ -3,7 +3,8 @@ App::import('Model','Ingredient');
 App::import('Model','Cocktail');
 App::import('Model','Owns');  
 App::import('Model','Price'); 
-App::import('Model','Proof'); 
+App::import('Model','Proof');
+App::import('Model','Tag'); 
 App::import('Model','User'); 
 
 define("SERVER", "stardock.cs.virginia.edu");
@@ -13,96 +14,119 @@ define("DB", "cs4750baw4ux");
 
 class QueryBot {
 
-	
-	function db_connect() {
-		$db_connection = new mysqli(SERVER, USER, PASS, DB);
-		if (mysqli_connect_error()) {
-			echo "Can't connect!";
-			echo "<br>" . mysqli_connect_error();
-			return null;
-		} return $db_connection;}
-	
-	function run($db, $stmt) {
-		$success = $stmt->execute();
-		if (!$success) {
-			throw new BadRequestException("Error: ".htmlspecialchars($stmt->error));
-		} $stmt->close(); $db->close();
-		return $success;}
-	
-	public function request($index, $attribute) {
-    	$result = trim($this->request->data[$index][$attribute]);
-       	if (strcmp($result, "") == 0) {
-    		return NULL;
-    	} else { 
-    		return $request;
-    	}}
+
+	function tidy($data) {
+		if (trim($data == "")) { return NULL; }
+		return trim($data); }
+
+    function perform($sql, $bound) {
+    	$this->loadModel('User');
+    	$db = $this->User->getDataSource();
+    	return $db->fetchAll($sql, $bound); }
+
+    function perform_free($sql) {
+    	$this->loadModel('User');
+    	$db = $this->User->getDataSource();
+    	return $db->fetchAll($sql); }
 
 
     /************ COCKTAIL OPERATIONS  ************/
 
 
-    public function index_cocktails($available, $name, $tag) {
+    public function index_cocktails($availability, $name, $tag) {
 		$this->loadModel('Cocktail');
 		$db = $this->Cocktail->getDataSource();
 
-		return $db->fetchAll('SELECT * FROM cocktail');}
+		if (strcmp($availability, 'all') == 0 and is_null($name) and
+			is_null($tag)) {
+
+			$sql = "SELECT * FROM cocktail";
+
+			return $db->fetchAll($sql);
+		}
+
+		elseif (strcmp($availability, 'all') == 0 and !is_null($name) and
+			is_null($tag)) {
+
+			$sql = "SELECT * FROM cocktail
+			WHERE name LIKE CONCAT('%',:name,'%')";
+
+			return $db->fetchAll($sql, array(':name' => $name));
+		}
+
+		elseif (strcmp($availability, 'all') == 0 and is_null($name) and
+			!is_null($tag)) {
+
+			$sql = "SELECT * FROM cocktail 
+			WHERE cocktail_id IN (SELECT cocktail_id FROM labels
+									WHERE tag_id = :tag)";
+			
+			return $db->fetchAll($sql, array(':tag' => $tag));
+		}
+
+		elseif (strcmp($availability, 'all') == 0 and !is_null($name) and
+			!is_null($tag)) {
+
+			$sql = "SELECT * FROM cocktail 
+			WHERE name LIKE CONCAT('%',:name,'%') 
+			AND cocktail_id IN 
+			(SELECT cocktail_id FROM labels
+				WHERE tag_id = :tag)";
+			
+			return $db->fetchAll($sql, array(':name' => $name, 'tag' => $tag));
+		}
+
+		else { return $db->fetchAll('SELECT * FROM cocktail WHERE 1 = 1'); }}
 
 	public function create_cocktail($name, $recipe) {
-		$db = self::db_connect();
-		
 		$sql = "INSERT INTO cocktail (name, recipe) VALUES (:name, :recipe)";
-		
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param(':name', $name);
-		$stmt->bind_param(':recipe', $recipe);
+		$bound = array('name' => $name, 'recipe' => $recipe);
+		return self::perform($sql, $bound); }
 
-		return self::run($db, $stmt); }
+	public function retrieve_cocktail_by_name($name) {
+		$sql = "SELECT * FROM cocktail WHERE name = :name LIMIT 1";
+		$bound = array('name' => $name);
+		return self::perform($sql, $bound); }
+
+	public function retrieve_cocktail($cocktail_id) {
+		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
+		$bound = array('cocktail_id' => $cocktail_id);
+		return self::perform($sql, $bound); }
+
+	public function update_cocktail_name($cocktail_id, $name) {
+		$sql = "UPDATE cocktail SET name = :name WHERE cocktail_id = :cocktail_id";
+		$bound = array('name' => $name, 'ingredient_id' => $ingredient_id);
+		return self::perform($sql, $bound); }
+
+	public function update_cocktail_recipe($cocktail_id, $recipe) {
+		$sql = "UPDATE cocktail SET recipe = :recipe WHERE cocktail_id = :cocktail_id";
+		$bound = array('recipe' => $recipe, 'ingredient_id' => $ingredient_id);
+		return self::perform($sql, $bound); }
 
 
     /************ CONTAINS OPERATIONS ************/
 
 
     public function create_contains($cocktail_id, $ingredient_id, $volume) {
-		$db = self::db_connect();
-		
 		$sql = "INSERT INTO contains (cocktail_id, ingredient_id, volume) VALUES (:cocktail_id, :ingredient_id, :volume)";
-		
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param(':cocktail_id', $cocktail_id);
-		$stmt->bind_param(':ingredient_id', $ingredient_id);
-		$stmt->bind_param(':volume', $volume);
-
-		return self::run($db, $stmt);}
+		$bound = array('cocktail_id' => $cocktail_id, 'ingredient_id' => $ingredient_id, 'volume' => $volume);
+		return self::perform($sql, $bound); }
 
 	public function delete_contains($cocktail_id, $ingredient_id) {
-		$db = self::db_connect();
-
-		$sql = "DELETE FROM contains 
-		WHERE cocktail_id = :cocktail_id 
-		AND ingredient_id = :ingredient_id";
-		
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param(':cocktail_id', $cocktail_id);
-		$stmt->bind_param(':ingredient_id', $ingredient_id);
-
-		return self::run($db, $stmt);}
+		$sql = "DELETE FROM contains WHERE cocktail_id = :cocktail_id AND ingredient_id = :ingredient_id";
+		$bound = array('cocktail_id' => $cocktail_id, 'ingredient_id' => $ingredient_id);
+		return self::perform($sql, $bound); }
 
 
 	/************ INGREDIENT OPERATIONS  ************/
 
 
 	public function create_ingredient($description, $brand) {
-		$db = self::db_connect();
-
 		$sql = "INSERT INTO ingredient (description, brand) VALUES (:description, :brand)";
+		$bound = array("description" => $description, 'brand' => $brand);
+		return self::perform($sql, $bound); }
 
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param(':description', $description);
-		$stmt->bind_param(':brand', $brand);
-
-		return self::run($db, $stmt);}
-
-	public function index_ingredient($description, $brand, $classification) {
+	public function index_ingredients($description, $brand, $classification) {
 		$this->loadModel('Ingredient');
 		$db = $this->Ingredient->getDataSource();
 
@@ -227,123 +251,59 @@ class QueryBot {
 				AND brand LIKE CONCAT('%',:brand,'%')";
 			
 			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
-		}
-
-		return $db->fetchAll( "SELECT * FROM ingredient");}
+		} else {
+			return $db->fetchAll('SELECT * FROM ingredient');
+		}}
 
 	public function retrieve_ingredient($ingredient_id) {
-		$this->loadModel('Ingredient');
-		$db = $this->Ingredient->getDataSource();
+		$sql = "SELECT * FROM ingredient WHERE ingredient_id = :ingredient_id LIMIT 1";
+		$bound = (array('ingredient_id' => $ingredient_id)); 
+		return self::perform($sql, $bound); }
 
-		$sql = "SELECT *  FROM ingredient WHERE ingredient_id = :ingredient_id LIMIT 1";
-		
-		return $db->fetchAll($sql, array('ingredient_id' => $ingredient_id)); }
+	public function retrieve_ingredients_by_cocktail($cocktail_id) {
+		$sql = "SELECT ing.ingredient_id, ing.description, ing.brand, con.volume FROM ingredient ing JOIN contains con ON ing.ingredient_id = con.ingredient_id AND con.cocktail_id = :cocktail_id";
+		$bound = array('cocktail_id' => $cocktail_id);
+		return self::perform($sql, $bound); } 
+
+	public function get_ingredient_brands_asc() {
+		$sql = "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
+		return self::perform_free($sql); }
 
 
 	/************ OWNS OPERATIONS ************/
 
 
 	public function retrieve_owns($user_id, $ingredient_id) {
-		$this->loadModel('Owns');
-		$db = $this->Price->getDataSource();
-
 		$sql = "SELECT volume FROM owns 
 			WHERE user_id = :user_id
 			AND ingredient_id = :ingredient_id LIMIT 1";
-		
-		return $db->fetchAll($sql, array('user_id' => $user_id, 
-			'ingredient_id' => $ingredient_id)); }
+		$bound = array('user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
+		return self::perform($sql, $bound); }
 
 
 	/************ PRICE OPERATIONS ************/
 
 
 	public function retrieve_prices($ingredient_id) {
-		$this->loadModel('Price');
-		$db = $this->Price->getDataSource();
-
 		$sql = "SELECT volume, price FROM price WHERE ingredient_id = :ingredient_id";
-		return $db->fetchAll($sql, array('ingredient_id' => $ingredient_id)); }
+		$bound = array('ingredient_id' => $ingredient_id);
+		return self::perform($sql, $bound); }
 
 
 	/************ PROOF OPERATIONS ************/
 
 
 	public function retrieve_proofs($ingredient_id) {
-		$this->loadModel('Proof');
-		$db = $this->Proof->getDataSource();
-
 		$sql = "SELECT proof FROM proof WHERE ingredient_id = :ingredient_id";
-		
-		return $db->fetchAll($sql, array('ingredient_id' => $ingredient_id)); }
+		$bound = array('ingredient_id' => $ingredient_id);
+		return self::perform($sql, $bound); }
 
 
-	/************ MODEL SELECTIONS ************/
-
-	public function get_ingredient_brands_asc() {
-		$this->loadModel('Ingredient');
-		$db = $this->Ingredient->getDataSource();
-
-		$sql = "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
-		return $db->fetchAll($sql);
-	}
-
-	public function get_cocktail_by_id($cocktail_id) {
-		$this->loadModel('Cocktail');
-		$db = $this->Cocktail->getDataSource();
-
-		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
-		return $db->fetchAll($sql, array('cocktail_id' => $cocktail_id));
-	}
-
-	public function get_cocktail_by_name($name) {
-		$this->loadModel('Cocktail');
-		$db = $this->Cocktail->getDataSource();
-
-		$sql = "SELECT * FROM cocktail WHERE name = :name LIMIT 1";
-		return $db->fetchAll($sql, array('name' => $name));
-	}
-
-	
+	/************ TAG OPERATIONS ************/
 
 
-
-
-
-	/************ MODEL INSERTIONS ************/
-
-
-
-
-
-
-	/************ MODEL UPDATES ************/
-
-	public function update_cocktail_name($cocktail_id, $name) {
-		$db = self::db_connect();
-		$sql = "UPDATE cocktail SET name = ? WHERE cocktail_id = ?";
-		
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param("ss", $name, $cocktail_id);
-		return self::run($db, $stmt);
-	}
-
-	public function update_cocktail_recipe($cocktail_id, $recipe) {
-		$db = self::db_connect();
-		
-		$sql = "UPDATE cocktail SET recipe = ? WHERE cocktail_id = ?";
-		
-		$stmt = $db->prepare($sql);
-		$stmt->bind_param("ss", $recipe, $cocktail_id);
-		return self::run($db, $stmt);
-	}
-
-
-	/************ MODEL DELETES **********/
-
-	
-
-
- 	
+	public function retrieve_tag_names_asc() {
+		$sql = "SELECT * FROM tag ORDER BY name ASC";
+		return self::perform_free($sql); }
 
 }
