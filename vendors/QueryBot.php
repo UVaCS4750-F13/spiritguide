@@ -76,7 +76,7 @@ class QueryBot {
 			return $db->fetchAll($sql, array(':name' => $name, 'tag' => $tag));
 		}
 
-		else { return $db->fetchAll('SELECT * FROM cocktail WHERE 1 = 1'); }}
+		else { return $db->fetchAll('SELECT * FROM cocktail'); }}
 
 	public function create_cocktail($name, $recipe) {
 		$sql = "INSERT INTO cocktail (name, recipe) VALUES (:name, :recipe)";
@@ -265,7 +265,7 @@ class QueryBot {
 		$bound = array('cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); } 
 
-	public function get_ingredient_brands_asc() {
+	public function retrieve_ingredient_brands_asc() {
 		$sql = "SELECT ingredient_id, brand FROM ingredient ORDER BY brand ASC";
 		return self::perform_free($sql); }
 

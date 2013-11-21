@@ -30,7 +30,7 @@
     	<?php echo $this->Form->create('Contain', array('action' => 'add')); ?>
             <fieldset>
          	    <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
-              	<?php echo $this->Form->input('ingredient', array('label' => false, 'options' => $all_ingredients)); ?>
+              	<?php echo $this->Form->input('ingredient_id', array('label' => false, 'options' => $all_ingredients)); ?>
 				<?php echo $this->Form->input('volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
             </fieldset>
      	<?php echo $this->Form->end(array('label' => 'Add', 'class' => 'btn btn-info')); ?>    

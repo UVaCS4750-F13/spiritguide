@@ -14,13 +14,11 @@ class ContainsController extends AppController {
 	public function add() {
 		if($this->request->is('post')) {
           	$index = 'Contain';
-            $cocktail_id = QueryBot::request($index, 'cocktail_id');
-            $ingredient_id = QueryBot::request($index, 'ingredient_id');
-            $volume_id = QueryBot::request($index, 'volume');
-            if (QueryBot::create_contains($cocktail_id, $ingredient_id, $volume)) {
-                $this->redirect(array('controller' => 'cocktails', 
-                                        'action' => 'view', $cocktail_id));
-            }
+            $cocktail_id = $this->request->data[$index]['cocktail_id'];
+            $ingredient_id = $this->request->data[$index]['ingredient_id'];
+            $volume = $this->request->data[$index]['volume'];
+            QueryBot::create_contains($cocktail_id, $ingredient_id, $volume);
+            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
         }
     }
 	

@@ -12,26 +12,27 @@ class CocktailsController extends AppController {
 				if($vv != "") {
 					$url[$kk]=$vv;
 				}
-			}}$this->redirect($url, null, true);}
+			}
+		}
+		$this->redirect($url, null, true);}
 	
 	public function index() {
+
 		$availability = null;
 		if (isset($this->passedArgs['availability'])) {
-            $this->request->data['Cocktail']['availability'] = trim($this->passedArgs['availability']);
-           $description = trim($this->passedArgs['descr']);
+            $this->request->data['Cocktail']['availability'] = QueryBot::tidy($this->passedArgs['availability']);
+           	$description = QueryBot::tidy($this->passedArgs['descr']);
 		}
 
 		$name = null;
 		if (isset($this->passedArgs['name'])) {
-            $this->request->data['Cocktail']['name'] = trim($this->passedArgs['name']);
-            $name = trim($this->passedArgs['name']);
-		} 
+            $this->request->data['Cocktail']['name'] = QueryBot::tidy($this->passedArgs['name']);
+            $name = QueryBot::tidy($this->passedArgs['name']); } 
 
 		$tag = null;
 		if (isset($this->passedArgs['tag'])) {
-            $this->request->data['Cocktail']['tag'] = trim($this->passedArgs['tag']);
-            $tag = trim($this->passedArgs['tag']);
-		}
+            $this->request->data['Cocktail']['tag'] = QueryBot::tidy($this->passedArgs['tag']);
+            $tag = QueryBot::tidy($this->passedArgs['tag']); }
 
 		$results = QueryBot::index_cocktails($availability, $name, $tag);
 		$this->set('cocktails', $results);
@@ -40,7 +41,7 @@ class CocktailsController extends AppController {
 		$all_tags = array();
 		foreach (QueryBot::retrieve_tag_names_asc() as $tag) {
 			$all_tags[$tag['tag']['tag_id']] = $tag['tag']['name'];
-		} $this->set('all_tags', $all_tags);}
+		} $this->set('all_tags', $all_tags); }
 
 
 	public function view($id = null) {
@@ -50,7 +51,7 @@ class CocktailsController extends AppController {
 		}
 
 		$all_ingredients = array();
-		foreach (QueryBot::get_ingredient_brands_asc() as $ingredient) {
+		foreach (QueryBot::retrieve_ingredient_brands_asc() as $ingredient) {
 			$all_ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
 		} $this->set('all_ingredients', $all_ingredients);
 
@@ -59,7 +60,7 @@ class CocktailsController extends AppController {
 	
 
 		// get cocktail for which id matches
-		$cocktail_array = QueryBot::get_cocktail_by_id($id);
+		$cocktail_array = QueryBot::retrieve_cocktail($id);
 		$this->set('cocktail', $cocktail_array[0]);
 
 	}
@@ -80,7 +81,7 @@ class CocktailsController extends AppController {
 			return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));	
 		} else {
 			$ingredients = array();
-			foreach (QueryBot::get_ingredient_brands_asc() as $ingredient) {
+			foreach (QueryBot::retrieve_ingredient_brands_asc() as $ingredient) {
 				$ingredients[$ingredient['ingredient']['ingredient_id']] = $ingredient['ingredient']['brand'];
 			} $this->set('ingredients', $ingredients);
 		}
@@ -139,11 +140,11 @@ class CocktailsController extends AppController {
 		if ($this->request->is('post')) {
 			
 			$cocktail_id = NULL;
-			$rid = trim($this->request->data['Cocktail']['cocktail_id']);
+			$rid = QueryBot::tidy($this->request->data['Cocktail']['cocktail_id']);
 			if ($rid != '') { $cocktail_id = $rid; }
 
 			$name = NULL;
-			$rname = trim($this->request->data['Cocktail']['recipe']);
+			$rname = QueryBot::tidy($this->request->data['Cocktail']['recipe']);
 			if ($rname != '') {
 				$name = $rname;
 			}
