@@ -65,7 +65,7 @@
     <h3 id="myModalLabel">Update Volume</h3>
   </div>
   <div class="modal-body">
-    <?php echo $this->Form->create('Cocktail', array('action' => 'update_contain_volume')); ?>
+    <?php echo $this->Form->create('Contains', array('action' => 'update_contains')); ?>
       <fieldset>
                         <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
                         <?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ing']['ingredient_id'])); ?>

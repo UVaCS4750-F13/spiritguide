@@ -2,17 +2,13 @@
 
 <div class="cocktails index">
 	
+<?php echo $options = array('all' => 'All Cocktails', 'power' => 'Within Your Power'); ?>
 <span id="cocktail-index-span">
    	<?php echo $this->Form->create('Cocktail', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
     <fieldset class="filter-form">
-         <?php echo $this->Form->input('availablility', array('id' => 'type-select', 'label' => false, 'div' => false,
-				'options' => array(
-				'all' => 'All Cocktails',
-				'power' => 'Within Your Power'
-				)
-			)
-		); ?>
-        <?php echo $this->Form->input('name', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
+         <?php echo $this->Form->input('availability', array('id' => 'type-select', 'label' => false, 'div' => false,
+				'options' => $options)); ?>
+        <?php echo $this->Form->input('cocktail_name', array('label' => false, 'div' => false, 'placeHolder' => 'Filter by Name')); ?>
         <?php echo $this->Form->input('tag', array('label' => false, 'div' => false,
         		'empty' => 'All Tags',
 				'options' => $all_tags

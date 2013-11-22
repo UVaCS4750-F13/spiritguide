@@ -2,8 +2,7 @@
 	document.getElementById("ingredient-tab").className = "active";
 </script>
 
-<div class="ingredients index">
-
+<?php $classification = array('all' => 'All Ingredients', 'alcohols' => 'Alcohols', 'mixers' => 'Mixers'); ?>
 <span id="ingredient-index-span">
    	<?php echo $this->Form->create('Ingredient', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
     <fieldset class="filter-form">
@@ -47,5 +46,3 @@
 	</table>
 	<p>
 	</p>
-</div>
-

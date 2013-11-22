@@ -21,13 +21,13 @@ class CocktailsController extends AppController {
 		$availability = null;
 		if (isset($this->passedArgs['availability'])) {
             $this->request->data['Cocktail']['availability'] = QueryBot::tidy($this->passedArgs['availability']);
-           	$description = QueryBot::tidy($this->passedArgs['descr']);
+           	$availability = QueryBot::tidy($this->passedArgs['availability']);
 		}
 
 		$name = null;
-		if (isset($this->passedArgs['name'])) {
-            $this->request->data['Cocktail']['name'] = QueryBot::tidy($this->passedArgs['name']);
-            $name = QueryBot::tidy($this->passedArgs['name']); } 
+		if (isset($this->passedArgs['cocktail_name'])) {
+            $this->request->data['Cocktail']['cocktail_name'] = QueryBot::tidy($this->passedArgs['cocktail_name']);
+            $name = QueryBot::tidy($this->passedArgs['cocktail_name']); } 
 
 		$tag = null;
 		if (isset($this->passedArgs['tag'])) {

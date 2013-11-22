@@ -1,5 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'QueryBot');
+
 /**
  * Owns Controller
  *
@@ -13,7 +15,7 @@ class OwnsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator',);
 
 /**
  * index method
@@ -60,31 +62,18 @@ class OwnsController extends AppController {
 		$this->set(compact('users', 'ingredients'));
 	}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		if (!$this->Own->exists($id)) {
-			throw new NotFoundException(__('Invalid own'));
+
+	public function edit($id = null) { throw new NotFoundException(__('Invalid Action')); }
+
+
+	public function update_owns() {
+		if ($this->request->is('post')) {
+			$user_id = $this->Auth->user('user_id');
+			$ingredient_id = QueryBot::tidy($this->request->data['Owns']['ingredient_id']);
+			$volume = QueryBot::tidy($this->request->data['Owns']['volume']);
+			QueryBot::update_owns($user_id, $ingredient_id, $volume);
+			return $this->redirect(array('controller' => 'ingredients', 'action' => 'view', $ingredient_id));
 		}
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Own->save($this->request->data)) {
-				$this->Session->setFlash(__('The own has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The own could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('Own.' . $this->Own->primaryKey => $id));
-			$this->request->data = $this->Own->find('first', $options);
-		}
-		$users = $this->Own->User->find('list');
-		$ingredients = $this->Own->Ingredient->find('list');
-		$this->set(compact('users', 'ingredients'));
 	}
 
 /**

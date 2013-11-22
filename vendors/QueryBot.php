@@ -33,7 +33,7 @@ class QueryBot {
 			return $db->fetchAll($sql);
 		}
 
-		elseif (strcmp($availability, 'all') == 0 and !is_null($name) and
+		elseif ((strcmp($availability, 'all') == 0) and !is_null($name) and
 			is_null($tag)) {
 
 			$sql = "SELECT * FROM cocktail
@@ -98,6 +98,13 @@ class QueryBot {
     public function create_contains($cocktail_id, $ingredient_id, $volume) {
 		$sql = "INSERT INTO contains (cocktail_id, ingredient_id, volume) VALUES (:cocktail_id, :ingredient_id, :volume)";
 		$bound = array('cocktail_id' => $cocktail_id, 'ingredient_id' => $ingredient_id, 'volume' => $volume);
+		return self::perform($sql, $bound); }
+
+	public function update_contains($cocktail_id, $ingredient_id, $volume) {
+		$sql = "UPDATE contains SET volume = :volume 
+			WHERE cocktail_id = :cocktail_id
+			AND ingredient_id = :ingredient_id";
+		$bound = array('volume' => $volume, 'cocktail_id' => $cocktail_id, 'ingredient_id' => $ingredient_id); 
 		return self::perform($sql, $bound); }
 
 	public function delete_contains($cocktail_id, $ingredient_id) {
@@ -268,6 +275,13 @@ class QueryBot {
 		$bound = array('user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
 		return self::perform($sql, $bound); }
 
+	public function update_owns($user_id, $ingredient_id, $volume) {
+		$sql = "UPDATE owns SET volume = :volume 
+			WHERE user_id = :user_id
+			AND ingredient_id = :ingredient_id";
+		$bound = array('volume' => $volume, 'user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
+		return self::perform($sql, $bound); }
+
 
 	/************ PRICE OPERATIONS ************/
 
@@ -281,7 +295,7 @@ class QueryBot {
 	/************ PROOF OPERATIONS ************/
 
 
-	public function retrieve_proofs($ingredient_id) {
+	public function retrieve_proof($ingredient_id) {
 		$sql = "SELECT proof FROM proof WHERE ingredient_id = :ingredient_id";
 		$bound = array('ingredient_id' => $ingredient_id);
 		return self::perform($sql, $bound); }

@@ -51,7 +51,7 @@ class IngredientsController extends AppController {
         
         $this->set('prices', QueryBot::retrieve_prices($id));
         
-        $this->set('proofs', QueryBot::retrieve_proofs($id));
+        $this->set('proof', QueryBot::retrieve_proof($id));
 
         $owns = QueryBot::retrieve_owns($this->Auth->user('user_id'), $id);
         $this->set('owns_at_all', count($owns));
