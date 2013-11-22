@@ -2,7 +2,7 @@
 
 <div class="cocktails index">
 	
-<?php echo $options = array('all' => 'All Cocktails', 'power' => 'Within Your Power'); ?>
+<?php $options = array('all' => 'All Cocktails', 'power' => 'Within Your Power'); ?>
 <span id="cocktail-index-span">
    	<?php echo $this->Form->create('Cocktail', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
     <fieldset class="filter-form">

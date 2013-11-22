@@ -40,6 +40,11 @@ class ContainsController extends AppController {
 
 
 	public function delete() {
-        throw new NotFoundException(__('Invalid Action'));
+        if ($this->request->is('post')) {
+            $cocktail_id = QueryBot::tidy($this->request->data['Contains']['cocktail_id']);
+            $ingredient_id = QueryBot::tidy($this->request->data['Contains']['ingredient_id']);
+            QueryBot::delete_contains($cocktail_id, $ingredient_id);
+            return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
     }
 }
