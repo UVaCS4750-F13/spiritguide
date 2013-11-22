@@ -55,8 +55,9 @@ class IngredientsController extends AppController {
 
         $owns = QueryBot::retrieve_owns($this->Auth->user('user_id'), $id);
         $this->set('owns_at_all', count($owns));
-        $this->set('current_inventory', $owns[0]['owns']);}
-	
+        if(count($owns) == 1) {
+        	$this->set('current_inventory', $owns[0]['owns']);}
+		}
 	public function edit($id = null) { throw new NotFoundException(_('Invalid Action')); }
 
 	public function delete($id = null) { throw new NotFoundException(_('Invalid Action')); }

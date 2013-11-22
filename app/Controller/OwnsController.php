@@ -42,25 +42,16 @@ class OwnsController extends AppController {
 		$this->set('own', $this->Own->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
+	public function create_owns() {
 		if ($this->request->is('post')) {
-			$this->Own->create();
-			if ($this->Own->save($this->request->data)) {
-				$this->Session->setFlash(__('The own has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The own could not be saved. Please, try again.'));
-			}
+			$user_id = $this->Auth->user('user_id');
+			$ingredient_id = QueryBot::tidy($this->request->data['Owns']['ingredient_id']);
+			$volume = QueryBot::tidy($this->request->data['Owns']['volume']);
+			QueryBot::create_owns($user_id, $ingredient_id, $volume);
+			return $this->redirect(array('controller' => 'ingredients', 'action' => 'view', $ingredient_id));
 		}
-		$users = $this->Own->User->find('list');
-		$ingredients = $this->Own->Ingredient->find('list');
-		$this->set(compact('users', 'ingredients'));
 	}
+
 
 
 	public function edit($id = null) { throw new NotFoundException(__('Invalid Action')); }
@@ -71,6 +62,10 @@ class OwnsController extends AppController {
 			$user_id = $this->Auth->user('user_id');
 			$ingredient_id = QueryBot::tidy($this->request->data['Owns']['ingredient_id']);
 			$volume = QueryBot::tidy($this->request->data['Owns']['volume']);
+			if ($volume == 0) {
+				QueryBot::delete_owns($user_id, $ingredient_id, $volume);
+				return $this->redirect(array('controller' => 'ingredients', 'action' => 'view', $ingredient_id));
+			}	
 			QueryBot::update_owns($user_id, $ingredient_id, $volume);
 			return $this->redirect(array('controller' => 'ingredients', 'action' => 'view', $ingredient_id));
 		}

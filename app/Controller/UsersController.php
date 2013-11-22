@@ -1,5 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'QueryBot');
+
 /**
  * Users Controller
  *
@@ -55,6 +57,13 @@ public function logout() {
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
+	}
+
+
+	public function inventory($id = null) {
+		$inventory = QueryBot::retrieve_inventory($id);
+		$this->set('inventory', $inventory);
+		$this->set('inventory_count', count($inventory));
 	}
 
 /**

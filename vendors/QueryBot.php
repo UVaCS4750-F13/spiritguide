@@ -267,6 +267,10 @@ class QueryBot {
 
 	/************ OWNS OPERATIONS ************/
 
+	public function create_owns($user_id, $ingredient_id, $volume) {
+		$sql = "INSERT INTO owns VALUES (:user_id, :ingredient_id, :volume)";
+		$bound = array('volume' => $volume, 'user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
+	return self::perform($sql, $bound); }
 
 	public function retrieve_owns($user_id, $ingredient_id) {
 		$sql = "SELECT volume FROM owns 
@@ -275,12 +279,24 @@ class QueryBot {
 		$bound = array('user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
 		return self::perform($sql, $bound); }
 
+	public function retrieve_inventory($user_id) {
+		$sql = "SELECT ingredient.ingredient_id, brand, description, volume FROM owns 
+			JOIN ingredient ON ingredient.ingredient_id = owns.ingredient_id
+			WHERE user_id = :user_id";
+		$bound = array('user_id' => $user_id); 
+		return self::perform($sql, $bound); }
+
 	public function update_owns($user_id, $ingredient_id, $volume) {
 		$sql = "UPDATE owns SET volume = :volume 
 			WHERE user_id = :user_id
 			AND ingredient_id = :ingredient_id";
 		$bound = array('volume' => $volume, 'user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
 		return self::perform($sql, $bound); }
+
+		public function delete_owns($user_id, $ingredient_id) {
+		$sql = "DELETE FROM owns WHERE user_id = :user_id AND ingredient_id = :ingredient_id";
+		$bound = array('user_id' => $user_id, 'ingredient_id' => $ingredient_id); 
+	return self::perform($sql, $bound); }
 
 
 	/************ PRICE OPERATIONS ************/

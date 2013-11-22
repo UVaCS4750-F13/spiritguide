@@ -1,3 +1,7 @@
+<script>
+	document.getElementById("ingredient-tab").className = "active";
+</script>
+
 <div class="ingredients view">
 <h2><?php echo $ingredient['brand']; ?></h2>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
@@ -36,7 +40,7 @@
 	<?php endif; ?>
 </div>
 
-
+<?php if($owns_at_all == 1): ?>
 <div class="related">
 		<h3><?php echo __('Inventory'); ?></h3>
 		<table cellpadding = "0" cellspacing = "0" class="table table-striped table-bordered">
@@ -45,25 +49,35 @@
 		</tr>
 		<td><?php echo $current_inventory['volume']; ?> ml</td>
 		</table>
-
 </div>
-
-
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-        <button class="btn btn-info view-button" type="button" data-toggle="modal" data-target="#inv-modal">Update Inventory</button>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+<button class="btn btn-info view-button" type="button" data-toggle="modal" data-target="#inv-modal">Update Inventory</button>
+<?php else: ?>
+<h3><?php echo __('None in Inventory'); ?></h3>
+<button class="btn btn-info view-button" type="button" data-toggle="modal" data-target="#inv-add-modal">Add to Inventory</button>
+<?php endif; ?>
 
 <div id="inv-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel"><?echo "How much ".$ingredient['brand']." do you own?"; ?></h3>
+    <h3 id="myModalLabel"><?echo "How much ".$ingredient['brand']." do you own? (in ml)"; ?></h3>
   </div>
   <div class="modal-body">
     <?php echo $this->Form->create('Owns', array('action' => 'update_owns')); ?>
+      <fieldset>
+        <?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ingredient_id'])); ?>
+        <?php echo $this->Form->input('volume', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $current_inventory['volume'])); ?>
+      </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
+  </div></div>
+
+
+ <div id="inv-add-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><?echo "How much ".$ingredient['brand']." do you own? (in ml)"; ?></h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Owns', array('action' => 'create_owns')); ?>
       <fieldset>
         <?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ingredient_id'])); ?>
         <?php echo $this->Form->input('volume', array('label' => false, 'div' => false, 'class' => 'input-block-level')); ?>

@@ -47,7 +47,9 @@
         							<ul class="dropdown-menu">
           								<li><a href="#">Profile</a></li>
           								<li><a href="#">Favorites</a></li>
-          								<li><a href="#">Inventory</a></li>
+          								<li><?php echo $this->Html->link('Inventory', 
+  											array('controller'=>'users', 'action'=>'inventory', $this->Session->read('Auth.User.user_id'))); ?>
+  										</li>
           								<li class="divider"></li>
           								<li><?php echo $this->Html->link('Logout', 
   											array('controller'=>'users', 'action'=>'logout')); ?>
