@@ -265,6 +265,18 @@ class QueryBot {
 		return self::perform_free($sql); }
 
 
+	/************ LABELS OPERATIONS ************/
+
+	public function create_labels($tag_id, $cocktail_id) {
+		$sql = "INSERT INTO labels (tag_id, cocktail_id) VALUES (:tag_id, :cocktail_id)";
+		$bound = array('tag_id' => $tag_id, 'cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
+	public function delete_labels($tag_id, $cocktail_id) {
+		$sql = "DELETE FROM labels WHERE tag_id = :tag_id AND cocktail_id = :cocktail_id";
+		$bound = array('tag_id' => $tag_id, 'cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
 	/************ OWNS OPERATIONS ************/
 
 	public function create_owns($user_id, $ingredient_id, $volume) {
@@ -323,5 +335,11 @@ class QueryBot {
 	public function retrieve_tag_names_asc() {
 		$sql = "SELECT * FROM tag ORDER BY name ASC";
 		return self::perform_free($sql); }
+
+
+	public function retrieve_tags_by_cocktail($cocktail_id) {
+		$sql = "SELECT tag.tag_id, tag.name FROM tag JOIN labels ON tag.tag_id = labels.tag_id WHERE labels.cocktail_id = :cocktail_id";
+		$bound = array('cocktail_id' => $cocktail_id);
+		return self::perform($sql, $bound); } 
 
 }

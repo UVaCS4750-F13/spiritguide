@@ -1,5 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'QueryBot');
+
 /**
  * Labels Controller
  *
@@ -40,25 +42,15 @@ class LabelsController extends AppController {
 		$this->set('label', $this->Label->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
 	public function add() {
-		if ($this->request->is('post')) {
-			$this->Label->create();
-			if ($this->Label->save($this->request->data)) {
-				$this->Session->setFlash(__('The label has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The label could not be saved. Please, try again.'));
-			}
-		}
-		$cocktails = $this->Label->Cocktail->find('list');
-		$tags = $this->Label->Tag->find('list');
-		$this->set(compact('cocktails', 'tags'));
-	}
+		if($this->request->is('post')) {
+          	$index = 'Labels';
+            $cocktail_id = $this->request->data[$index]['cocktail_id'];
+            $tag_id = $this->request->data[$index]['tag_id'];
+            QueryBot::create_labels($tag_id, $cocktail_id);
+            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
+    }
 
 /**
  * edit method
@@ -87,23 +79,12 @@ class LabelsController extends AppController {
 		$this->set(compact('cocktails', 'tags'));
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		$this->Label->id = $id;
-		if (!$this->Label->exists()) {
-			throw new NotFoundException(__('Invalid label'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Label->delete()) {
-			$this->Session->setFlash(__('The label has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The label could not be deleted. Please, try again.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-	}}
+	public function delete() {
+        if ($this->request->is('post')) {
+            $tag_id = QueryBot::tidy($this->request->data['Labels']['tag_id']);
+            $cocktail_id = QueryBot::tidy($this->request->data['Labels']['cocktail_id']);
+            QueryBot::delete_labels($tag_id, $cocktail_id);
+            return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
+    }
+}

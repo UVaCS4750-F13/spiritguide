@@ -13,9 +13,12 @@ class IngredientsController extends AppController {
 					$url[$kk]=$vv;
 				}
 			} 
-		}$this->redirect($url, null, true);}
+		}
+		$this->redirect($url, null, true);
+	}
 
 	public function index() {
+		
 		$description = null;
 		if (isset($this->passedArgs['description'])) {
             $this->request->data['Ingredient']['description'] = trim($this->passedArgs['description']);
@@ -41,24 +44,11 @@ class IngredientsController extends AppController {
 	public function add() { throw new NotFoundException(_('Invalid Action')); }
 
 	public function view($id = null) {
-
-		if (!$this->Ingredient->exists($id)) {
-			throw new NotFoundException(__('Invalid Ingredient'));
-		}
-
+		if (!$this->Ingredient->exists($id)) { throw new NotFoundException(__('Invalid Ingredient')); }
 		$ingredient = QueryBot::retrieve_ingredient($id);    
         $this->set('ingredient', $ingredient[0]['ingredient']);
-        
         $this->set('prices', QueryBot::retrieve_prices($id));
-        
         $this->set('proof', QueryBot::retrieve_proof($id));
+        $this->set('owns', QueryBot::retrieve_owns($this->Auth->user('user_id'), $id)); }
 
-        $owns = QueryBot::retrieve_owns($this->Auth->user('user_id'), $id);
-        $this->set('owns_at_all', count($owns));
-        if(count($owns) == 1) {
-        	$this->set('current_inventory', $owns[0]['owns']);}
-		}
-	public function edit($id = null) { throw new NotFoundException(_('Invalid Action')); }
-
-	public function delete($id = null) { throw new NotFoundException(_('Invalid Action')); }
 }

@@ -108,6 +108,7 @@
 <?php echo $this->Form->button('Update Recipe', array('div' => false, 
 	'data-toggle' => 'modal', 'data-target' => '#recipe-modal', 'class' => 'view-button btn btn-info')); ?>
  
+
 <div id="name-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -145,6 +146,57 @@
       <fieldset>
         <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
         <?php echo $this->Form->input('recipe', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $cocktail['cocktail']['recipe'])) ?>
+      </fieldset>
+    <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
+  </div></div>
+
+  <br>
+  <br>
+
+
+  <div class="related">
+  <?php if (!empty($cocktail_tags)): ?>
+    <h3><?php echo 'Tags'; ?></h3>
+    <table class="table table-striped table-bordered" cellpadding = "0" cellspacing = "0">
+      <?php foreach ($cocktail_tags as $tag): ?>
+        <tr>
+          <td><?php echo $tag['tag']['name']; ?></td>
+          <td><?php echo '<a href data-toggle="modal" data-target="#delete-tag-modal-'.$tag['tag']['tag_id'].'">Delete</a>'; ?></td>
+        </tr>
+        <?php echo '<div id="delete-tag-modal-'.$tag['tag']['tag_id'].'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'; ?>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title" id="myModalLabel">Untag as <?php echo $tag['tag']['name']; ?>?</h4>
+              </div>
+              <div class="modal-footer">
+                <?php echo $this->Form->create('Labels', array('controller' => 'labels', 'action' => 'delete')); ?>
+                      <fieldset>
+                        <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+                        <?php echo $this->Form->input('tag_id', array('type' => 'hidden', 'value' => $tag['tag']['tag_id'])); ?>
+                      </fieldset>
+              <?php echo $this->Form->end(array('label' => 'Delete', 'class' => 'btn btn-danger')); ?>   
+              </div>
+        </div>
+      <?php endforeach; ?>
+    </table>
+  <?php else: ?>
+    <h3><?php echo 'No Tags' ?>
+  <?php endif; ?>
+</div>
+
+<?php echo $this->Form->button('Add Tag', array('div' => false, 
+  'data-toggle' => 'modal', 'data-target' => '#add-tag-modal', 'class' => 'view-button btn btn-info')); ?>
+
+  <div id="add-tag-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Add a Tag</h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Labels', array('controllers' => 'labels', 'action' => 'add')); ?>
+      <fieldset>
+            <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+        <?php echo $this->Form->input('tag_id', array('label' => false, 'options' => $all_tags)); ?>
       </fieldset>
     <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
   </div></div>
