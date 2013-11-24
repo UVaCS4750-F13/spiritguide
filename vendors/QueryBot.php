@@ -66,9 +66,9 @@ class QueryBot {
 
 		else { return $db->fetchAll('SELECT * FROM cocktail'); }}
 
-	public function create_cocktail($name, $recipe) {
-		$sql = "INSERT INTO cocktail (name, recipe) VALUES (:name, :recipe)";
-		$bound = array('name' => $name, 'recipe' => $recipe);
+	public function create_cocktail($name, $recipe, $creator_id) {
+		$sql = "INSERT INTO cocktail (name, recipe, creator_id) VALUES (:name, :recipe, :creator_id)";
+		$bound = array('name' => $name, 'recipe' => $recipe, 'creator_id' => $creator_id);
 		return self::perform($sql, $bound); }
 
 	public function retrieve_cocktail_by_name($name) {

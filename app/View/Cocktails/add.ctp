@@ -18,6 +18,7 @@
 			<?php echo $this->Form->input('ingredient_3_volume', array('label' => false, 'placeHolder' => 'Volume')); ?>
 		</span>
 		<?php echo $this->Form->input('recipe', array('label' => '<h4>Recipe</h4>', 'div' => false, 'class' => 'input-block-level')); ?>
+		<?php echo $this->Form->input('creator_id', array('type' => 'hidden', 'value' => $creator)); ?>
 	</fieldset>
 	<br>
 	<?php echo $this->Form->end(array('label' => 'Submit', 'action' => 'add', 'class' => 'btn btn-info')); ?>

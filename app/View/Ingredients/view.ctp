@@ -42,6 +42,8 @@
 </div>
 
 
+<?php if(!is_null($this->Session->read('Auth.User'))): ?>
+
 <?php if (!empty($owns)): ?>
 <div class="related">
 		<h3><?php echo __('Inventory'); ?></h3>
@@ -61,6 +63,7 @@
 <button class="btn btn-info view-button" type="button" data-toggle="modal" data-target="#inv-add-modal">Add to Inventory</button>
 <?php endif; ?>
 
+<?php endif; ?>
 
 <div id="inv-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -71,7 +74,7 @@
     <?php echo $this->Form->create('Owns', array('action' => 'update_owns')); ?>
       <fieldset>
         <?php echo $this->Form->input('ingredient_id', array('type' => 'hidden', 'value' => $ingredient['ingredient_id'])); ?>
-        <?php echo $this->Form->input('volume', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $current_inventory['volume'])); ?>
+        <?php echo $this->Form->input('volume', array('label' => false, 'div' => false, 'class' => 'input-block-level', 'value' => $owns[0]['owns']['volume'])); ?>
       </fieldset>
     <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
   </div>

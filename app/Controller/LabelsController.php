@@ -48,7 +48,7 @@ class LabelsController extends AppController {
             $cocktail_id = $this->request->data[$index]['cocktail_id'];
             $tag_id = $this->request->data[$index]['tag_id'];
             QueryBot::create_labels($tag_id, $cocktail_id);
-            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+            $this->redirect(array('controller' => 'cocktails', 'action' => 'edit', $cocktail_id));
         }
     }
 
