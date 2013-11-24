@@ -1,5 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'QueryBot');
+
 /**
  * Favorites Controller
  *
@@ -40,26 +42,15 @@ class FavoritesController extends AppController {
 		$this->set('favorite', $this->Favorite->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
 	public function add() {
-		if ($this->request->is('post')) {
-			$this->Favorite->create();
-			if ($this->Favorite->save($this->request->data)) {
-				$this->Session->setFlash(__('The favorite has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The favorite could not be saved. Please, try again.'));
-			}
-		}
-		$users = $this->Favorite->User->find('list');
-		$cocktails = $this->Favorite->Cocktail->find('list');
-		$this->set(compact('users', 'cocktails'));
-	}
-
+		if($this->request->is('post')) {
+          	$index = 'Favorites';
+            $cocktail_id = $this->request->data[$index]['cocktail_id'];
+            $user_id = $this->Auth->user('user_id');
+            QueryBot::create_favorites($user_id, $cocktail_id);
+            $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
+    }
 /**
  * edit method
  *
@@ -87,23 +78,13 @@ class FavoritesController extends AppController {
 		$this->set(compact('users', 'cocktails'));
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		$this->Favorite->id = $id;
-		if (!$this->Favorite->exists()) {
-			throw new NotFoundException(__('Invalid favorite'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Favorite->delete()) {
-			$this->Session->setFlash(__('The favorite has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The favorite could not be deleted. Please, try again.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-	}}
+	public function delete() {
+        if ($this->request->is('post')) {
+        	$index = 'Favorites';
+            $user_id = $this->Auth->user('user_id');
+            $cocktail_id = QueryBot::tidy($this->request->data[$index]['cocktail_id']);
+            QueryBot::delete_favorite($user_id, $cocktail_id);
+            return $this->redirect(array('controller' => 'cocktails', 'action' => 'view', $cocktail_id));
+        }
+    }
+}

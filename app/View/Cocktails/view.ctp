@@ -7,6 +7,18 @@
 
 <?php if($current_user == $cocktail['cocktail']['creator_id']): ?>
 
+
+<?php if(empty($currently_favorited)): ?>
+<?php echo $this->Form->create('Favorites', array('div' => false, 'action' => 'add', $cocktail['cocktail']['cocktail_id'])) ?>
+              <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+ <?php echo $this->Form->end(array('label' => 'Favorite', 'class' => 'btn btn-info')); ?>  
+<?php else: ?>
+<?php echo $this->Form->create('Favorites', array('div' => false, 'action' => 'delete', $cocktail['cocktail']['cocktail_id'])) ?>
+              <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+ <?php echo $this->Form->end(array('label' => 'Unfavorite', 'class' => 'btn btn-info')); ?>  
+<?php endif; ?>
+
+
 <?php echo $this->Form->create('Cocktail', array('div' => false, 'action' => 'edit', $cocktail['cocktail']['cocktail_id'])) ?>
               <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
  <?php echo $this->Form->end(array('label' => 'Edit', 'class' => 'view-button btn btn-info')); ?>  
@@ -25,7 +37,7 @@
 		<tr>
 			<td><?php echo $cocktail['cocktail']['name']; ?></td>
 			<td><?php echo 'Yes'; ?></td>
-			<td><?php echo $cocktail['cocktail']['favorited']; ?></td>
+			<td><?php echo $favorites; ?></td>
 			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 		</tr>
 	</table>

@@ -113,6 +113,29 @@ class QueryBot {
 		return self::perform($sql, $bound); }
 
 
+	/************ FAVORITES OPERATIONS ************/
+
+	public function create_favorites($user_id, $cocktail_id) {
+		$sql = "INSERT INTO favorites (user_id, cocktail_id) VALUES (:user_id, :cocktail_id)";
+		$bound = array('user_id' => $user_id, 'cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
+	public function delete_favorite($user_id, $cocktail_id) {
+		$sql = "DELETE FROM favorites WHERE user_id = :user_id AND cocktail_id = :cocktail_id";
+		$bound = array('user_id' => $user_id, 'cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
+	public function retrieve_favorites_by_cocktail($cocktail_id) {
+		$sql = "SELECT user_id FROM favorites WHERE cocktail_id = :cocktail_id";
+		$bound = array('cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
+	public function retrieve_favorite($user_id, $cocktail_id) {
+		$sql = "SELECT * FROM favorites WHERE user_id = :user_id AND cocktail_id = :cocktail_id";
+		$bound = array('user_id' => $user_id, 'cocktail_id' => $cocktail_id);
+	return self::perform($sql, $bound); }
+
+
 	/************ INGREDIENT OPERATIONS  ************/
 
 

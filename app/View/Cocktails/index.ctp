@@ -27,6 +27,7 @@
 			<th><?php echo 'Name'; ?></th>
 			<th><?php echo 'Favorites'; ?></th>
 		</tr>
+		<?php $i = 0; ?>
 		<?php foreach ($cocktails as $cocktail): ?>
 
 		<tr>
@@ -34,7 +35,8 @@
 				<?php echo $this->Html->link($cocktail['cocktail']['name'], 
 					array('action' => 'view', $cocktail['cocktail']['cocktail_id'])); ?>
 			</td>
-			<td><?php echo h($cocktail['cocktail']['favorited']); ?>&nbsp;</td>
+			<td><?php echo $favorites[$i]; ?>&nbsp;</td>
+			<?php $i++; ?>
 		</tr>
 		<?php endforeach; ?>
 	</table>

@@ -21,7 +21,7 @@
 		<tr>
 			<td><?php echo $cocktail['cocktail']['name']; ?></td>
 			<td><?php echo 'Yes'; ?></td>
-			<td><?php echo $cocktail['cocktail']['favorited']; ?></td>
+			<td><?php echo $favorites; ?></td>
 			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 		</tr>
 	</table>
