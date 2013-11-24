@@ -5,7 +5,7 @@
 <div class="cocktails view">
 
 
-<?php if($current_user == $cocktail['cocktail']['creator_id']): ?>
+
 
 
 <?php if(empty($currently_favorited)): ?>
@@ -19,10 +19,10 @@
 <?php endif; ?>
 
 
+<?php if($current_user == $cocktail['cocktail']['creator_id']): ?>
 <?php echo $this->Form->create('Cocktail', array('div' => false, 'action' => 'edit', $cocktail['cocktail']['cocktail_id'])) ?>
               <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
  <?php echo $this->Form->end(array('label' => 'Edit', 'class' => 'view-button btn btn-info')); ?>  
-
 <?php endif; ?>
 
   <h2><?php echo __($cocktail['cocktail']['name']); ?></h2>
