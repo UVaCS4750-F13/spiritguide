@@ -12,7 +12,8 @@ var asInitVals = new Array();
 			"sSearch": "Search all columns:"
 		},
 		"sPaginationType": "bootstrap",
-		"iDisplayLength": 15
+		"iDisplayLength": 15,
+		"aaSorting": [ ]
 	} );
 	$("thead input").keyup( function () {
 		/* Filter on the column (the index) of this element */
@@ -53,12 +54,14 @@ display: none;
 #data-table_length {
 	display: none;
 }
+#new-ing-button {
+	float: right;
+	margin-bottom: 20px;
+}
 </style>
 
-<span id='new-ing-button'><?php echo $this->Form->button('New Ingredient', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/ingredients/add/\'', 'class' => 'view-button btn btn-info', 'style' => 'display:block')) ?>
+<span><h2>Ingredients Index</h2><?php echo $this->Form->button('New Mixer', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/ingredients/add/\'', 'id' => 'new-ing-button', 'class' => 'view-button btn btn-info')) ?>
 </span>
-<br>
-<br>
 
 <!--
 <?php $classification = array('all' => 'All Ingredients', 'alcohols' => 'Alcohols', 'mixers' => 'Mixers'); ?>
@@ -88,22 +91,22 @@ display: none;
 		<thead>
 		<tr>
 			<th rowspan="1" colspan="1"><h4>Description</h4><input type="text" name="description" value="Filter by Description" class="search_init"></th>
-			<th rowspan="1" colspan="1"><h4>Brand</h4><input type="text" name="description" value="Filter by Brand" class="search_init"></th></tr>
+			<th rowspan="1" colspan="1"><h4>Brand</h4><input type="text" name="description" value="Filter by Brand" class="search_init"></th>
+			</tr>
 				</tr>
 		</thead>
 		<tbody>
-			<?php foreach ($ingredients as $ingredient): ?>
+			<?php foreach ($ingredients as $row): ?>
 				<tr>
-				<?php foreach ($ingredient as $ing): ?>
+				<?php foreach ($row as $ingredient): ?>
 				<td> 
-					<?php echo $ing['description']; ?>
+					<?php echo $ingredient['description']; ?>
 				</td>
 				<td>
-					<?php echo $this->Html->link($ing['brand'], 
-						array('action' => 'view', $ing['ingredient_id']));
+					<?php echo $this->Html->link($ingredient['brand'], 
+						array('action' => 'view', $ingredient['ingredient_id']));
 					?>
 				</td>
-			
 			<?php endforeach; ?>
 			</tr>
 			<?php endforeach; ?>
