@@ -1,7 +1,7 @@
 body {
 	background-image:url('../img/cocktailsplash.jpg');
 	background-repeat:no-repeat;
-	background-position:center top;
+	background-position:0px 0px;
 	background-size: 100%;
 }
 
@@ -9,6 +9,7 @@ h1 {
 	padding-top: 60px;
 	font-size: 100px;
 	text-align: center;
+	font
 }
 
 .btn {
