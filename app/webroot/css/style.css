@@ -142,3 +142,21 @@ h5 {margin-top: 0px;}
 .view-button {
 	float: right;
 }
+
+.pagination {
+    float: right;
+}
+
+.inputs input, textarea{
+      display:inline;
+}
+
+h4 {
+	width: 100px;
+	padding: 0px;
+}
+
+th, td {
+    overflow: hidden;
+    width: 50px;
+}

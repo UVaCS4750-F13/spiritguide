@@ -1,5 +1,16 @@
 <script>document.getElementById("cocktail-tab").className = "active";</script>
 
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="dataTables.scrollingPagination.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#cocktails-table').dataTable( {
+            "sPaginationType": "scrolling"
+        } );
+        
+    } );
+</script>
+
 <div class="cocktails index">
 	
 <?php $options = array('all' => 'All Cocktails', 'power' => 'Within Your Power'); ?>
@@ -22,7 +33,7 @@
 <span>
 <?php echo $this->Form->button('New Cocktail', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/cocktails/add\'', 'class' => 'btn btn-info')) ?>
 	<h5 id="cocktail-results"><?php echo  __($count.' Cocktail'.$plural.' Returned'); ?></h5></span>
-	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
+	<table id='cocktails-table' class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 				<tr>
 			<th><?php echo 'Name'; ?></th>
 			<th><?php echo 'Favorites'; ?></th>

@@ -2,6 +2,65 @@
 	document.getElementById("ingredient-tab").className = "active";
 </script>
 
+<?php echo $this->Html->script('dataTables.min'); ?>
+
+<script>
+var asInitVals = new Array();
+    $(document).ready(function() {
+        var oTable = $('#data-table').dataTable( {
+		"oLanguage": {
+			"sSearch": "Search all columns:"
+		},
+		"sPaginationType": "bootstrap",
+		"iDisplayLength": 15
+	} );
+	$("thead input").keyup( function () {
+		/* Filter on the column (the index) of this element */
+		oTable.fnFilter( this.value, $("thead input").index(this) );
+	} );
+	
+	/*
+	 * Support functions to provide a little bit of 'user friendlyness' to the textboxes in 
+	 * the footer
+	 */
+	$("thead input").each( function (i) {
+		asInitVals[i] = this.value;
+	} );
+	
+	$("thead input").focus( function () {
+		if ( this.className == "search_init" )
+		{
+			this.className = "";
+			this.value = "";
+		}
+	} );
+	
+	$("tfoot input").blur( function (i) {
+		if ( this.value == "" )
+		{
+			this.className = "search_init";
+			this.value = asInitVals[$("tfoot input").index(this)];
+		}
+	} );
+        document.getElementById('data-table').style.display = 'table';
+    } );
+</script>
+
+<style type="text/css">
+.dataTables_filter {
+display: none; 
+}
+#data-table_length {
+	display: none;
+}
+</style>
+
+<span id='new-ing-button'><?php echo $this->Form->button('New Ingredient', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/ingredients/add/\'', 'class' => 'view-button btn btn-info', 'style' => 'display:block')) ?>
+</span>
+<br>
+<br>
+
+<!--
 <?php $classification = array('all' => 'All Ingredients', 'alcohols' => 'Alcohols', 'mixers' => 'Mixers'); ?>
 <span id="ingredient-index-span">
    	<?php echo $this->Form->create('Ingredient', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>
@@ -18,16 +77,21 @@
 		); ?>
     </fieldset>
     <?php echo $this->Form->end(array('label' => 'Filter Ingredients', 'div' => false, 'id' => 'mixer-filter-button', 'class' => 'btn btn-info')); ?> 
-    
+
 </span>
+
 	<?php $plural = "s"; if ($ingredient_count == 1) { $plural = ""; } ?>
 	<span><?php echo $this->Form->button('New Ingredient', array('div' => false, 'onclick' => 'location.href=\'ingredients/add\'', 'class' => 'btn btn-info')) ?>
 	<h5 id="ingredient-results"><?php echo  __($ingredient_count.' Ingredient'.$plural.' Returned'); ?></h5></span>
-	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
+	 -->
+	<table id="data-table" class="table table-striped table-bordered" cellpadding="0" cellspacing="0" style='display:none'>
+		<thead>
 		<tr>
-			<th><?php echo 'Description'; ?></th>
-			<th><?php echo 'Brand'; ?></th>
-		</tr>
+			<th rowspan="1" colspan="1"><h4>Description</h4><input type="text" name="description" value="Filter by Description" class="search_init"></th>
+			<th rowspan="1" colspan="1"><h4>Brand</h4><input type="text" name="description" value="Filter by Brand" class="search_init"></th></tr>
+				</tr>
+		</thead>
+		<tbody>
 			<?php foreach ($ingredients as $ingredient): ?>
 				<tr>
 				<?php foreach ($ingredient as $ing): ?>
@@ -43,6 +107,8 @@
 			<?php endforeach; ?>
 			</tr>
 			<?php endforeach; ?>
+			</tbody>
+	
 	</table>
 	<p>
 	</p>
