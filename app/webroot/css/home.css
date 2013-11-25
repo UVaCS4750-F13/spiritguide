@@ -1,9 +1,9 @@
 body {
 	background-image:url('../img/cocktailsplash.jpg');
 	background-repeat:no-repeat;
-	background-position: 0px 0px;
+	background-position: center top;
 	background-position: fixed;
-	background-size: 1700px 1300px;
+	background-size: 2100px 1300px;
 }
 
 h1 {
