@@ -2,5 +2,5 @@
 
 <div>
   <h1>The Spirit Guide</h1>
-  <button class="btn btn-info">Project Page</button>
+  <button class="btn btn-info">Get Our Data</button>
 </div>

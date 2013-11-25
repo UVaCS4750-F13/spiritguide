@@ -52,8 +52,7 @@ var asInitVals = new Array();
 display: none; 
 }
 #data-table_length {
-	display: none;
-}
+	margin-top: 13px;}
 #new-ing-button {
 	float: right;
 	margin-bottom: 20px;
