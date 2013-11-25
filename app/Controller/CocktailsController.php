@@ -176,19 +176,15 @@ class CocktailsController extends AppController {
 	/************ DELETE ACTION ************/
 
 
-	public function delete($id = null) {
-		$this->Cocktail->id = $id;
-		if (!$this->Cocktail->exists()) {
-			throw new NotFoundException(__('Invalid cocktail'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Cocktail->delete()) {
-			$this->Session->setFlash(__('The cocktail has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The cocktail could not be deleted. Please, try again.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-	}
+		public function delete() {
+        if ($this->request->is('post')) {
+        	$index = 'Cocktails';
+            $tag_id = QueryBot::tidy($this->request->data[$index]['cocktail_id']);
+            $cocktail_id = QueryBot::tidy($this->request->data[$index]['cocktail_id']);
+            QueryBot::delete_cocktail($cocktail_id);
+            return $this->redirect(array('controller' => 'cocktails', 'action' => 'index'));
+        }
+    }
 
 
 	/************ UPDATE ACTIONS ************/

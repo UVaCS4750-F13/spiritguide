@@ -20,7 +20,7 @@
 
 	<?php $plural = "s"; if ($count == 1) { $plural = ""; } ?>
 <span>
-<?php echo $this->Form->button('New Cocktail', array('div' => false, 'onclick' => 'location.href=\'cocktails/add\'', 'class' => 'btn btn-info')) ?>
+<?php echo $this->Form->button('New Cocktail', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/cocktails/add\'', 'class' => 'btn btn-info')) ?>
 	<h5 id="cocktail-results"><?php echo  __($count.' Cocktail'.$plural.' Returned'); ?></h5></span>
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 				<tr>

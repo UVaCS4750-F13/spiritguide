@@ -209,3 +209,21 @@
       </fieldset>
     <?php echo $this->Form->end(array('label' => 'Update', 'class' => 'btn btn-info')); ?>    
   </div></div>
+
+<br><br><br>
+
+  <?php echo $this->Form->button('Delete', array('div' => false, 
+  'data-toggle' => 'modal', 'data-target' => '#delete-cocktail-modal', 'class' => 'view-button btn btn-danger')); ?>
+
+  <div id="delete-cocktail-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Delete Cocktail?</h3>
+  </div>
+  <div class="modal-body">
+    <?php echo $this->Form->create('Cocktails', array('controllers' => 'cocktails', 'action' => 'delete')); ?>
+      <fieldset>
+            <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
+      </fieldset>
+           <?php echo $this->Form->end(array('label' => 'Delete', 'class' => 'btn btn-danger')); ?>   
+  </div></div>

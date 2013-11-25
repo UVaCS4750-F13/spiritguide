@@ -91,6 +91,11 @@ class QueryBot {
 		$bound = array('recipe' => $recipe, 'cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); }
 
+	public function delete_cocktail($cocktail_id) {
+		$sql = "DELETE FROM cocktail WHERE cocktail_id = :cocktail_id";
+		$bound = array('cocktail_id' => $cocktail_id);
+		return self::perform($sql, $bound); }
+
 
     /************ CONTAINS OPERATIONS ************/
 
