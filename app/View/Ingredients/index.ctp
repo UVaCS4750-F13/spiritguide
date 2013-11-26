@@ -12,7 +12,6 @@ var asInitVals = new Array();
 			"sSearch": "Search all columns:"
 		},
 		"sPaginationType": "bootstrap",
-		"iDisplayLength": 15,
 		"aaSorting": [ ]
 	} );
 	$("thead input").keyup( function () {
@@ -89,8 +88,8 @@ display: none;
 	<table id="data-table" class="table table-striped table-bordered" cellpadding="0" cellspacing="0" style='display:none'>
 		<thead>
 		<tr>
-			<th rowspan="1" colspan="1"><h4>Description</h4><input type="text" name="description" value="Filter by Description" class="search_init"></th>
-			<th rowspan="1" colspan="1"><h4>Brand</h4><input type="text" name="description" value="Filter by Brand" class="search_init"></th>
+			<th rowspan="1" colspan="1"><h4>Description</h4><input type="text" name="description" placeHolder="Filter by Description" class="search_init"></th>
+			<th rowspan="1" colspan="1"><h4>Brand</h4><input type="text" name="description" placeHolder="Filter by Brand" class="search_init"></th>
 			</tr>
 				</tr>
 		</thead>

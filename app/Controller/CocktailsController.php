@@ -45,15 +45,7 @@ class CocktailsController extends AppController {
 		foreach (QueryBot::retrieve_tag_names_asc() as $tag) {
 			$all_tags[$tag['tag']['tag_id']] = $tag['tag']['name'];
 		} $this->set('all_tags', $all_tags); 
-
-		$i = 0;
-		$favorites = array();
-		foreach($results as $cocktail) {
-			$favorites[$i] = count(QueryBot::retrieve_favorites_by_cocktail($cocktail['cocktail']['cocktail_id']));
-			$i++;
-		} $this->set('favorites', $favorites);
-		
-}
+	}
 
 	public function add() {
 		if ($this->request->is('post')) {
@@ -119,7 +111,6 @@ class CocktailsController extends AppController {
 
 		$this->set('cocktail_tags', QueryBot::retrieve_tags_by_cocktail($id));
 		$this->set('currently_favorited', QueryBot::retrieve_favorite($this->Auth->user('user_id'),$id));
-		$this->set('favorites', count(QueryBot::retrieve_favorites_by_cocktail($id)));
 	}
 
 
@@ -147,7 +138,6 @@ class CocktailsController extends AppController {
 		} $this->set('all_tags', $all_tags);
 
 		$this->set('cocktail_tags', QueryBot::retrieve_tags_by_cocktail($id));
-		$this->set('favorites', count(QueryBot::retrieve_favorites_by_cocktail($id)));
 		$this->set('currently_favorited', QueryBot::retrieve_favorite($this->Auth->user('user_id'),$id));
 		
 	}

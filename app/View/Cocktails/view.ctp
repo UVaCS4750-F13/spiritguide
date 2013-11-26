@@ -4,10 +4,6 @@
 
 <div class="cocktails view">
 
-
-
-
-
 <?php if(empty($currently_favorited)): ?>
 <?php echo $this->Form->create('Favorites', array('div' => false, 'action' => 'add', $cocktail['cocktail']['cocktail_id'])) ?>
               <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
@@ -30,14 +26,12 @@
 	<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0">
 		<tr>
 			<th><?php echo 'Name'; ?></th>
-			<th><?php echo 'Favorite'; ?></th>
 			<th><?php echo 'Favorites'; ?></th>
 			<th><?php echo 'Cocktail ID'; ?></th>
 		</tr>
 		<tr>
 			<td><?php echo $cocktail['cocktail']['name']; ?></td>
-			<td><?php echo 'Yes'; ?></td>
-			<td><?php echo $favorites; ?></td>
+			<td><?php echo $cocktail['cocktail']['favorited']; ?></td>
 			<td><?php echo $cocktail['cocktail']['cocktail_id']; ?></td>
 		</tr>
 	</table>

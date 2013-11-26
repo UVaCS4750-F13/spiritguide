@@ -46,7 +46,7 @@
 				<?php echo $this->Html->link($cocktail['cocktail']['name'], 
 					array('action' => 'view', $cocktail['cocktail']['cocktail_id'])); ?>
 			</td>
-			<td><?php echo $favorites[$i]; ?>&nbsp;</td>
+			<td><?php echo $cocktail['cocktail']['favorited']; ?>&nbsp;</td>
 			<?php $i++; ?>
 		</tr>
 		<?php endforeach; ?>

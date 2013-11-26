@@ -18,7 +18,37 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+
+	<script>
+function showHint(str)
+{
+if (str.length==0)
+  { 
+  document.getElementById("content").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("content").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","search.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
+
 </head>
+
 <body>
 	<div id="container-outer">
 		<div id="container-inner">
@@ -34,8 +64,9 @@
 							</li>
 						</ul>
 						<ul class="nav pull-right">
+
 						<form class="navbar-search pull-left">
- 							<input type="text" class="search-query" placeholder="Search">
+ 							<input type="text" class="search-query" placeholder="Search" id="master-search" onkeyup="showHint(this.value)">
 						</form>
 						<?php
 							if(is_null($this->Session->read('Auth.User'))) {
