@@ -136,7 +136,7 @@ class QueryBot {
 	return self::perform($sql, $bound); }
 
 	public function retrieve_user_favorites($user_id) {
-		$sql = "SELECT * FROM favorites WHERE user_id = :user_id";
+		$sql = "SELECT * FROM favorites JOIN cocktail ON favorites.cocktail_id = cocktail.cocktail_id WHERE favorites.user_id = :user_id";
 		$bound = array('user_id' => $user_id);
 	return self::perform($sql, $bound); }
 
