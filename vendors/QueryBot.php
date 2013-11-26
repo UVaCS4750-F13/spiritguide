@@ -370,4 +370,34 @@ class QueryBot {
 		$bound = array('cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); } 
 
+	public function export() {
+		$sql = "SHOW TABLES";
+		$tables = array();
+		foreach (self::perform_free($sql) as $table_outer) {
+			foreach ($table_outer as $table_inner) {
+				foreach($table_inner as $table) {
+					array_push($tables, $table);
+				}
+			}
+		}
+
+		$output = "";
+		foreach ($tables as $table) {
+			$output = $output.$table."\r\n";
+
+			$sql = "SELECT * FROM ".$table;
+			foreach (self::perform($sql, array('table' => $table)) as $result) {
+				$end = end($result[$table]);
+				foreach ($result[$table] as $atr) {
+					$output = $output."'".$atr."'";
+					if ($atr != $end) {
+						$output = $output.",";
+					}
+				} $output = $output."\r\n";
+			} $output = $output."\r\n";
+		}
+
+		return $output;
+	}
+
 }

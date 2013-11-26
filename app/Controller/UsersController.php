@@ -133,4 +133,16 @@ public function logout() {
 	}
 
 
+	public function export() {
+		$filename = "spiritguide.csv";
+		$db_dump = QueryBot::export();
+		header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-disposition: attachment; filename="'.$filename.'"');
+        header('Content-Length: '.strlen($db_dump));
+        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+        header('Expires: 0');
+        header('Pragma: public');
+        echo $db_dump;
+    }
 }

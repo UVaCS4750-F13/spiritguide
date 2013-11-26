@@ -75,12 +75,4 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
-
-
-    public function export() {
-        $file = fopen("test.txt", "w");
-        echo fwrite($file, "Hello World. Testing!");
-        fclose($file);
-        return $this->redirect(array('controller' => 'cocktails', 'action' => 'index'));
-    }
 }
