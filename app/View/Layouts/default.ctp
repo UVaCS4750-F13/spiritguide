@@ -77,7 +77,9 @@ xmlhttp.send();
         							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->Session->read('Auth.User.display_name') ?></a>
         							<ul class="dropdown-menu">
           								<li><a href="#">Profile</a></li>
-          								<li><a href="#">Favorites</a></li>
+          								<li><?php echo $this->Html->link('Favorites', 
+  											array('controller'=>'users', 'action'=>'favorites', $this->Session->read('Auth.User.user_id'))); ?>
+  										</li>
           								<li><?php echo $this->Html->link('Inventory', 
   											array('controller'=>'users', 'action'=>'inventory', $this->Session->read('Auth.User.user_id'))); ?>
   										</li>

@@ -66,6 +66,10 @@ public function logout() {
 		$this->set('inventory_count', count($inventory));
 	}
 
+	public function favorites($id = null) {
+		$this->set('favorites', QueryBot::retrieve_user_favorites($id));
+	}
+
 /**
  * add method
  *
