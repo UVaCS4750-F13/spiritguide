@@ -18,7 +18,8 @@ public function beforeFilter() {
 public function login() {
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {
-            return $this->redirect($this->Auth->redirect());
+        	$this->User->useDbConfig = 'unrestricted';
+            return $this->redirect(array('controller' => 'users', 'action' => 'index'));
         } $this->Session->setFlash(__('Invalid username or password, try again'));
     }
 }

@@ -60,25 +60,13 @@
  * For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx
  */
 class DATABASE_CONFIG {
-
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'stardock.cs.virginia.edu',
-		'login' => 'cs4750baw4ux',
+		'login' => 'cs4750baw4uxb',
 		'password' => 'fall2013',
 		'database' => 'cs4750baw4ux',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

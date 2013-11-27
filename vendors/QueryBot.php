@@ -149,134 +149,9 @@ class QueryBot {
 		$bound = array("description" => $description, 'brand' => $brand);
 		return self::perform($sql, $bound); }
 
-	public function index_ingredients($description, $brand, $classification) {
-		$this->loadModel('Ingredient');
-		$db = $this->Ingredient->getDataSource();
-
-		// Select from Alcohols
-
-		if (is_null($description) and is_null($brand) 
-			and strcmp($classification, 'alcohols') == 0) {
-			
-			$sql =  "SELECT * FROM ingredient 
-					WHERE ingredient_id IN 
-					(SELECT ingredient_id FROM proof)";
-		
-			return $db->fetchAll($sql);
-		} 
-
-		elseif (is_null($description) and !is_null($brand) 
-			and $classification == 'alcohols') {
-			
-			$sql = "SELECT * FROM ingredient 
-				WHERE brand LIKE CONCAT('%',:brand,'%')
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-
-			return $db->fetchAll($sql, array('brand' => $brand));
-		}
-
-		elseif (!is_null($description) and is_null($brand)
-			and $classification == 'alcohols') {
-
-			$sql = "SELECT * FROM ingredient 
-				WHERE description LIKE CONCAT('%',:description,'%') 
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-			
-			return $db->fetchAll($sql, array('description' => $description));
-		}
-
-		elseif (!is_null($description) and !is_null($brand)
-			and $classification == 'alcohols') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE description LIKE CONCAT('%',:description,'%') 
-				AND brand LIKE CONCAT('%',:brand,'%') 
-				AND ingredient_id IN (SELECT ingredient_id FROM proof)";
-			
-			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
-		}
-
-		// Select from Mixers
-
-		elseif (is_null($description) and is_null($brand)
-			and $classification == 'mixers') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-			
-			return $db->fetchAll($sql);
-		} 
-
-		elseif (is_null($description) and !is_null($brand) 
-			and $classification == 'mixers') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE brand LIKE CONCAT('%',:brand,'%') 
-				AND ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-			
-			return $db->fetchAll($sql, array('brand' => $brand));
-		}
-
-		elseif (!is_null($description) and is_null($brand)
-			and $classification == 'mixers') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE description LIKE CONCAT('%',:description,'%') 
-				AND ingredient_id NOT IN (SELECT ingredient_id FROM proof)";
-
-			return $db->fetchAll($sql, array('description' => $description));
-		}
-
-		elseif (!is_null($description) and !is_null($brand)
-			and $classification == 'mixers') {
-			
-			$sql = "SELECT * FROM ingredient 
-				WHERE description LIKE CONCAT('%',:description,'%') 
-				AND brand LIKE CONCAT('%',:brand,'%') 
-				AND ingredient_id NOT IN(SELECT ingredient_id FROM proof)";
-			
-			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
-		}
-
-		// Select from All Ingredients
-
-		elseif (is_null($description) and is_null($brand)
-			and $classification == 'all') {
-			
-			$sql =  "SELECT * FROM ingredient";
-			
-			return $db->fetchAll($sql);
-		} 
-
-		elseif (is_null($description) and !is_null($brand) 
-			and $classification == 'all') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE brand LIKE CONCAT('%',:brand,'%')";
-			
-			return $db->fetchAll($sql, array('brand' => $brand));
-		}
-
-		elseif (!is_null($description) and is_null($brand) 
-			and $classification == 'all') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE description LIKE CONCAT('%',:description,'%')";
-			
-			return $db->fetchAll($sql, array('description' => $description));
-		}
-
-		elseif (!is_null($description) and !is_null($brand)
-			and $classification == 'all') {
-			
-			$sql = "SELECT * FROM ingredient
-				WHERE description LIKE CONCAT('%',:description,'%') 
-				AND brand LIKE CONCAT('%',:brand,'%')";
-			
-			return $db->fetchAll($sql, array('description' => $description, 'brand' => $brand));
-		} else {
-			return $db->fetchAll('SELECT * FROM ingredient');
-		}}
+	public function index_ingredients() {
+			$sql = "SELECT * FROM ingredient";
+			return self::perform_free($sql); }
 
 	public function retrieve_ingredient($ingredient_id) {
 		$sql = "SELECT * FROM ingredient WHERE ingredient_id = :ingredient_id LIMIT 1";
@@ -384,12 +259,25 @@ class QueryBot {
 		$output = "";
 		foreach ($tables as $table) {
 			$output = $output.$table."\r\n";
+			$sql = "SHOW COLUMNS FROM ".$table;
+			foreach(self::perform_free($sql) as $column) {
+				$end = end($column);
+				foreach ($column as $c) {
+					foreach (array_keys($c) as $header) {
+						$output = $output.$header[0];
+						if ($header != $end) {
+							$output = $output.",";
+						}
+					}
+				}
+			}
+			$output = $output.$table."\r\n";
 
 			$sql = "SELECT * FROM ".$table;
 			foreach (self::perform($sql, array('table' => $table)) as $result) {
 				$end = end($result[$table]);
 				foreach ($result[$table] as $atr) {
-					$output = $output."'".$atr."'";
+					$output = $output.$atr;
 					if ($atr != $end) {
 						$output = $output.",";
 					}
