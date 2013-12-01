@@ -18,30 +18,30 @@ class IngredientsController extends AppController {
 	}
 
 	public function index() {
-		
-		$description = null;
-		if (isset($this->passedArgs['description'])) {
-            $this->request->data['Ingredient']['description'] = trim($this->passedArgs['description']);
-           $description = trim($this->passedArgs['description']);
-		}
-
-		$brand = null;
-		if (isset($this->passedArgs['brand'])) {
-            $this->request->data['Ingredient']['brand'] = trim($this->passedArgs['brand']);
-            $brand = trim($this->passedArgs['brand']);
-		} 
-
-		$classification = null;
-		if (isset($this->passedArgs['classification'])) {
-            $this->request->data['Ingredient']['classification'] = trim($this->passedArgs['classification']);
-            $classification = trim($this->passedArgs['classification']);
-		}
-
-		$results = QueryBot::index_ingredients($description, $brand, $classification);
+		$results = QueryBot::index_ingredients();
 		$this->set('ingredients', $results);
 		$this->set('ingredient_count', count($results));}
 
-	public function add() { throw new NotFoundException(_('Invalid Action')); }
+	public function index_alcohols() {
+		$results = QueryBot::index_alcohols();
+		$this->set('ingredients', $results);
+		$this->set('ingredient_count', count($results));}
+
+	public function index_mixers() {
+		$results = QueryBot::index_mixers();
+		$this->set('ingredients', $results);
+		$this->set('ingredient_count', count($results));}
+
+	public function add() {
+		if ($this->request->is('post')) {
+			$description = QueryBot::tidy($this->request->data['Ingredient']['description']);
+			$brand = QueryBot::tidy($this->request->data['Ingredient']['brand']);
+			QueryBot::create_ingredient($description, $brand);	
+			$ingredient = QueryBot::retrieve_ingredient_id($description, $brand);
+			$ingredient_id = $ingredient[0]['ingredient']['ingredient_id'];
+			return $this->redirect(array('controller' => 'ingredients', 'action' => 'view', $ingredient_id));	
+		} 
+	}
 
 	public function view($id = null) {
 		if (!$this->Ingredient->exists($id)) { throw new NotFoundException(__('Invalid Ingredient')); }

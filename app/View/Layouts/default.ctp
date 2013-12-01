@@ -56,9 +56,20 @@ xmlhttp.send();
 				<div class="navbar-inner">
 					<?php echo $this->Html->link('The Spirit Guide', '/', array('class'=>'brand')); ?>
 						<ul class="nav">
-							<li id="ingredient-tab"><?php echo $this->Html->link('Ingredients',
-								array('controller' => 'ingredients', 'action' => 'index')); ?>
-							</li>
+							<li class="dropdown" id="ingredient-tab">
+        							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingredients</a>
+        							<ul class="dropdown-menu">
+          								<li><?php echo $this->Html->link('All Ingredients', 
+  											array('controller'=>'ingredients', 'action'=>'index')); ?>
+  										</li>
+  										<li><?php echo $this->Html->link('Alcohols', 
+  											array('controller'=>'ingredients', 'action'=>'index_alcohols')); ?>
+  										</li>
+          								<li><?php echo $this->Html->link('Mixers', 
+  											array('controller'=>'ingredients', 'action'=>'index_mixers')); ?>
+  										</li>
+        							</ul>
+     							</li>
 							<li id="cocktail-tab"><?php echo $this->Html->link('Cocktails',
 								array('controller' => 'cocktails', 'action' => 'index')); ?>
 							</li>
@@ -76,7 +87,6 @@ xmlhttp.send();
 								<li class="dropdown">
         							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->Session->read('Auth.User.display_name') ?></a>
         							<ul class="dropdown-menu">
-          								<li><a href="#">Profile</a></li>
           								<li><?php echo $this->Html->link('Favorites', 
   											array('controller'=>'users', 'action'=>'favorites', $this->Session->read('Auth.User.user_id'))); ?>
   										</li>

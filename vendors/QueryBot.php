@@ -153,10 +153,23 @@ class QueryBot {
 			$sql = "SELECT * FROM ingredient";
 			return self::perform_free($sql); }
 
+	public function index_alcohols() {
+		$sql = "SELECT * FROM alcohol";
+		return self::perform_free($sql); }
+
+	public function index_mixers() {
+		$sql = "SELECT * FROM mixer";
+		return self::perform_free($sql); }
+
 	public function retrieve_ingredient($ingredient_id) {
 		$sql = "SELECT * FROM ingredient WHERE ingredient_id = :ingredient_id LIMIT 1";
 		$bound = (array('ingredient_id' => $ingredient_id)); 
 		return self::perform($sql, $bound); }
+
+	public function retrieve_ingredient_id($description, $brand) {
+		$sql = "SELECT * FROM ingredient WHERE description = :description AND brand = :brand LIMIT 1";
+		$bound = array("description" => $description, 'brand' => $brand);
+	return self::perform($sql, $bound); }
 
 	public function retrieve_ingredients_by_cocktail($cocktail_id) {
 		$sql = "SELECT ing.ingredient_id, ing.description, ing.brand, con.volume FROM ingredient ing JOIN contains con ON ing.ingredient_id = con.ingredient_id AND con.cocktail_id = :cocktail_id";
