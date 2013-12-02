@@ -1,4 +1,4 @@
-<h3><?php echo __('Favorites'); ?></h3>
+<h2><?php echo __('Favorites'); ?></h2>
 </span>
 	<?php $plural = "s"; if (count($favorites) == 1) { $plural = ""; } ?>
 	<span>

@@ -58,7 +58,7 @@ display: none;
 }
 </style>
 
-<span><h2>Alcohols Index</h2>
+<span><h2>Alcohol Index</h2>
 </span>
 
 <!--

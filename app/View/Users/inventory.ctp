@@ -1,4 +1,4 @@
-<h3><?php echo __('Inventory'); ?></h3>
+<h2><?php echo __('Inventory'); ?></h2>
 </span>
 	<?php $plural = "s"; if ($inventory_count == 1) { $plural = ""; } ?>
 	<span>

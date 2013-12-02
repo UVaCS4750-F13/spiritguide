@@ -12,7 +12,7 @@
 </script>
 
 <div class="cocktails index">
-	
+	<h2>Cocktail Index</h2>
 <?php $options = array('all' => 'All Cocktails', 'power' => 'Within Your Power'); ?>
 <span id="cocktail-index-span">
    	<?php echo $this->Form->create('Cocktail', array('div' => false, 'action' => 'filter', 'class' => 'form-inline')); ?>

@@ -4,6 +4,7 @@
 
 <div class="cocktails view">
 
+<?php if(!is_null($this->Session->read('Auth.User'))): ?>
 <?php if(empty($currently_favorited)): ?>
 <?php echo $this->Form->create('Favorites', array('div' => false, 'action' => 'add', $cocktail['cocktail']['cocktail_id'])) ?>
               <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
@@ -12,6 +13,7 @@
 <?php echo $this->Form->create('Favorites', array('div' => false, 'action' => 'delete', $cocktail['cocktail']['cocktail_id'])) ?>
               <?php echo $this->Form->input('cocktail_id', array('type' => 'hidden', 'value' => $cocktail['cocktail']['cocktail_id'])); ?>
  <?php echo $this->Form->end(array('label' => 'Unfavorite', 'class' => 'btn btn-info')); ?>  
+<?php endif; ?>
 <?php endif; ?>
 
 

@@ -58,7 +58,7 @@ display: none;
 }
 </style>
 
-<span><h2>Ingredients Index</h2><?php echo $this->Form->button('New Mixer', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/ingredients/add/\'', 'id' => 'new-ing-button', 'class' => 'view-button btn btn-info')) ?>
+<span><h2>Ingredient Index</h2><?php echo $this->Form->button('New Mixer', array('div' => false, 'onclick' => 'location.href=\'/~baw4ux/spiritguide/ingredients/add/\'', 'id' => 'new-ing-button', 'class' => 'view-button btn btn-info')) ?>
 </span>
 
 <!--
