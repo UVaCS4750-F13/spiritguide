@@ -7,6 +7,7 @@ App::uses('AppModel', 'Model');
  * @property Own $Own
  */
 class User extends AppModel {
+
 	public $validate = array(
 		'username' 		=> array(
 			'unique'		=>	array(

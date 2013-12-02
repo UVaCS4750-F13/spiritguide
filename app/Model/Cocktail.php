@@ -9,6 +9,7 @@ App::uses('AppModel', 'Model');
  * @property UserRating $UserRating
  */
 class Cocktail extends AppModel {
+
 	public $validate = array(
 		'name' 			=> array(
 			'unique'		=>	array(

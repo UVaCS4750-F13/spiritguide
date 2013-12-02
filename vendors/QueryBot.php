@@ -21,50 +21,80 @@ class QueryBot {
     /************ COCKTAIL OPERATIONS  ************/
 
 
-    public function index_cocktails($availability, $name, $tag) {
-		$this->loadModel('Cocktail');
-		$db = $this->Cocktail->getDataSource();
-
-		if (strcmp($availability, 'all') == 0 and is_null($name) and
-			is_null($tag)) {
-
-			$sql = "SELECT * FROM cocktail";
-
-			return $db->fetchAll($sql);
-		}
-
-		elseif ((strcmp($availability, 'all') == 0) and !is_null($name) and
-			is_null($tag)) {
-
-			$sql = "SELECT * FROM cocktail
-			WHERE name LIKE CONCAT('%',:name,'%')";
-
-			return $db->fetchAll($sql, array(':name' => $name));
-		}
-
-		elseif (strcmp($availability, 'all') == 0 and is_null($name) and
-			!is_null($tag)) {
-
-			$sql = "SELECT * FROM cocktail 
-			WHERE cocktail_id IN (SELECT cocktail_id FROM labels
+    public function index_cocktails($availability, $name, $tag, $user_id) {
+		if (strcmp($availability, 'all') == 0) {
+			if(is_null($name)) {
+				if(is_null($tag)) {
+					$sql = "SELECT * FROM cocktail";
+					return self::perform_free($sql); }
+				else {
+					$sql = "SELECT * FROM cocktail WHERE cocktail_id IN 
+						(SELECT cocktail_id FROM labels WHERE tag_id = :tag)";
+					$bound = array(':tag' => $tag);
+					return self::perform($sql, $bound); }
+			} else {
+				if (is_null($tag)) {
+					$sql = "SELECT * FROM cocktail
+						WHERE name LIKE CONCAT('%',:name,'%')";
+					$bound = array('name' => $name);
+					return self::perform($sql, $bound); }
+				else {
+					$sql = "SELECT * FROM cocktail 
+								WHERE name LIKE CONCAT('%',:name,'%') 
+								AND cocktail_id IN 
+									(SELECT cocktail_id FROM labels
 									WHERE tag_id = :tag)";
-			
-			return $db->fetchAll($sql, array(':tag' => $tag));
+					$bound = array(':name' => $name, 'tag' => $tag);
+					return self::perform($sql, $bound); }
+			}
+		} elseif (strcmp($availability, 'power') == 0) {
+			if(is_null($name)) {
+				if(is_null($tag)) {
+					$sql = "SELECT * FROM cocktail WHERE cocktail_id NOT IN
+										(select distinct cocktail_id 
+											from (select * from owns where user_id = :user_id) as o 
+											right join contains as c on c.ingredient_id = o.ingredient_id
+											where o.volume is null or o.volume < c.volume)";
+					$bound = array('user_id' => $user_id);
+					return self::perform($sql, $bound); }
+				else {
+					$sql = "SELECT * FROM cocktail WHERE cocktail_id IN 
+						(SELECT cocktail_id FROM labels WHERE tag_id = :tag) AND cocktail_id NOT IN
+										(select distinct cocktail_id 
+											from (select * from owns where user_id = :user_id) as o 
+											right join contains as c on c.ingredient_id = o.ingredient_id
+											where o.volume is null or o.volume < c.volume)";
+					$bound = array(':tag' => $tag, 'user_id' => $user_id);
+					return self::perform($sql, $bound); }
+			} else {
+				if (is_null($tag)) {
+					$sql = "SELECT * FROM cocktail
+						WHERE name LIKE CONCAT('%',:name,'%') AND cocktail_id NOT IN
+										(select distinct cocktail_id 
+											from (select * from owns where user_id = :user_id) as o 
+											right join contains as c on c.ingredient_id = o.ingredient_id
+											where o.volume is null or o.volume < c.volume)";
+					$bound = array('name' => $name, 'user_id' => $user_id);
+					return self::perform($sql, $bound); }
+				else {
+					$sql = "SELECT * FROM cocktail 
+								WHERE name LIKE CONCAT('%',:name,'%') 
+								AND cocktail_id IN 
+									(SELECT cocktail_id FROM labels
+									WHERE tag_id = :tag) AND cocktail_id NOT IN
+										(select distinct cocktail_id 
+											from (select * from owns where user_id = :user_id) as o 
+											right join contains as c on c.ingredient_id = o.ingredient_id
+											where o.volume is null or o.volume < c.volume)";
+					$bound = array(':name' => $name, 'tag' => $tag, 'user_id' => $user_id);
+					return self::perform($sql, $bound); }
+			}
+		} else {
+			$sql = "SELECT * FROM cocktail";
+			return self::perform_free($sql); 
 		}
-
-		elseif (strcmp($availability, 'all') == 0 and !is_null($name) and
-			!is_null($tag)) {
-
-			$sql = "SELECT * FROM cocktail 
-			WHERE name LIKE CONCAT('%',:name,'%') 
-			AND cocktail_id IN 
-			(SELECT cocktail_id FROM labels
-				WHERE tag_id = :tag)";
-			
-			return $db->fetchAll($sql, array(':name' => $name, 'tag' => $tag));
-		}
-
-		else { return $db->fetchAll('SELECT * FROM cocktail'); }}
+	}
+		 
 
 	public function create_cocktail($name, $recipe, $creator_id) {
 		$sql = "INSERT INTO cocktail (name, recipe, creator_id) VALUES (:name, :recipe, :creator_id)";
@@ -257,6 +287,10 @@ class QueryBot {
 		$sql = "SELECT tag.tag_id, tag.name FROM tag JOIN labels ON tag.tag_id = labels.tag_id WHERE labels.cocktail_id = :cocktail_id";
 		$bound = array('cocktail_id' => $cocktail_id);
 		return self::perform($sql, $bound); } 
+
+
+	/************ SPECIAL OPERATIONS ************/
+
 
 	public function export() {
 		$sql = "SHOW TABLES";

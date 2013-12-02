@@ -37,7 +37,8 @@ class CocktailsController extends AppController {
             $tag = QueryBot::tidy($this->passedArgs['tag']);
         }
 
-		$results = QueryBot::index_cocktails($availability, $name, $tag);
+        $user_id = $this->Auth->user('user_id');
+		$results = QueryBot::index_cocktails($availability, $name, $tag, $user_id);
 		$this->set('cocktails', $results);
 		$this->set('count', count($results));
 
