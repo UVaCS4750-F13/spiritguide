@@ -76,9 +76,9 @@ xmlhttp.send();
 						</ul>
 						<ul class="nav pull-right">
 
-						<form class="navbar-search pull-left">
- 							<input type="text" class="search-query" placeholder="Search" id="master-search" onkeyup="showHint(this.value)">
-						</form>
+						<?php echo $this->Form->create('Cocktail', array('div' => false, 'controller' => 'cocktails', 'action' => 'filter_search', 'class' => 'navbar-search pull-left')); ?>
+    					<?php echo $this->Form->input('search', array('div' => false, 'type' => 'text', 'class' => 'search-query', 'placeholder' => 'Search', 'label' => false)); ?>
+    					<?php echo $this->Form->end(); ?>
 						<?php
 							if(is_null($this->Session->read('Auth.User'))) {
   								echo '<li>'.$this->Html->link('Login', 

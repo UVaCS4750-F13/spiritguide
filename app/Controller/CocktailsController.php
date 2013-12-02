@@ -200,4 +200,26 @@ class CocktailsController extends AppController {
 		}
 	}
 
+	function filter_search() {
+		$url['action'] = 'search_all';
+		foreach ($this->data as $k=>$v){ 
+			foreach ($v as $kk=>$vv){
+				if($vv != "") {
+					$url[$kk]=$vv;
+				}
+			}
+		}
+		$this->redirect($url, null, true);
+	}
+
+	public function search_all() {
+		$search_string = null;
+		if (isset($this->passedArgs['search'])) {
+            $this->request->data['Cocktail']['search'] = QueryBot::tidy($this->passedArgs['search']);
+            $search_string = QueryBot::tidy($this->passedArgs['search']);
+        }
+		$this->set('cocktails', QueryBot::retrieve_cocktail_like_name($search_string));
+        $this->set('ingredients', QueryBot::retrieve_like_ingredient($search_string)); 
+	}
+
 }

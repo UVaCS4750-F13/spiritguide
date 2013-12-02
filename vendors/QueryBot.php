@@ -106,6 +106,11 @@ class QueryBot {
 		$bound = array('name' => $name);
 		return self::perform($sql, $bound); }
 
+	public function retrieve_cocktail_like_name($name) {
+		$sql = "SELECT * FROM cocktail WHERE name LIKE CONCAT('%',:name,'%')";
+		$bound = array('name' => $name);
+		return self::perform($sql, $bound); }
+
 	public function retrieve_cocktail($cocktail_id) {
 		$sql = "SELECT * FROM cocktail WHERE cocktail_id = :cocktail_id LIMIT 1";
 		$bound = array('cocktail_id' => $cocktail_id);
@@ -200,6 +205,11 @@ class QueryBot {
 		$sql = "SELECT * FROM ingredient WHERE description = :description AND brand = :brand LIMIT 1";
 		$bound = array("description" => $description, 'brand' => $brand);
 	return self::perform($sql, $bound); }
+
+	public function retrieve_like_ingredient($string) {
+		$sql = "SELECT * FROM ingredient WHERE brand LIKE CONCAT('%',:string,'%') OR description LIKE CONCAT('%',:string,'%')";
+		$bound = array('string' => $string);
+		return self::perform($sql, $bound); }
 
 	public function retrieve_ingredients_by_cocktail($cocktail_id) {
 		$sql = "SELECT ing.ingredient_id, ing.description, ing.brand, con.volume FROM ingredient ing JOIN contains con ON ing.ingredient_id = con.ingredient_id AND con.cocktail_id = :cocktail_id";
