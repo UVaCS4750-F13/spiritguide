@@ -319,11 +319,15 @@ class QueryBot {
 			$sql = "SHOW COLUMNS FROM ".$table;
 			foreach(self::perform_free($sql) as $column) {
 				$end = end($column);
+				$i = 1;
 				foreach ($column as $c) {
-					foreach (array_keys($c) as $header) {
-						$output = $output.$header[0];
-						if ($header != $end) {
-							$output = $output.",";
+					foreach ($c as $header) {
+						if ($i % 5  == 1) {
+							$i++;
+							$output = $output.$header;
+							if ($header != $end) {
+								$output = $output.",";
+							}
 						}
 					}
 				}
