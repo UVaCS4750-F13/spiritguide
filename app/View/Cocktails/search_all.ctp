@@ -42,7 +42,7 @@
 				</td>
 				<td>
 					<?php echo $this->Html->link($ingredient['brand'], 
-						array('action' => 'view', $ingredient['ingredient_id']));
+						array('controller' => 'ingredients', 'action' => 'view', $ingredient['ingredient_id']));
 					?>
 				</td>
 			<?php endforeach; ?>
